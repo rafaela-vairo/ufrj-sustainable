@@ -1,5 +1,5 @@
 {
-  "name": "mnv-design-system",
+  "name": "mnv-design-system-test",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -23,5 +23,6 @@
   "devDependencies": {
     "@stencil/core": "^1.0.7"
   },
-  "license": "MIT"
+  "license": "AGPL-3.0",
+  "dependencies": {}
 }

@@ -1,3 +1,5 @@
-mnv-mark {
-    /* Component styles go here */
+:host * {
+    background-color: var(--mnv-primary-color, yellow);
+    font-size: var(--mnv-font-size);
+    font-family: var(--mnv-sans-font-family);
 }

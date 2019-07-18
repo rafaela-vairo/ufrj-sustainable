@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|PT+Serif&display=swap');
+:root {
+    --mnv-primary-color: rgb(0, 100, 250, 0.2);
+    --mnv-font-size: 45px;
+    --mnv-serif-font-family: 'PT Serif', serif;
+    --mnv-sans-font-family: 'Alegreya Sans', sans-serif;
+}

@@ -9,12 +9,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MnvMark {
-    /**
-    * Value: propriedade de teste
-    */
-    'value': string;
-  }
+  interface MnvMark {}
   interface MyComponent {
     /**
     * The first name
@@ -52,12 +47,7 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {
-    /**
-    * Value: propriedade de teste
-    */
-    'value'?: string;
-  }
+  interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
     * The first name
