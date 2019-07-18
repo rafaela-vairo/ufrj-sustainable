@@ -1,7 +1,7 @@
 {
-  "name": "mnv-design-system-test",
+  "name": "mnv-ds",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Mnv Design System",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/mnv-design-system/mnv-design-system.js",
+  "unpkg": "dist/mnv-ds/mnv-ds.js",
   "files": [
     "dist/",
     "loader/"
