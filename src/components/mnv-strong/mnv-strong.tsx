@@ -1,16 +1,16 @@
 import { Component, h } from '@stencil/core'
 
 @Component({
-  tag: 'mnv-mark',
-  styleUrl: 'mnv-mark.css',
+  tag: 'mnv-strong',
+  styleUrl: 'mnv-strong.css',
   shadow: true,
 })
-export class MnvMark {
+export class MnvStrong {
   render() {
     return (
-      <mark>
+      <strong>
         <slot />
-      </mark>
+      </strong>
     )
   }
 }

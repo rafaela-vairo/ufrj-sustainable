@@ -10,6 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface MnvMark {}
+  interface MnvStrong {}
   interface MyComponent {
     /**
     * The first name
@@ -35,6 +36,12 @@ declare global {
     new (): HTMLMnvMarkElement;
   };
 
+  interface HTMLMnvStrongElement extends Components.MnvStrong, HTMLStencilElement {}
+  var HTMLMnvStrongElement: {
+    prototype: HTMLMnvStrongElement;
+    new (): HTMLMnvStrongElement;
+  };
+
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
@@ -42,12 +49,14 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'mnv-mark': HTMLMnvMarkElement;
+    'mnv-strong': HTMLMnvStrongElement;
     'my-component': HTMLMyComponentElement;
   }
 }
 
 declare namespace LocalJSX {
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
+  interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
     * The first name
@@ -65,6 +74,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'mnv-mark': MnvMark;
+    'mnv-strong': MnvStrong;
     'my-component': MyComponent;
   }
 }

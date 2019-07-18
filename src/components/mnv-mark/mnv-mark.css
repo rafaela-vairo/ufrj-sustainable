@@ -1,5 +1,3 @@
 :host * {
-    background-color: var(--mnv-primary-color, yellow);
-    font-size: var(--mnv-font-size);
-    font-family: var(--mnv-sans-font-family);
+  background-color: var(--mnv-primary-color, yellow);
 }
