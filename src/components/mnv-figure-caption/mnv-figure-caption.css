@@ -1,0 +1,15 @@
+figure {
+    display: block;
+    padding: 5px;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    padding: 15px;
+}
