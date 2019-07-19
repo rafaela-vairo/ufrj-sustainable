@@ -9,6 +9,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface MnvBase {}
   interface MnvCol {
     'lg': number;
     'md': number;
@@ -41,6 +42,18 @@ export namespace Components {
     * Altera o parágrafo para tamanho reduzido (body 2).
     */
     'bodytwo': boolean;
+    /**
+    * Ativa ou desativa estilização de capitular.
+    */
+    'capitular': boolean;
+  }
+  interface MnvPre {}
+  interface MnvRow {
+    'lg': number;
+    'md': number;
+    'sm': number;
+    'xl': number;
+    'xs': number;
   }
   interface MnvPre {}
   interface MnvRow {
@@ -74,6 +87,15 @@ export namespace Components {
 declare global {
 
 
+<<<<<<< HEAD
+=======
+  interface HTMLMnvBaseElement extends Components.MnvBase, HTMLStencilElement {}
+  var HTMLMnvBaseElement: {
+    prototype: HTMLMnvBaseElement;
+    new (): HTMLMnvBaseElement;
+  };
+
+>>>>>>> 3473ee6035acd954a30db1ae98973765b39313f6
   interface HTMLMnvColElement extends Components.MnvCol, HTMLStencilElement {}
   var HTMLMnvColElement: {
     prototype: HTMLMnvColElement;
@@ -146,6 +168,10 @@ declare global {
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+<<<<<<< HEAD
+=======
+    'mnv-base': HTMLMnvBaseElement;
+>>>>>>> 3473ee6035acd954a30db1ae98973765b39313f6
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
     'mnv-figure': HTMLMnvFigureElement;
@@ -162,6 +188,10 @@ declare global {
 }
 
 declare namespace LocalJSX {
+<<<<<<< HEAD
+=======
+  interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
+>>>>>>> 3473ee6035acd954a30db1ae98973765b39313f6
   interface MnvCol extends JSXBase.HTMLAttributes<HTMLMnvColElement> {
     'lg'?: number;
     'md'?: number;
@@ -194,6 +224,18 @@ declare namespace LocalJSX {
     * Altera o parágrafo para tamanho reduzido (body 2).
     */
     'bodytwo'?: boolean;
+    /**
+    * Ativa ou desativa estilização de capitular.
+    */
+    'capitular'?: boolean;
+  }
+  interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
+  interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {
+    'lg'?: number;
+    'md'?: number;
+    'sm'?: number;
+    'xl'?: number;
+    'xs'?: number;
   }
   interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
   interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {
@@ -224,6 +266,10 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+<<<<<<< HEAD
+=======
+    'mnv-base': MnvBase;
+>>>>>>> 3473ee6035acd954a30db1ae98973765b39313f6
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;
     'mnv-figure': MnvFigure;

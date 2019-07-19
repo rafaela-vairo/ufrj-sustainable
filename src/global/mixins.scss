@@ -1,27 +1,28 @@
-// Small devices
+//Breakpoints
+
 @mixin sm {
-   @media (max-width: #{$screen-sm-max}) {
-       @content;
-   }
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
 }
-
-// Medium devices
 @mixin md {
-   @media (min-width: #{$screen-md-min}) and (max-width:#{$screen-md-max}) {
-       @content;
-   }
+  @media (min-width: #{$screen-md-min}) and (max-width:#{$screen-md-max}) {
+    @content;
+  }
 }
-
-// Large devices
 @mixin lg {
-   @media (min-width: #{$screen-lg-min}) and (max-width:#{$screen-lg-max}) {
-       @content;
-   }
+  @media (min-width: #{$screen-lg-min}) and (max-width:#{$screen-lg-max}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
 }
 
-// Extra large devices
-@mixin xl {
-   @media (min-width: #{$screen-xl-min}) {
-       @content;
-   }
+//Animations
+
+@mixin BGeaseInOut01 {
+  transition: background-color 0.1s ease-in-out;
 }
