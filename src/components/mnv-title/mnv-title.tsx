@@ -1,4 +1,5 @@
 import { Component, h, Prop } from '@stencil/core';
+import { getAsync } from '../../services/content.js';
 
 
 @Component({
@@ -10,6 +11,11 @@ export class MnvTitle {
 
     @Prop() level: string;
     @Prop() overline: string;
+
+
+    async componentDidLoad() {
+        console.log(await getAsync());
+    }
 
     // Renderiza o componente
     render() {
