@@ -14,6 +14,13 @@
 | `middle` | `middle`  | The middle name | `string` | `undefined` |
 
 
+## CSS Custom Properties
+
+| Name        | Description           |
+| ----------- | --------------------- |
+| `--primary` | Primary header color. |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

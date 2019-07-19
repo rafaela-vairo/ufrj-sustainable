@@ -1,0 +1,48 @@
+:host * {
+    font-family: $mnv-font-body;
+}
+
+.bodyone {
+    @include xl {
+        font-size: 21px;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+    }
+    @include lg {
+        font-size: 19px;
+        line-height: 27px;
+        letter-spacing: 0.5px;
+    }
+    @include md {
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: 0.4px;
+    }
+    @include sm {
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0px;
+    }
+}
+.bodytwo {
+    @include xl {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+    }
+    @include lg {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.4px;
+    }
+    @include md {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.3px;
+    }
+    @include sm {
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: 0px;
+    }
+}

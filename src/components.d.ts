@@ -10,6 +10,12 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface MnvMark {}
+  interface MnvParagraph {
+    /**
+    * Altera o parágrafo para tamanho reduzido (body 2).
+    */
+    'bodytwo': boolean;
+  }
   interface MnvStrong {}
   interface MyComponent {
     /**
@@ -36,6 +42,12 @@ declare global {
     new (): HTMLMnvMarkElement;
   };
 
+  interface HTMLMnvParagraphElement extends Components.MnvParagraph, HTMLStencilElement {}
+  var HTMLMnvParagraphElement: {
+    prototype: HTMLMnvParagraphElement;
+    new (): HTMLMnvParagraphElement;
+  };
+
   interface HTMLMnvStrongElement extends Components.MnvStrong, HTMLStencilElement {}
   var HTMLMnvStrongElement: {
     prototype: HTMLMnvStrongElement;
@@ -49,6 +61,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'mnv-mark': HTMLMnvMarkElement;
+    'mnv-paragraph': HTMLMnvParagraphElement;
     'mnv-strong': HTMLMnvStrongElement;
     'my-component': HTMLMyComponentElement;
   }
@@ -56,6 +69,12 @@ declare global {
 
 declare namespace LocalJSX {
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
+  interface MnvParagraph extends JSXBase.HTMLAttributes<HTMLMnvParagraphElement> {
+    /**
+    * Altera o parágrafo para tamanho reduzido (body 2).
+    */
+    'bodytwo'?: boolean;
+  }
   interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
@@ -74,6 +93,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'mnv-mark': MnvMark;
+    'mnv-paragraph': MnvParagraph;
     'mnv-strong': MnvStrong;
     'my-component': MyComponent;
   }
