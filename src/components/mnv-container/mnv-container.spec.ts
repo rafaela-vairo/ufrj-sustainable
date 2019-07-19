@@ -1,19 +1,19 @@
 import { TestWindow } from '@stencil/core/testing';
-import { MnvGrid } from './mnv-grid';
+import { MnvContainer } from './mnv-container';
 
-describe('mnv-grid', () => {
+describe('mnv-container', () => {
   it('should build', () => {
-    expect(new MnvGrid()).toBeTruthy();
+    expect(new MnvContainer()).toBeTruthy();
   });
 
   describe('rendering', () => {
-    let element: HTMLMnvGridElement;
+    let element: HTMLMnvContainerElement;
     let testWindow: TestWindow;
     beforeEach(async () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
-        components: [MnvGrid],
-        html: '<mnv-grid></mnv-grid>'
+        components: [MnvContainer],
+        html: '<mnv-container></mnv-container>'
       });
     });
 

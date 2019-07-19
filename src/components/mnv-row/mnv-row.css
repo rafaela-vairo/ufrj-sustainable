@@ -1,3 +1,6 @@
 mnv-row {
-    /* Component styles go here */
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
 }

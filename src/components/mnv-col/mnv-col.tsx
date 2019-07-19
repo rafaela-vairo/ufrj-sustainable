@@ -2,11 +2,11 @@ import { Component, h, Prop } from '@stencil/core';
 
 
 @Component({
-    tag: 'mnv-row',
-    styleUrl: 'mnv-row.css',
+    tag: 'mnv-col',
+    styleUrl: 'mnv-col.css',
     shadow: true,
 })
-export class MnvRow {
+export class MnvCol {
 
     @Prop({ reflect: true }) xs: number;
     @Prop({ reflect: true }) sm: number;
@@ -14,5 +14,5 @@ export class MnvRow {
     @Prop({ reflect: true }) lg: number;
     @Prop({ reflect: true }) xl: number;
 
-    render = () => <div><slot/></div> 
+    render = () => <div><slot/></div>
 }

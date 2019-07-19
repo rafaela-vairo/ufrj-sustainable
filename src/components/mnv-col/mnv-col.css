@@ -1,0 +1,4 @@
+mnv-col {
+    flex-grow: 1;
+    width: calc(100%/(1/12));
+}
