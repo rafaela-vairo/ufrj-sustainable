@@ -10,6 +10,12 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface MnvBase {}
+  interface MnvButton {
+    'contained': boolean;
+    'disabled': boolean;
+    'outlined': boolean;
+    'type': string;
+  }
   interface MnvCol {
     'lg': number;
     'md': number;
@@ -85,6 +91,12 @@ declare global {
     new (): HTMLMnvBaseElement;
   };
 
+  interface HTMLMnvButtonElement extends Components.MnvButton, HTMLStencilElement {}
+  var HTMLMnvButtonElement: {
+    prototype: HTMLMnvButtonElement;
+    new (): HTMLMnvButtonElement;
+  };
+
   interface HTMLMnvColElement extends Components.MnvCol, HTMLStencilElement {}
   var HTMLMnvColElement: {
     prototype: HTMLMnvColElement;
@@ -158,6 +170,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'mnv-base': HTMLMnvBaseElement;
+    'mnv-button': HTMLMnvButtonElement;
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
     'mnv-figure': HTMLMnvFigureElement;
@@ -175,6 +188,12 @@ declare global {
 
 declare namespace LocalJSX {
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
+  interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
+    'contained'?: boolean;
+    'disabled'?: boolean;
+    'outlined'?: boolean;
+    'type'?: string;
+  }
   interface MnvCol extends JSXBase.HTMLAttributes<HTMLMnvColElement> {
     'lg'?: number;
     'md'?: number;
@@ -242,6 +261,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'mnv-base': MnvBase;
+    'mnv-button': MnvButton;
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;
     'mnv-figure': MnvFigure;
