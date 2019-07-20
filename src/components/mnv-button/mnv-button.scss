@@ -1,21 +1,23 @@
 :host * {
-	&.outline {
+	cursor: pointer;
+	text-transform: lowercase;
+	background-color: rgba(0,0,0,0);
+	font-family: $mnv-font-alegreya-sans-sc;
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	min-width: 90px;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 3px;
+	border: none;
+	&.outlined {
+		background-color: rgba(0,0,0,0);
 		border: 2px solid $mnv-color-primary;
 	}
 	&.contained {
 		background-color: $mnv-color-primary;
-		color: $mnv-color-white;
-		text-align: center;
-		align-items: flex-start;
-		cursor: pointer;
-		min-width: 90px;
-		font-weight: 700;
-		letter-spacing: 1px;
-		font-family: $mnv-font-alegreya-sans-sc;
-		border-radius: 3px;
-		padding: 15px;
-		margin: 15px;
-		font-size: 21px;
+		color: $mnv-text-light;
 		border: 2px solid $mnv-color-primary;
 	}
 }
