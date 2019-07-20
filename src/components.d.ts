@@ -39,6 +39,7 @@ export namespace Components {
     'caption': string;
     'src': string;
   }
+  interface MnvIconbutton {}
   interface MnvLink {
     'href': string;
   }
@@ -121,6 +122,12 @@ declare global {
     new (): HTMLMnvFigureCaptionElement;
   };
 
+  interface HTMLMnvIconbuttonElement extends Components.MnvIconbutton, HTMLStencilElement {}
+  var HTMLMnvIconbuttonElement: {
+    prototype: HTMLMnvIconbuttonElement;
+    new (): HTMLMnvIconbuttonElement;
+  };
+
   interface HTMLMnvLinkElement extends Components.MnvLink, HTMLStencilElement {}
   var HTMLMnvLinkElement: {
     prototype: HTMLMnvLinkElement;
@@ -175,6 +182,7 @@ declare global {
     'mnv-container': HTMLMnvContainerElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
+    'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
     'mnv-paragraph': HTMLMnvParagraphElement;
@@ -217,6 +225,7 @@ declare namespace LocalJSX {
     'caption'?: string;
     'src'?: string;
   }
+  interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {}
   interface MnvLink extends JSXBase.HTMLAttributes<HTMLMnvLinkElement> {
     'href'?: string;
   }
@@ -266,6 +275,7 @@ declare namespace LocalJSX {
     'mnv-container': MnvContainer;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
+    'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
     'mnv-paragraph': MnvParagraph;
