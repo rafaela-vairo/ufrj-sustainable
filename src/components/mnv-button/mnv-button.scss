@@ -1,5 +1,6 @@
 button {
 	cursor: pointer;
+	color: $mnv-color-primary;
 	text-transform: lowercase;
 	background-color: rgba(0,0,0,0);
 	font-family: $mnv-font-alegreya-sans-sc;
@@ -8,6 +9,17 @@ button {
 	border-radius: 3px;
 	border: none;
 	vertical-align: middle;
+	transition: color $mnv-transition-cubic-03;
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+		color: $mnv-color-primary-light;
+	}
+	&:disabled, &:disabled > *, &:disabled:hover, &:disabled:active {
+		cursor: default;
+		color: rgba($mnv-text-dark, .4);
+	}
 	@include xl {
 		min-width: 90px;
 		padding: 15px;
@@ -33,15 +45,50 @@ button {
 		font-size: 16px;
 	}
 	&.outlined {
+		position: relative;
 		background-color: rgba(0,0,0,0);
-		border: 2px solid $mnv-color-primary;
+		border: 2px solid $mnv-color-primary-light;
+		transition: transform $mnv-transition-cubic-03;
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		position: relative;
+		&:disabled, &:disabled > *, &:disabled:hover, &:disabled:active {
+			cursor: default;
+			color: rgba($mnv-color-primary-light, 0.5);
+			border-color: rgba($mnv-color-primary-light, 0.5);
+			&:before {
+				transform: scaleX(0);
+			}
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			outline: none;
+			color: white;
+			&:before {
+				transform: scaleX(1);
+			}
+		}
+		&:before {
+			content:"";
+			transition: all $mnv-transition-cubic-03;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0px;
+			right: 0;
+			bottom: 0;
+			background: $mnv-color-primary-light;
+			transform: scaleX(0);
+			transform-origin: 0 50%;
+		}
 	}
 	&.contained {
 		background-color: $mnv-color-primary;
 		color: $mnv-text-light;
 		border: 2px solid $mnv-color-primary;
 		box-shadow: 0 3px 5px rgba($mnv-color-black, 0.3), 0 3px 5px rgba($mnv-color-primary-dark, 0.3);
-		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		transition: box-shadow $mnv-transition-cubic-03;
 		&:disabled, &:disabled > *, &:disabled:hover, &:disabled:active {
 			cursor: default;
 			color: rgba($mnv-text-light, 0.4);
