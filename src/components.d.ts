@@ -61,6 +61,10 @@ export namespace Components {
     'level': string;
     'overline': boolean;
   }
+  interface MnvTooltip {
+    'label': string;
+    'length': string;
+  }
   interface MyComponent {
     /**
     * The first name
@@ -170,6 +174,12 @@ declare global {
     new (): HTMLMnvTitleElement;
   };
 
+  interface HTMLMnvTooltipElement extends Components.MnvTooltip, HTMLStencilElement {}
+  var HTMLMnvTooltipElement: {
+    prototype: HTMLMnvTooltipElement;
+    new (): HTMLMnvTooltipElement;
+  };
+
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
@@ -191,6 +201,7 @@ declare global {
     'mnv-row': HTMLMnvRowElement;
     'mnv-strong': HTMLMnvStrongElement;
     'mnv-title': HTMLMnvTitleElement;
+    'mnv-tooltip': HTMLMnvTooltipElement;
     'my-component': HTMLMyComponentElement;
   }
 }
@@ -248,6 +259,10 @@ declare namespace LocalJSX {
     'level'?: string;
     'overline'?: boolean;
   }
+  interface MnvTooltip extends JSXBase.HTMLAttributes<HTMLMnvTooltipElement> {
+    'label'?: string;
+    'length'?: string;
+  }
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
     * The first name
@@ -279,6 +294,7 @@ declare namespace LocalJSX {
     'mnv-row': MnvRow;
     'mnv-strong': MnvStrong;
     'mnv-title': MnvTitle;
+    'mnv-tooltip': MnvTooltip;
     'my-component': MyComponent;
   }
 }

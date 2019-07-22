@@ -24,25 +24,25 @@ button {
 	}
 	@include xl {
 		min-width: 90px;
-		padding: 15px;
+		padding: 19.5px;
 		margin: 15px;
 		font-size: 21px;
 	}
 	@include lg {
 		min-width: 81px;
-		padding: 13.5px;
+		padding: 17.5px;
 		margin: 13.5px;
 		font-size: 19px;
 	}
 	@include md {
 		min-width: 75px;
-		padding: 12.5px;
+		padding: 16.5px;
 		margin: 12.5px;
 		font-size: 17px;
 	}
 	@include sm {
 		min-width: 69px;
-		padding: 11.5px;
+		padding: 15px;
 		margin: 11.5px;
 		font-size: 16px;
 	}
