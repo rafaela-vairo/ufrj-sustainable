@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
     tag: 'mnv-iconbutton',
@@ -6,9 +6,11 @@ import { Component, h } from '@stencil/core';
     shadow: true,
 })
 export class MnvIconbutton {
+    @Prop({ reflect: true }) disabled: boolean = false
+    @Prop({ reflect: true }) type: string = 'button'
     render() {
         return (
-            <button>
+            <button type={this.type} disabled={this.disabled}>
                 <slot/>
             </button>
         );

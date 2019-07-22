@@ -7,18 +7,20 @@ button {
 	font-weight: 700;
 	letter-spacing: 1px;
 	border-radius: 3px;
-	border: none;
+	border: 2px solid rgba($mnv-color-primary-light, 0);
 	vertical-align: middle;
-	transition: color $mnv-transition-cubic-03;
+	transition: all $mnv-transition-cubic-03;
 	&:hover,
 	&:focus,
 	&:active {
 		outline: none;
 		color: $mnv-color-primary-light;
+		border: 2px solid $mnv-color-primary-light;
 	}
 	&:disabled, &:disabled > *, &:disabled:hover, &:disabled:active {
 		cursor: default;
 		color: rgba($mnv-text-dark, .4);
+		border: 2px solid rgba($mnv-color-primary-light, 0);
 	}
 	@include xl {
 		min-width: 90px;

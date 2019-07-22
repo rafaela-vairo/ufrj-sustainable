@@ -35,7 +35,10 @@ export namespace Components {
     'caption': string;
     'src': string;
   }
-  interface MnvIconbutton {}
+  interface MnvIconbutton {
+    'disabled': boolean;
+    'type': string;
+  }
   interface MnvLink {
     'href': string;
   }
@@ -211,7 +214,10 @@ declare namespace LocalJSX {
     'caption'?: string;
     'src'?: string;
   }
-  interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {}
+  interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {
+    'disabled'?: boolean;
+    'type'?: string;
+  }
   interface MnvLink extends JSXBase.HTMLAttributes<HTMLMnvLinkElement> {
     'href'?: string;
   }
