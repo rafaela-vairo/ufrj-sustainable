@@ -11,5 +11,5 @@ export class MnvLink {
     @Prop({reflect: true}) href: string;
 
     // Renderiza o componente
-    render = () => <a href={this.href}><slot/></a>
+    render = () => <a><slot/></a>
 }

@@ -8,11 +8,8 @@ import { Component, h, Prop } from '@stencil/core';
 })
 export class MnvCol {
 
-    @Prop({ reflect: true }) xs: number;
-    @Prop({ reflect: true }) sm: number;
-    @Prop({ reflect: true }) md: number;
-    @Prop({ reflect: true }) lg: number;
-    @Prop({ reflect: true }) xl: number;
+    @Prop({ reflect: true }) class: string;
 
-    render = () => <div><slot/></div>
+    render = () => <div class={this.class}><slot/></div>
+
 }

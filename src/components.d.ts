@@ -17,11 +17,7 @@ export namespace Components {
     'type': string;
   }
   interface MnvCol {
-    'lg': number;
-    'md': number;
-    'sm': number;
-    'xl': number;
-    'xs': number;
+    'class': string;
   }
   interface MnvContainer {
     'lg': number;
@@ -55,13 +51,7 @@ export namespace Components {
     'capitular': boolean;
   }
   interface MnvPre {}
-  interface MnvRow {
-    'lg': number;
-    'md': number;
-    'sm': number;
-    'xl': number;
-    'xs': number;
-  }
+  interface MnvRow {}
   interface MnvStrong {}
   interface MnvTitle {
     'level': string;
@@ -203,11 +193,7 @@ declare namespace LocalJSX {
     'type'?: string;
   }
   interface MnvCol extends JSXBase.HTMLAttributes<HTMLMnvColElement> {
-    'lg'?: number;
-    'md'?: number;
-    'sm'?: number;
-    'xl'?: number;
-    'xs'?: number;
+    'class'?: string;
   }
   interface MnvContainer extends JSXBase.HTMLAttributes<HTMLMnvContainerElement> {
     'lg'?: number;
@@ -241,13 +227,7 @@ declare namespace LocalJSX {
     'capitular'?: boolean;
   }
   interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
-  interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {
-    'lg'?: number;
-    'md'?: number;
-    'sm'?: number;
-    'xl'?: number;
-    'xs'?: number;
-  }
+  interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {}
   interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
   interface MnvTitle extends JSXBase.HTMLAttributes<HTMLMnvTitleElement> {
     'level'?: string;

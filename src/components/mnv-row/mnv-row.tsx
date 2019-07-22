@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 
 @Component({
@@ -7,12 +7,6 @@ import { Component, h, Prop } from '@stencil/core';
     shadow: true,
 })
 export class MnvRow {
-
-    @Prop({ reflect: true }) xs: number;
-    @Prop({ reflect: true }) sm: number;
-    @Prop({ reflect: true }) md: number;
-    @Prop({ reflect: true }) lg: number;
-    @Prop({ reflect: true }) xl: number;
 
     render = () => <div><slot/></div> 
 }
