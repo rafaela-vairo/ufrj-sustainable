@@ -1,6 +1,6 @@
-mnv-col { 
+:host { 
     flex-grow: 1; 
-    flex: 1;
+    -webkit-flex-grow: 1;
 }
 
 .xs-1 { width: calc(100%/(12/1)); }

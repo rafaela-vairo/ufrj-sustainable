@@ -40,6 +40,7 @@ export namespace Components {
     'href': string;
   }
   interface MnvMark {}
+  interface MnvOverline {}
   interface MnvParagraph {
     /**
     * Altera o parágrafo para tamanho reduzido (body 2).
@@ -55,7 +56,7 @@ export namespace Components {
   interface MnvStrong {}
   interface MnvTitle {
     'level': string;
-    'overline': string;
+    'overline': boolean;
   }
   interface MyComponent {
     /**
@@ -130,6 +131,12 @@ declare global {
     new (): HTMLMnvMarkElement;
   };
 
+  interface HTMLMnvOverlineElement extends Components.MnvOverline, HTMLStencilElement {}
+  var HTMLMnvOverlineElement: {
+    prototype: HTMLMnvOverlineElement;
+    new (): HTMLMnvOverlineElement;
+  };
+
   interface HTMLMnvParagraphElement extends Components.MnvParagraph, HTMLStencilElement {}
   var HTMLMnvParagraphElement: {
     prototype: HTMLMnvParagraphElement;
@@ -175,6 +182,7 @@ declare global {
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
+    'mnv-overline': HTMLMnvOverlineElement;
     'mnv-paragraph': HTMLMnvParagraphElement;
     'mnv-pre': HTMLMnvPreElement;
     'mnv-row': HTMLMnvRowElement;
@@ -216,6 +224,7 @@ declare namespace LocalJSX {
     'href'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
+  interface MnvOverline extends JSXBase.HTMLAttributes<HTMLMnvOverlineElement> {}
   interface MnvParagraph extends JSXBase.HTMLAttributes<HTMLMnvParagraphElement> {
     /**
     * Altera o parágrafo para tamanho reduzido (body 2).
@@ -231,7 +240,7 @@ declare namespace LocalJSX {
   interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
   interface MnvTitle extends JSXBase.HTMLAttributes<HTMLMnvTitleElement> {
     'level'?: string;
-    'overline'?: string;
+    'overline'?: boolean;
   }
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
@@ -258,6 +267,7 @@ declare namespace LocalJSX {
     'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
+    'mnv-overline': MnvOverline;
     'mnv-paragraph': MnvParagraph;
     'mnv-pre': MnvPre;
     'mnv-row': MnvRow;
