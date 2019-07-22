@@ -1,4 +1,6 @@
 mnv-col {
     flex-grow: 1;
-    width: calc(100%/(1/12));
+
+    /* calc(100%/(12/{VARIAVEL})) */
+    width: calc(100%/(12/1));
 }
