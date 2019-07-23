@@ -9,6 +9,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface MnvAnchor {
+    'href': string;
+  }
   interface MnvBase {}
   interface MnvButton {
     'contained': boolean;
@@ -26,6 +29,7 @@ export namespace Components {
     'xl': number;
     'xs': number;
   }
+  interface MnvDivider {}
   interface MnvFigure {
     'alt': string;
     'src': string;
@@ -84,6 +88,12 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLMnvAnchorElement extends Components.MnvAnchor, HTMLStencilElement {}
+  var HTMLMnvAnchorElement: {
+    prototype: HTMLMnvAnchorElement;
+    new (): HTMLMnvAnchorElement;
+  };
+
   interface HTMLMnvBaseElement extends Components.MnvBase, HTMLStencilElement {}
   var HTMLMnvBaseElement: {
     prototype: HTMLMnvBaseElement;
@@ -106,6 +116,12 @@ declare global {
   var HTMLMnvContainerElement: {
     prototype: HTMLMnvContainerElement;
     new (): HTMLMnvContainerElement;
+  };
+
+  interface HTMLMnvDividerElement extends Components.MnvDivider, HTMLStencilElement {}
+  var HTMLMnvDividerElement: {
+    prototype: HTMLMnvDividerElement;
+    new (): HTMLMnvDividerElement;
   };
 
   interface HTMLMnvFigureElement extends Components.MnvFigure, HTMLStencilElement {}
@@ -186,10 +202,12 @@ declare global {
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+    'mnv-anchor': HTMLMnvAnchorElement;
     'mnv-base': HTMLMnvBaseElement;
     'mnv-button': HTMLMnvButtonElement;
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
+    'mnv-divider': HTMLMnvDividerElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
@@ -207,6 +225,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface MnvAnchor extends JSXBase.HTMLAttributes<HTMLMnvAnchorElement> {
+    'href'?: string;
+  }
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
@@ -224,6 +245,7 @@ declare namespace LocalJSX {
     'xl'?: number;
     'xs'?: number;
   }
+  interface MnvDivider extends JSXBase.HTMLAttributes<HTMLMnvDividerElement> {}
   interface MnvFigure extends JSXBase.HTMLAttributes<HTMLMnvFigureElement> {
     'alt'?: string;
     'src'?: string;
@@ -279,10 +301,12 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'mnv-anchor': MnvAnchor;
     'mnv-base': MnvBase;
     'mnv-button': MnvButton;
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;
+    'mnv-divider': MnvDivider;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
     'mnv-iconbutton': MnvIconbutton;

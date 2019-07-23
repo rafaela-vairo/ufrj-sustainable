@@ -1,12 +1,16 @@
 import { Component, h } from '@stencil/core';
 
-
 @Component({
     tag: 'mnv-pre',
-    styleUrl: 'mnv-pre.css',
+    styleUrl: 'mnv-pre.scss',
     shadow: true,
 })
 export class MnvPre {
-
-    render = () => <pre><slot/></pre>
+    render() {
+        return (
+            <pre>
+                <slot/>
+            </pre>
+        );
+    }
 }

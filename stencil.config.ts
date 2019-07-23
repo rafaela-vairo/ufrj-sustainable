@@ -22,6 +22,7 @@ export const config: Config = {
 			injectGlobalPaths: [
 				'src/global/variables.scss',
 				'src/global/mixins.scss',
+				'src/global/fonts.scss',
 			],
 		}),
 	],
