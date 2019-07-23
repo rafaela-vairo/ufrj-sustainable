@@ -44,6 +44,15 @@ export namespace Components {
     'italictext': boolean;
     'src': string;
   }
+  interface MnvGrid {
+    'container': boolean;
+    'item': boolean;
+    'lg': number;
+    'md': number;
+    'sm': number;
+    'spacing': number;
+    'xl': number;
+  }
   interface MnvIconbutton {
     'disabled': boolean;
     'type': string;
@@ -140,6 +149,12 @@ declare global {
     new (): HTMLMnvFigureCaptionElement;
   };
 
+  interface HTMLMnvGridElement extends Components.MnvGrid, HTMLStencilElement {}
+  var HTMLMnvGridElement: {
+    prototype: HTMLMnvGridElement;
+    new (): HTMLMnvGridElement;
+  };
+
   interface HTMLMnvIconbuttonElement extends Components.MnvIconbutton, HTMLStencilElement {}
   var HTMLMnvIconbuttonElement: {
     prototype: HTMLMnvIconbuttonElement;
@@ -208,6 +223,7 @@ declare global {
     'mnv-divider': HTMLMnvDividerElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
+    'mnv-grid': HTMLMnvGridElement;
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
@@ -256,6 +272,15 @@ declare namespace LocalJSX {
     'italicspotlight'?: boolean;
     'italictext'?: boolean;
     'src'?: string;
+  }
+  interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
+    'container'?: boolean;
+    'item'?: boolean;
+    'lg'?: number;
+    'md'?: number;
+    'sm'?: number;
+    'spacing'?: number;
+    'xl'?: number;
   }
   interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {
     'disabled'?: boolean;
@@ -310,6 +335,7 @@ declare namespace LocalJSX {
     'mnv-divider': MnvDivider;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
+    'mnv-grid': MnvGrid;
     'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
