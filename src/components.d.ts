@@ -62,8 +62,8 @@ export namespace Components {
   interface MnvRow {}
   interface MnvStrong {}
   interface MnvTitle {
-    'level': string;
-    'overline': boolean;
+    'level': any;
+    'overline': string;
   }
   interface MnvTooltip {
     'label': string;
@@ -278,8 +278,8 @@ declare namespace LocalJSX {
   interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {}
   interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
   interface MnvTitle extends JSXBase.HTMLAttributes<HTMLMnvTitleElement> {
-    'level'?: string;
-    'overline'?: boolean;
+    'level'?: any;
+    'overline'?: string;
   }
   interface MnvTooltip extends JSXBase.HTMLAttributes<HTMLMnvTooltipElement> {
     'label'?: string;

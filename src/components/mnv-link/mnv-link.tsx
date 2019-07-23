@@ -3,7 +3,7 @@ import { Component, h, Prop } from '@stencil/core';
 
 @Component({
     tag: 'mnv-link',
-    styleUrl: 'mnv-link.css',
+    styleUrl: 'mnv-link.scss',
     shadow: true,
 })
 export class MnvLink {
