@@ -4,7 +4,6 @@ import { Component, h, Prop } from '@stencil/core';
 @Component({
     tag: 'mnv-title',
     styleUrl: 'mnv-title.scss',
-    shadow: true,
 })
 export class MnvTitle {
     @Prop() level;
