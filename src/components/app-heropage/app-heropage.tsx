@@ -2,16 +2,16 @@ import { Component, Prop, h } from '@stencil/core'
 import { MatchResults } from '@stencil/router'
 
 @Component({
-	tag: 'app-hero',
-	styleUrl: 'app-hero.scss',
+	tag: 'app-heropage',
+	styleUrl: 'app-heropage.scss',
 	shadow: true,
 })
-export class AppHero {
+export class AppHeropage {
 	@Prop() match: MatchResults
 
 	render() {
 		return (
-			<div class='app-hero'>
+			<div class='app-heropage'>
 				<stencil-route-link url='/'>
 					<mnv-button contained>Home</mnv-button>
 				</stencil-route-link>

@@ -9,11 +9,11 @@ describe('app-home', () => {
 		expect(element).toHaveClass('hydrated')
 	})
 
-	it('contains a "Hero Page" button', async () => {
+	it('contains a "Heropage Page" button', async () => {
 		const page = await newE2EPage()
 		await page.setContent('<app-home></app-home>')
 
 		const element = await page.find('app-home >>> button')
-		expect(element.textContent).toEqual('Hero page')
+		expect(element.textContent).toEqual('Heropage page')
 	})
 })

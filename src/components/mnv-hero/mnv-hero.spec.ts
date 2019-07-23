@@ -1,24 +1,25 @@
-import { TestWindow } from '@stencil/core/testing';
-import { MnvHero } from './mnv-hero';
+import { TestWindow } from '@stencil/core/testing'
+import { Mnvhero } from './mnv-hero'
 
 describe('mnv-hero', () => {
-  it('should build', () => {
-    expect(new MnvHero()).toBeTruthy();
-  });
+	it('should build', () => {
+		expect(new Mnvhero()).toBeTruthy()
+	})
 
-  describe('rendering', () => {
-    let element: HTMLMnvHeroElement;
-    let testWindow: TestWindow;
-    beforeEach(async () => {
-      testWindow = new TestWindow();
-      element = await testWindow.load({
-        components: [MnvHero],
-        html: '<mnv-hero></mnv-hero>'
-      });
-    });
+	describe('rendering', () => {
+		let element: HTMLMnvheroElement
+		let testWindow: TestWindow
+		beforeEach(async () => {
+			testWindow = new TestWindow()
+			element = await testWindow.load({
+				components: [Mnvhero],
+				html: '<mnv-hero></mnv-hero>',
+			})
+		})
 
-    // See https://stenciljs.com/docs/unit-testing
-    {cursor}
-
-  });
-});
+		// See https://stenciljs.com/docs/unit-testing
+		{
+			cursor
+		}
+	})
+})

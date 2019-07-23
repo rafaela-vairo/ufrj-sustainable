@@ -12,7 +12,7 @@ export class AppRoot {
 				<stencil-router>
 					<stencil-route-switch scrollTopOffset={0}>
 						<stencil-route url='/' component='app-home' exact={true} />
-						<stencil-route url='/hero/:name' component='app-hero' />
+						<stencil-route url='/Heropage/:name' component='app-Heropage' />
 					</stencil-route-switch>
 				</stencil-router>
 			</Host>

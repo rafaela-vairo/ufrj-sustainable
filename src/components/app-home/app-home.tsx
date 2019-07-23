@@ -9,8 +9,8 @@ export class AppHome {
 	render() {
 		return (
 			<mnv-base>
-				<stencil-route-link url='/Hero/stencil'>
-					<mnv-button contained>Hero</mnv-button>
+				<stencil-route-link url='/Heropage/stencil'>
+					<mnv-button contained>Heropage</mnv-button>
 				</stencil-route-link>
 				<mnv-grid container>
 					<mnv-grid item xl={6} md={12}>

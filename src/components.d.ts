@@ -6,9 +6,16 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
-
+import {
+  MatchResults,
+} from '@stencil/router';
 
 export namespace Components {
+  interface AppHeropage {
+    'match': MatchResults;
+  }
+  interface AppHome {}
+  interface AppRoot {}
   interface MnvAnchor {
     'href': string;
   }
@@ -105,6 +112,24 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLAppHeropageElement extends Components.AppHeropage, HTMLStencilElement {}
+  var HTMLAppHeropageElement: {
+    prototype: HTMLAppHeropageElement;
+    new (): HTMLAppHeropageElement;
+  };
+
+  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
+  var HTMLAppHomeElement: {
+    prototype: HTMLAppHomeElement;
+    new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
+  var HTMLAppRootElement: {
+    prototype: HTMLAppRootElement;
+    new (): HTMLAppRootElement;
+  };
 
   interface HTMLMnvAnchorElement extends Components.MnvAnchor, HTMLStencilElement {}
   var HTMLMnvAnchorElement: {
@@ -226,6 +251,9 @@ declare global {
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+    'app-heropage': HTMLAppHeropageElement;
+    'app-home': HTMLAppHomeElement;
+    'app-root': HTMLAppRootElement;
     'mnv-anchor': HTMLMnvAnchorElement;
     'mnv-base': HTMLMnvBaseElement;
     'mnv-button': HTMLMnvButtonElement;
@@ -250,6 +278,11 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppHeropage extends JSXBase.HTMLAttributes<HTMLAppHeropageElement> {
+    'match'?: MatchResults;
+  }
+  interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {}
   interface MnvAnchor extends JSXBase.HTMLAttributes<HTMLMnvAnchorElement> {
     'href'?: string;
   }
@@ -344,6 +377,9 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'app-heropage': AppHeropage;
+    'app-home': AppHome;
+    'app-root': AppRoot;
     'mnv-anchor': MnvAnchor;
     'mnv-base': MnvBase;
     'mnv-button': MnvButton;

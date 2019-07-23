@@ -18,6 +18,21 @@
 | `xl`        | `xl`        |             | `number`  | `undefined` |
 
 
+## Dependencies
+
+### Used by
+
+ - [app-home](../app-home)
+ - [mnv-hero](../mnv-hero)
+
+### Graph
+```mermaid
+graph TD;
+  app-home --> mnv-grid
+  mnv-hero --> mnv-grid
+  style mnv-grid fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
