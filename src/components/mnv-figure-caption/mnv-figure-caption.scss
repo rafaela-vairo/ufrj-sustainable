@@ -40,4 +40,10 @@ figcaption {
 
     &.bold { font-weight: 700; }
     &.italic { font-style: italic; }
+
+    &.bold-spotlight > *[name="spotlight"] { font-weight: 700; }
+    &.italic-spotlight > *[name="spotlight"] { font-style: italic; }
+
+    &.bold-text > *[name="text"] { font-weight: 700; }
+    &.italic-text > *[name="text"] { font-style: italic; }
 }

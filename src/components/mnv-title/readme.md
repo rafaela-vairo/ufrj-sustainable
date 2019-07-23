@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type      | Default     |
-| ---------- | ---------- | ----------- | --------- | ----------- |
-| `level`    | `level`    |             | `string`  | `undefined` |
-| `overline` | `overline` |             | `boolean` | `undefined` |
+| Property   | Attribute  | Description | Type     | Default     |
+| ---------- | ---------- | ----------- | -------- | ----------- |
+| `level`    | `level`    |             | `any`    | `undefined` |
+| `overline` | `overline` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

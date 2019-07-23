@@ -37,8 +37,11 @@ export namespace Components {
   interface MnvFigureCaption {
     'alt': string;
     'bold': boolean;
-    'caption': string;
+    'boldspotlight': boolean;
+    'boldtext': boolean;
     'italic': boolean;
+    'italicspotlight': boolean;
+    'italictext': boolean;
     'src': string;
   }
   interface MnvIconbutton {
@@ -247,8 +250,11 @@ declare namespace LocalJSX {
   interface MnvFigureCaption extends JSXBase.HTMLAttributes<HTMLMnvFigureCaptionElement> {
     'alt'?: string;
     'bold'?: boolean;
-    'caption'?: string;
+    'boldspotlight'?: boolean;
+    'boldtext'?: boolean;
     'italic'?: boolean;
+    'italicspotlight'?: boolean;
+    'italictext'?: boolean;
     'src'?: string;
   }
   interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {

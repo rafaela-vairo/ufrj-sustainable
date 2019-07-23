@@ -10,9 +10,12 @@ export class MnvFigureCaption {
 
     @Prop({reflect: true}) src: string;
     @Prop({reflect: true}) alt: string;
-    @Prop() caption: string;
     @Prop() bold: boolean;
     @Prop() italic: boolean;
+    @Prop() boldspotlight: boolean;
+    @Prop() italicspotlight: boolean;
+    @Prop() boldtext: boolean;
+    @Prop() italictext: boolean;
 
     render() {
         return (
@@ -21,8 +24,13 @@ export class MnvFigureCaption {
                 <figcaption class={{
                     'bold': this.bold,
                     'italic': this.italic,
+                    'bold-spotlight': this.boldspotlight,
+                    'italic-spotlight': this.italicspotlight,
+                    'bold-text': this.boldtext,
+                    'italic-text': this.italictext,
                 }}>
-                    {this.caption}
+                    <slot name="spotlight"/>
+                    <slot name="text" />
                 </figcaption>
             </figure>
         );
