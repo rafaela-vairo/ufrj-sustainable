@@ -1,0 +1,43 @@
+figure {
+    display: block;
+    padding: 5px;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Alegreya Sans';
+    color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    padding: 15px;
+
+    @include xl {
+        font-size: 18px;
+        line-height: 22.5px;
+        letter-spacing: .6px;
+    }
+
+    @include lg {
+        font-size: 16px;
+        line-height: 20.5px;
+        letter-spacing: .5px;
+    }
+
+    @include md {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .5px;
+    }
+
+    @include sm {
+        font-size: 15px;
+        line-height: 17.25px;
+        letter-spacing: 0px;
+    }
+
+    &.bold { font-weight: 700; }
+    &.italic { font-style: italic; }
+}
