@@ -53,6 +53,11 @@ export namespace Components {
     'spacing': number;
     'xl': number;
   }
+  interface MnvHero {
+    'background': string;
+    'button': string;
+    'name': string;
+  }
   interface MnvIconbutton {
     'disabled': boolean;
     'type': string;
@@ -155,6 +160,12 @@ declare global {
     new (): HTMLMnvGridElement;
   };
 
+  interface HTMLMnvHeroElement extends Components.MnvHero, HTMLStencilElement {}
+  var HTMLMnvHeroElement: {
+    prototype: HTMLMnvHeroElement;
+    new (): HTMLMnvHeroElement;
+  };
+
   interface HTMLMnvIconbuttonElement extends Components.MnvIconbutton, HTMLStencilElement {}
   var HTMLMnvIconbuttonElement: {
     prototype: HTMLMnvIconbuttonElement;
@@ -224,6 +235,7 @@ declare global {
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
     'mnv-grid': HTMLMnvGridElement;
+    'mnv-hero': HTMLMnvHeroElement;
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
@@ -282,6 +294,11 @@ declare namespace LocalJSX {
     'spacing'?: number;
     'xl'?: number;
   }
+  interface MnvHero extends JSXBase.HTMLAttributes<HTMLMnvHeroElement> {
+    'background'?: string;
+    'button'?: string;
+    'name'?: string;
+  }
   interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {
     'disabled'?: boolean;
     'type'?: string;
@@ -336,6 +353,7 @@ declare namespace LocalJSX {
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
     'mnv-grid': MnvGrid;
+    'mnv-hero': MnvHero;
     'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
