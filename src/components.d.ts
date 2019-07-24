@@ -64,7 +64,7 @@ export namespace Components {
   interface MnvHero {
     'background': string;
     'button': string;
-    'title': string;
+    'herotitle': string;
   }
   interface MnvIconbutton {
     'disabled': boolean;
@@ -332,7 +332,7 @@ declare namespace LocalJSX {
   interface MnvHero extends JSXBase.HTMLAttributes<HTMLMnvHeroElement> {
     'background'?: string;
     'button'?: string;
-    'title'?: string;
+    'herotitle'?: string;
   }
   interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {
     'disabled'?: boolean;

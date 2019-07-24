@@ -17,7 +17,7 @@ export class AppHeropage {
 						<mnv-button contained>Home</mnv-button>
 					</stencil-route-link>
 				</div>
-				<mnv-hero title='UFRJ Sustentável' button='Ação'>
+				<mnv-hero herotitle='UFRJ Sustentável' button='Ação'>
 					descubra as tecnologias e projetos verdes desenvolvidos na maior
 					universidade federal do Brasil
 				</mnv-hero>
