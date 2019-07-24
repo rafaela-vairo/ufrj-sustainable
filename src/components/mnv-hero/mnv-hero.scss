@@ -13,31 +13,68 @@
             z-index: 999;
             background-color: rgba($color: #000, $alpha: .7);
 
-            mnv-title > * {
-                color: $mnv-text-light;
-            }
-
-            mnv-button{
+            mnv-button > * {
                 margin-left: 0px !important;
             }
 
             mnv-grid.grid-container {
 
+                * {
+                    color: $mnv-text-light;
+                }
+
                 @include xl {
                     padding-top: calc(30px * 4);
+                    padding-left: calc(30px * 4);
                 }
 
                 @include lg {
                     padding-top: calc(27px * 4);
+                    padding-left: calc(27px * 4);
                 }
 
                 @include md {
                     padding-top: calc(25px * 4);
+                    padding-left: calc(25px * 2);
                 }
 
                 @include sm {
                     padding-top: calc(23px * 2);
+                    padding-left: 23px;
                 }
+            }
+
+            mnv-grid.title {
+                margin-bottom: 0;
+
+                * {
+                    margin-bottom: 0;
+                }
+
+                @include xl {
+                    padding-right: 75%;
+                }
+
+                @include lg {
+                    padding-right: 70%;
+                }
+
+                @include md {
+                    padding-right: 3%;
+                }
+
+                @include sm {
+                    
+                }
+            }
+
+            mnv-grid.text {
+                
+                * {
+                    margin: 0;
+
+                }
+
             }
         }
     }

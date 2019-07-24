@@ -3,7 +3,7 @@ import { Component, Prop, h } from '@stencil/core'
 @Component({
 	tag: 'mnv-button',
 	styleUrl: 'mnv-button.scss',
-	shadow: true,
+	// shadow: true,
 })
 export class MnvButton {
 	@Prop({ reflect: true }) disabled: boolean = false

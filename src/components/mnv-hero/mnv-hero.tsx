@@ -15,13 +15,13 @@ export class Mnvhero {
 			<div class='image'>
 				<div class='body'>
 					<mnv-grid container>
-						<mnv-grid item sm={12} md={12} lg={3} xl={12}>
+						<mnv-grid item sm={12} md={4} lg={12} xl={12} class="title">
 							<mnv-title level='h1 sans'>{this.name}</mnv-title>
 						</mnv-grid>
-						<mnv-grid item sm={12} md={12} lg={2} xl={12}>
-							<mnv-title level='h4'>
+						<mnv-grid item sm={12} md={12} lg={12} xl={12} class="text">
+							<mnv-paragraph>
 								<slot />
-							</mnv-title>
+							</mnv-paragraph>
 						</mnv-grid>
 						<mnv-grid item sm={12} md={12} lg={12} xl={12}>
 							<mnv-button outlined>{this.button}</mnv-button>

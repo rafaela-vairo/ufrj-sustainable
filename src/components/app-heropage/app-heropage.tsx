@@ -15,7 +15,13 @@ export class AppHeropage {
 				<stencil-route-link url='/'>
 					<mnv-button contained>Home</mnv-button>
 				</stencil-route-link>
-				<mnv-paragraph>Olá, Minerva!</mnv-paragraph>
+				<mnv-hero
+					name="Lorem ipsum dolor sit amet, consectur cras amet."
+					button="Veja Mais"
+					background="https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+				>
+					Texto
+				</mnv-hero>
 			</div>
 		)
 	}
