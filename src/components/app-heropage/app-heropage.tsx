@@ -12,7 +12,7 @@ export class AppHeropage {
 	render() {
 		return (
 			<div class='app-heropage'>
-				<div style={{ position: 'fixed', top: '20px', left: '20px' }}>
+				<div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
 					<stencil-route-link url='/'>
 						<mnv-button contained>Home</mnv-button>
 					</stencil-route-link>
