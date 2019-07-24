@@ -5,7 +5,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-image: url('https://abrilvejario.files.wordpress.com/2018/03/fc3a1bio-guimarc3a3es_ag-o-globo.jpg');
 
         .body {
             // width: 100vw;
@@ -17,7 +17,7 @@
                 margin-left: 0px !important;
             }
 
-            mnv-grid.grid-container {
+            mnv-grid.container {
 
                 * {
                     color: $mnv-text-light;
@@ -42,39 +42,6 @@
                     padding-top: calc(23px * 2);
                     padding-left: 23px;
                 }
-            }
-
-            mnv-grid.title {
-                margin-bottom: 0;
-
-                * {
-                    margin-bottom: 0;
-                }
-
-                @include xl {
-                    padding-right: 75%;
-                }
-
-                @include lg {
-                    padding-right: 70%;
-                }
-
-                @include md {
-                    padding-right: 3%;
-                }
-
-                @include sm {
-                    
-                }
-            }
-
-            mnv-grid.text {
-                
-                * {
-                    margin: 0;
-
-                }
-
             }
         }
     }

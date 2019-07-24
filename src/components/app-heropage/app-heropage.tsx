@@ -12,15 +12,14 @@ export class AppHeropage {
 	render() {
 		return (
 			<div class='app-heropage'>
-				<stencil-route-link url='/'>
-					<mnv-button contained>Home</mnv-button>
-				</stencil-route-link>
-				<mnv-hero
-					name="Lorem ipsum dolor sit amet, consectur cras amet."
-					button="Veja Mais"
-					background="https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-				>
-					Texto
+				<div style={{ position: 'fixed', top: '20px', left: '20px' }}>
+					<stencil-route-link url='/'>
+						<mnv-button contained>Home</mnv-button>
+					</stencil-route-link>
+				</div>
+				<mnv-hero title='UFRJ Sustentável' button='Ação'>
+					Descubra as tecnologias e projetos verdes desenvolvidos na maior
+					universidade federal do Brasil
 				</mnv-hero>
 			</div>
 		)
