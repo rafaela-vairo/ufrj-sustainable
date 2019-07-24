@@ -10,6 +10,9 @@ button {
 	border: 2px solid rgba($mnv-color-primary-light, 0);
 	vertical-align: middle;
 	transition: all $mnv-transition-cubic-03;
+	&.marginzero {
+		margin: 0px !important;
+	}
 	&:hover,
 	&:focus,
 	&:active {

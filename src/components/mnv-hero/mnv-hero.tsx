@@ -24,7 +24,11 @@ export class Mnvhero {
 							</mnv-title>
 						</mnv-grid>
 						<mnv-grid item sm={12} md={12} lg={12} xl={12}>
-							<mnv-button outlined style={{ margin: '0px !important' }}>
+							<mnv-button
+								outlined
+								marginzero
+								style={{ margin: '0px !important' }}
+							>
 								{this.button}
 							</mnv-button>
 						</mnv-grid>

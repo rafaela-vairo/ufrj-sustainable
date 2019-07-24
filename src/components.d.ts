@@ -23,6 +23,7 @@ export namespace Components {
   interface MnvButton {
     'contained': boolean;
     'disabled': boolean;
+    'marginzero': boolean;
     'outlined': boolean;
     'type': string;
   }
@@ -290,6 +291,7 @@ declare namespace LocalJSX {
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
     'disabled'?: boolean;
+    'marginzero'?: boolean;
     'outlined'?: boolean;
     'type'?: string;
   }
