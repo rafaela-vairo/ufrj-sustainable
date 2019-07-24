@@ -1,0 +1,72 @@
+button {
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	color: $mnv-color-white;
+	text-transform: lowercase;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $mnv-font-alegreya-sans-sc;
+	font-weight: 700;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	border: none;
+	vertical-align: middle;
+	transition: all $mnv-transition-cubic-03;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 51%;
+		right: 51%;
+		bottom: 10px;
+		background: $mnv-color-white;
+		height: 2px;
+		transition-property: left, right;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
+	&.marginzero {
+		margin: 0px !important;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+		color: $mnv-color-white;
+		&:before {
+			left: 21px;
+			right: 21px;
+		}
+	}
+	&:disabled,
+	&:disabled > *,
+	&:disabled:hover,
+	&:disabled:active {
+		cursor: default;
+		color: rgba($mnv-text-dark, 0.4);
+	}
+	@include xl {
+		min-width: 90px;
+		padding: 19.5px;
+		margin: 15px;
+		font-size: 21px;
+	}
+	@include lg {
+		min-width: 81px;
+		padding: 17.5px;
+		margin: 13.5px;
+		font-size: 19px;
+	}
+	@include md {
+		min-width: 75px;
+		padding: 16.5px;
+		margin: 12.5px;
+		font-size: 17px;
+	}
+	@include sm {
+		min-width: 69px;
+		padding: 15px;
+		margin: 11.5px;
+		font-size: 16px;
+	}
+}

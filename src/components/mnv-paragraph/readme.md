@@ -17,13 +17,11 @@
 
 ### Used by
 
- - [app-heropage](../app-heropage)
  - [app-home](../app-home)
 
 ### Graph
 ```mermaid
 graph TD;
-  app-heropage --> mnv-paragraph
   app-home --> mnv-paragraph
   style mnv-paragraph fill:#f9f,stroke:#333,stroke-width:4px
 ```

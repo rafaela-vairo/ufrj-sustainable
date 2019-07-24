@@ -1,7 +1,7 @@
 :host {
 	.image {
 		// width: 100vw;
-		height: 101vh;
+		height: 102vh;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -9,12 +9,26 @@
 
 		.body {
 			// width: 100vw;
-			height: 101vh;
+			height: 102vh;
 			z-index: 999;
 			background-color: rgba($color: #000, $alpha: 0.7);
 
 			mnv-title > * {
 				color: $mnv-text-light;
+			}
+			h1.hero {
+				@include xl {
+					margin-top: 150px;
+				}
+				@include lg {
+					margin-top: 98px;
+				}
+				@include md {
+					margin-top: 123px;
+				}
+				@include sm {
+					margin-top: 92.5px;
+				}
 			}
 
 			mnv-button {

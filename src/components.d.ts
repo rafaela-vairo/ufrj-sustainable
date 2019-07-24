@@ -74,6 +74,16 @@ export namespace Components {
     'href': string;
   }
   interface MnvMark {}
+  interface MnvNavbar {
+    'setClass': string;
+  }
+  interface MnvNavbutton {
+    'contained': boolean;
+    'disabled': boolean;
+    'marginzero': boolean;
+    'outlined': boolean;
+    'type': string;
+  }
   interface MnvParagraph {
     /**
     * Altera o parágrafo para tamanho reduzido (body 2).
@@ -210,6 +220,18 @@ declare global {
     new (): HTMLMnvMarkElement;
   };
 
+  interface HTMLMnvNavbarElement extends Components.MnvNavbar, HTMLStencilElement {}
+  var HTMLMnvNavbarElement: {
+    prototype: HTMLMnvNavbarElement;
+    new (): HTMLMnvNavbarElement;
+  };
+
+  interface HTMLMnvNavbuttonElement extends Components.MnvNavbutton, HTMLStencilElement {}
+  var HTMLMnvNavbuttonElement: {
+    prototype: HTMLMnvNavbuttonElement;
+    new (): HTMLMnvNavbuttonElement;
+  };
+
   interface HTMLMnvParagraphElement extends Components.MnvParagraph, HTMLStencilElement {}
   var HTMLMnvParagraphElement: {
     prototype: HTMLMnvParagraphElement;
@@ -268,6 +290,8 @@ declare global {
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
+    'mnv-navbar': HTMLMnvNavbarElement;
+    'mnv-navbutton': HTMLMnvNavbuttonElement;
     'mnv-paragraph': HTMLMnvParagraphElement;
     'mnv-pre': HTMLMnvPreElement;
     'mnv-row': HTMLMnvRowElement;
@@ -342,6 +366,16 @@ declare namespace LocalJSX {
     'href'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
+  interface MnvNavbar extends JSXBase.HTMLAttributes<HTMLMnvNavbarElement> {
+    'setClass'?: string;
+  }
+  interface MnvNavbutton extends JSXBase.HTMLAttributes<HTMLMnvNavbuttonElement> {
+    'contained'?: boolean;
+    'disabled'?: boolean;
+    'marginzero'?: boolean;
+    'outlined'?: boolean;
+    'type'?: string;
+  }
   interface MnvParagraph extends JSXBase.HTMLAttributes<HTMLMnvParagraphElement> {
     /**
     * Altera o parágrafo para tamanho reduzido (body 2).
@@ -395,6 +429,8 @@ declare namespace LocalJSX {
     'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
+    'mnv-navbar': MnvNavbar;
+    'mnv-navbutton': MnvNavbutton;
     'mnv-paragraph': MnvParagraph;
     'mnv-pre': MnvPre;
     'mnv-row': MnvRow;

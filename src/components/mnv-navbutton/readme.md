@@ -1,6 +1,4 @@
-# mnv-button
-
-
+# mnv-navbutton
 
 <!-- Auto Generated Below -->
 
@@ -15,23 +13,6 @@
 | `outlined`   | `outlined`   |             | `boolean` | `false`    |
 | `type`       | `type`       |             | `string`  | `'button'` |
 
-
-## Dependencies
-
-### Used by
-
- - [app-home](../app-home)
- - [mnv-hero](../mnv-hero)
- - [mnv-navbar](../mnv-navbar)
-
-### Graph
-```mermaid
-graph TD;
-  app-home --> mnv-button
-  mnv-hero --> mnv-button
-  mnv-navbar --> mnv-button
-  style mnv-button fill:#f9f,stroke:#333,stroke-width:4px
-```
 
 ----------------------------------------------
 

@@ -16,16 +16,19 @@
 
 ### Depends on
 
-- stencil-route-link
-- [mnv-button](../mnv-button)
-- [mnv-paragraph](../mnv-paragraph)
+- [mnv-navbar](../mnv-navbar)
+- [mnv-hero](../mnv-hero)
 
 ### Graph
 ```mermaid
 graph TD;
-  app-heropage --> stencil-route-link
-  app-heropage --> mnv-button
-  app-heropage --> mnv-paragraph
+  app-heropage --> mnv-navbar
+  app-heropage --> mnv-hero
+  mnv-navbar --> stencil-route-link
+  mnv-navbar --> mnv-button
+  mnv-hero --> mnv-grid
+  mnv-hero --> mnv-title
+  mnv-hero --> mnv-button
   style app-heropage fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
