@@ -36,6 +36,7 @@ export class AppHome {
 							abat dolorum repellat et exercitationem aut voluptatem. Ullam
 							animi in libero porro dolorum qui totam alias. Dolores consequatur
 							dolores dolores.
+							<i class='material-icons'>face</i>
 						</mnv-paragraph>
 					</mnv-grid>
 					<mnv-grid item md={6}>
