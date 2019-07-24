@@ -1,5 +1,4 @@
 :host {
-<<<<<<< HEAD
 	.image {
 		// width: 100vw;
 		height: 102vh;
@@ -55,52 +54,4 @@
 			}
 		}
 	}
-=======
-    .image {
-        // width: 100vw;
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('https://abrilvejario.files.wordpress.com/2018/03/fc3a1bio-guimarc3a3es_ag-o-globo.jpg');
-
-        .body {
-            // width: 100vw;
-            height: 100vh;
-            z-index: 999;
-            background-color: rgba($color: #000, $alpha: .7);
-
-            mnv-button > * {
-                margin-left: 0px !important;
-            }
-
-            mnv-grid.grid-container {
-
-                * {
-                    color: $mnv-text-light;
-                }
-
-                @include xl {
-                    padding-top: calc(30px * 4);
-                    padding-left: calc(30px * 4);
-                }
-
-                @include lg {
-                    padding-top: calc(27px * 4);
-                    padding-left: calc(27px * 4);
-                }
-
-                @include md {
-                    padding-top: calc(25px * 4);
-                    padding-left: calc(25px * 2);
-                }
-
-                @include sm {
-                    padding-top: calc(23px * 2);
-                    padding-left: 23px;
-                }
-            }
-        }
-    }
->>>>>>> e08e362ac67c256430e3e23d528a705e1075dea7
 }
