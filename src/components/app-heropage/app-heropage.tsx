@@ -15,7 +15,7 @@ export class AppHeropage {
 				<mnv-navbar />
 
 				<mnv-hero herotitle='UFRJ Sustentável' button='Ação'>
-					descubra as tecnologias e projetos verdes desenvolvidos na maior
+					Descubra as tecnologias e projetos verdes desenvolvidos na maior
 					universidade federal do Brasil
 				</mnv-hero>
 			</div>

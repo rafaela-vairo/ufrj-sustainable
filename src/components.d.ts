@@ -74,6 +74,7 @@ export namespace Components {
     'href': string;
   }
   interface MnvMark {}
+<<<<<<< HEAD
   interface MnvNavbar {
     'setClass': string;
   }
@@ -84,6 +85,9 @@ export namespace Components {
     'outlined': boolean;
     'type': string;
   }
+=======
+  interface MnvOverline {}
+>>>>>>> e08e362ac67c256430e3e23d528a705e1075dea7
   interface MnvParagraph {
     /**
     * Altera o parágrafo para tamanho reduzido (body 2).
@@ -220,6 +224,7 @@ declare global {
     new (): HTMLMnvMarkElement;
   };
 
+<<<<<<< HEAD
   interface HTMLMnvNavbarElement extends Components.MnvNavbar, HTMLStencilElement {}
   var HTMLMnvNavbarElement: {
     prototype: HTMLMnvNavbarElement;
@@ -230,6 +235,12 @@ declare global {
   var HTMLMnvNavbuttonElement: {
     prototype: HTMLMnvNavbuttonElement;
     new (): HTMLMnvNavbuttonElement;
+=======
+  interface HTMLMnvOverlineElement extends Components.MnvOverline, HTMLStencilElement {}
+  var HTMLMnvOverlineElement: {
+    prototype: HTMLMnvOverlineElement;
+    new (): HTMLMnvOverlineElement;
+>>>>>>> e08e362ac67c256430e3e23d528a705e1075dea7
   };
 
   interface HTMLMnvParagraphElement extends Components.MnvParagraph, HTMLStencilElement {}
@@ -290,8 +301,12 @@ declare global {
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
+<<<<<<< HEAD
     'mnv-navbar': HTMLMnvNavbarElement;
     'mnv-navbutton': HTMLMnvNavbuttonElement;
+=======
+    'mnv-overline': HTMLMnvOverlineElement;
+>>>>>>> e08e362ac67c256430e3e23d528a705e1075dea7
     'mnv-paragraph': HTMLMnvParagraphElement;
     'mnv-pre': HTMLMnvPreElement;
     'mnv-row': HTMLMnvRowElement;
@@ -366,6 +381,7 @@ declare namespace LocalJSX {
     'href'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
+<<<<<<< HEAD
   interface MnvNavbar extends JSXBase.HTMLAttributes<HTMLMnvNavbarElement> {
     'setClass'?: string;
   }
@@ -376,6 +392,9 @@ declare namespace LocalJSX {
     'outlined'?: boolean;
     'type'?: string;
   }
+=======
+  interface MnvOverline extends JSXBase.HTMLAttributes<HTMLMnvOverlineElement> {}
+>>>>>>> e08e362ac67c256430e3e23d528a705e1075dea7
   interface MnvParagraph extends JSXBase.HTMLAttributes<HTMLMnvParagraphElement> {
     /**
     * Altera o parágrafo para tamanho reduzido (body 2).
@@ -429,8 +448,12 @@ declare namespace LocalJSX {
     'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
+<<<<<<< HEAD
     'mnv-navbar': MnvNavbar;
     'mnv-navbutton': MnvNavbutton;
+=======
+    'mnv-overline': MnvOverline;
+>>>>>>> e08e362ac67c256430e3e23d528a705e1075dea7
     'mnv-paragraph': MnvParagraph;
     'mnv-pre': MnvPre;
     'mnv-row': MnvRow;

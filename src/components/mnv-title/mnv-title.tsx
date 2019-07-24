@@ -15,7 +15,7 @@ export class MnvTitle {
 				case 'h1':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h1 class='overline'>
 								<slot />
 							</h1>
@@ -24,7 +24,7 @@ export class MnvTitle {
 				case 'h2':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h2 class='overline'>
 								<slot />
 							</h2>
@@ -33,7 +33,7 @@ export class MnvTitle {
 				case 'h3':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h3 class='overline'>
 								<slot />
 							</h3>
@@ -42,7 +42,7 @@ export class MnvTitle {
 				case 'h4':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h4 class='overline'>
 								<slot />
 							</h4>
@@ -51,7 +51,7 @@ export class MnvTitle {
 				case 'h5':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h5 class='overline'>
 								<slot />
 							</h5>
@@ -60,7 +60,7 @@ export class MnvTitle {
 				case 'h6':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h6 class='overline'>
 								<slot />
 							</h6>
