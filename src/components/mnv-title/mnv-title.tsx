@@ -15,7 +15,7 @@ export class MnvTitle {
 				case 'h1':
 					return (
 						<div>
-							<span>{this.overline}</span>
+							<mnv-overline>{this.overline}</mnv-overline>
 							<h1 class='overline'>
 								<slot />
 							</h1>
