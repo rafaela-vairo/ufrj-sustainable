@@ -11,7 +11,7 @@ export class AppHome {
 			<mnv-base>
 				<mnv-navbar />
 				<mnv-grid container>
-					<mnv-grid item xl={6} md={12}>
+					<mnv-grid item xl='6' md='12'>
 						<mnv-paragraph capitular>
 							Aolores veniam quasi nulla repellendus et aspernatur deserunt
 							eveniet maiores. Dolorem sint voluptates soluta asperiores
@@ -37,7 +37,7 @@ export class AppHome {
 							<i class='material-icons'>face</i>
 						</mnv-paragraph>
 					</mnv-grid>
-					<mnv-grid item md={6}>
+					<mnv-grid item md='6'>
 						<mnv-paragraph bodytwo>
 							Dolores veniam quasi nulla repellendus et aspernatur deserunt
 							eveniet maiores. Dolorem sint voluptates soluta asperiores
@@ -56,7 +56,7 @@ export class AppHome {
 							qui totam alias. Dolores consequatur dolores dolores.
 						</mnv-paragraph>
 					</mnv-grid>
-					<mnv-grid item xl={12}>
+					<mnv-grid item xl='12'>
 						<div>
 							<mnv-button contained>Contained</mnv-button>
 							<mnv-button contained disabled>

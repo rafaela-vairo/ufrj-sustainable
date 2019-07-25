@@ -9,7 +9,7 @@
 
 ### Used by
 
- - [app-home](..\app-home)
+ - [app-home](../app-home)
 
 ### Graph
 ```mermaid

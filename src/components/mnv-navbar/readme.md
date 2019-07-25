@@ -16,13 +16,13 @@
 
 ### Used by
 
- - [app-heropage](..\app-heropage)
- - [app-home](..\app-home)
+ - [app-heropage](../app-heropage)
+ - [app-home](../app-home)
 
 ### Depends on
 
 - stencil-route-link
-- [mnv-navbutton](..\mnv-navbutton)
+- [mnv-navbutton](../mnv-navbutton)
 
 ### Graph
 ```mermaid

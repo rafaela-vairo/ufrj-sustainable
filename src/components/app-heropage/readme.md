@@ -16,8 +16,8 @@
 
 ### Depends on
 
-- [mnv-navbar](..\mnv-navbar)
-- [mnv-hero](..\mnv-hero)
+- [mnv-navbar](../mnv-navbar)
+- [mnv-hero](../mnv-hero)
 
 ### Graph
 ```mermaid

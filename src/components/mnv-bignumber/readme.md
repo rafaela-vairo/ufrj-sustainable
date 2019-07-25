@@ -1,4 +1,4 @@
-# mnv-overline
+# mnv-bignumber
 
 
 
@@ -7,15 +7,15 @@
 
 ## Dependencies
 
-### Used by
+### Depends on
 
- - [mnv-title](../mnv-title)
+- [mnv-grid](../mnv-grid)
 
 ### Graph
 ```mermaid
 graph TD;
-  mnv-title --> mnv-overline
-  style mnv-overline fill:#f9f,stroke:#333,stroke-width:4px
+  mnv-bignumber --> mnv-grid
+  style mnv-bignumber fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

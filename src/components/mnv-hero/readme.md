@@ -19,13 +19,13 @@
 
 ### Used by
 
- - [app-heropage](..\app-heropage)
+ - [app-heropage](../app-heropage)
 
 ### Depends on
 
-- [mnv-grid](..\mnv-grid)
-- [mnv-title](..\mnv-title)
-- [mnv-button](..\mnv-button)
+- [mnv-grid](../mnv-grid)
+- [mnv-title](../mnv-title)
+- [mnv-button](../mnv-button)
 
 ### Graph
 ```mermaid

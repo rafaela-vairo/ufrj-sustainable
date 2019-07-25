@@ -1,0 +1,56 @@
+:host {
+	--background-color: '';
+}
+
+#box {
+	position: relative;
+	background-color: var(--background-color);
+	background-blend-mode: color;
+	min-height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		mix-blend-mode: color;
+		background-color: $mnv-color-primary;
+		height: 300px;
+		width: 100%;
+	}
+}
+
+.short-1 {
+	font-size: 169px;
+}
+
+.short-2 {
+	font-size: 130px;
+}
+
+.short-3 {
+	font-size: 90px;
+}
+
+.long {
+	font-size: 40px;
+}
+
+#number {
+	min-width: 200px;
+	padding: 2px;
+	text-align: center;
+	font-size: 60px;
+	font-family: $mnv-font-alegreya-sans;
+	color: $mnv-text-light;
+}
+
+#numcontainer {
+	margin: -2px;
+	//padding: 0px;
+	padding: 100px;
+	justify-content: center;
+}
