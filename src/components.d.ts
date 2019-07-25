@@ -23,9 +23,16 @@ export namespace Components {
   interface MnvButton {
     'contained': boolean;
     'disabled': boolean;
+    'full': boolean;
     'marginzero': boolean;
     'outlined': boolean;
     'type': string;
+  }
+  interface MnvCard {
+    'button': string;
+    'overline': string;
+    'subtitle': string;
+    'title': string;
   }
   interface MnvCol {
     'class': string;
@@ -99,8 +106,11 @@ export namespace Components {
   interface MnvPre {}
   interface MnvRow {}
   interface MnvStrong {}
+  interface MnvSubtitle {
+    'type': string;
+  }
   interface MnvTitle {
-    'level': any;
+    'level': string;
     'overline': string;
   }
   interface MnvTooltip {
@@ -160,6 +170,12 @@ declare global {
   var HTMLMnvButtonElement: {
     prototype: HTMLMnvButtonElement;
     new (): HTMLMnvButtonElement;
+  };
+
+  interface HTMLMnvCardElement extends Components.MnvCard, HTMLStencilElement {}
+  var HTMLMnvCardElement: {
+    prototype: HTMLMnvCardElement;
+    new (): HTMLMnvCardElement;
   };
 
   interface HTMLMnvColElement extends Components.MnvCol, HTMLStencilElement {}
@@ -264,6 +280,12 @@ declare global {
     new (): HTMLMnvStrongElement;
   };
 
+  interface HTMLMnvSubtitleElement extends Components.MnvSubtitle, HTMLStencilElement {}
+  var HTMLMnvSubtitleElement: {
+    prototype: HTMLMnvSubtitleElement;
+    new (): HTMLMnvSubtitleElement;
+  };
+
   interface HTMLMnvTitleElement extends Components.MnvTitle, HTMLStencilElement {}
   var HTMLMnvTitleElement: {
     prototype: HTMLMnvTitleElement;
@@ -288,6 +310,7 @@ declare global {
     'mnv-anchor': HTMLMnvAnchorElement;
     'mnv-base': HTMLMnvBaseElement;
     'mnv-button': HTMLMnvButtonElement;
+    'mnv-card': HTMLMnvCardElement;
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
     'mnv-divider': HTMLMnvDividerElement;
@@ -305,6 +328,7 @@ declare global {
     'mnv-pre': HTMLMnvPreElement;
     'mnv-row': HTMLMnvRowElement;
     'mnv-strong': HTMLMnvStrongElement;
+    'mnv-subtitle': HTMLMnvSubtitleElement;
     'mnv-title': HTMLMnvTitleElement;
     'mnv-tooltip': HTMLMnvTooltipElement;
     'my-component': HTMLMyComponentElement;
@@ -324,9 +348,16 @@ declare namespace LocalJSX {
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
     'disabled'?: boolean;
+    'full'?: boolean;
     'marginzero'?: boolean;
     'outlined'?: boolean;
     'type'?: string;
+  }
+  interface MnvCard extends JSXBase.HTMLAttributes<HTMLMnvCardElement> {
+    'button'?: string;
+    'overline'?: string;
+    'subtitle'?: string;
+    'title'?: string;
   }
   interface MnvCol extends JSXBase.HTMLAttributes<HTMLMnvColElement> {
     'class'?: string;
@@ -400,8 +431,11 @@ declare namespace LocalJSX {
   interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
   interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {}
   interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
+  interface MnvSubtitle extends JSXBase.HTMLAttributes<HTMLMnvSubtitleElement> {
+    'type'?: string;
+  }
   interface MnvTitle extends JSXBase.HTMLAttributes<HTMLMnvTitleElement> {
-    'level'?: any;
+    'level'?: string;
     'overline'?: string;
   }
   interface MnvTooltip extends JSXBase.HTMLAttributes<HTMLMnvTooltipElement> {
@@ -430,6 +464,7 @@ declare namespace LocalJSX {
     'mnv-anchor': MnvAnchor;
     'mnv-base': MnvBase;
     'mnv-button': MnvButton;
+    'mnv-card': MnvCard;
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;
     'mnv-divider': MnvDivider;
@@ -447,6 +482,7 @@ declare namespace LocalJSX {
     'mnv-pre': MnvPre;
     'mnv-row': MnvRow;
     'mnv-strong': MnvStrong;
+    'mnv-subtitle': MnvSubtitle;
     'mnv-title': MnvTitle;
     'mnv-tooltip': MnvTooltip;
     'my-component': MyComponent;

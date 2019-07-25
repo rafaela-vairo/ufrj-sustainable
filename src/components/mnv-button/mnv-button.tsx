@@ -10,12 +10,14 @@ export class MnvButton {
 	@Prop({ reflect: true }) type: string = 'button'
 	@Prop() contained: boolean = false
 	@Prop() outlined: boolean = false
+	@Prop() full: boolean = false
 	@Prop() marginzero: boolean = false
 	render() {
-		let marginzero = this.marginzero ? 'marginzero ' : ''
-		let contained = this.contained && !this.outlined ? 'contained ' : ''
-		let outlined = this.outlined && !this.contained ? 'outlined ' : ''
-		let genClass = marginzero + contained + outlined
+		let marginzero = this.marginzero ? 'marginzero ' : '';
+		let contained = this.contained && !this.outlined ? 'contained ' : '';
+		let outlined = this.outlined && !this.contained ? 'outlined ' : '';
+		let full = this.full ? 'full' : '';
+		let genClass = marginzero + contained + outlined + full;
 		return (
 			<button class={genClass} type={this.type} disabled={this.disabled}>
 				<slot />

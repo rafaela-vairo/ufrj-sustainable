@@ -1,0 +1,72 @@
+:host > * {
+
+    .one {
+
+        @include xl {
+            font-family: 'Alegreya Sans';
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 30px;
+            letter-spacing: .3px;
+        }
+
+        @include lg {
+            font-family: 'Alegreya Sans';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: .3px;
+        }
+
+        @include md {
+            font-family: 'Alegreya Sans';
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: .3px;
+        }
+
+        @include sm {
+            font-family: 'Alegreya Sans';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: .2px;
+        }
+    }
+
+    .two {
+
+        @include xl {
+            font-family: 'Alegreya Sans';
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 30px;
+            letter-spacing: 0
+        }
+
+        @include lg {
+            font-family: 'Alegreya Sans';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0;
+        }
+
+        @include md {
+            font-family: 'Alegreya Sans';
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: 0;
+        }
+
+        @include sm {
+            font-family: 'Alegreya Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0;
+        }
+    }
+}

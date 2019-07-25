@@ -5,7 +5,7 @@ import { Component, h, Prop } from '@stencil/core'
 	styleUrl: 'mnv-title.scss',
 })
 export class MnvTitle {
-	@Prop() level
+	@Prop() level: string;
 	@Prop() overline: string
 
 	// Renderiza o componente
