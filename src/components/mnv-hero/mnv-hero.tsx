@@ -9,10 +9,12 @@ export class Mnvhero {
 	@Prop() background: string
 	@Prop() herotitle: string
 	@Prop() button: string
+	@Prop() bgimg: string = 'https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
 
 	render() {
+	let setBgImg = `url('${this.bgimg}')`
 		return (
-			<div class='image'>
+			<div class='image' style={{backgroundImage: setBgImg}}>
 				<div class='body'>
 					<mnv-grid container>
 						<mnv-grid item sm={12} md={9} lg={6} xl={6}>

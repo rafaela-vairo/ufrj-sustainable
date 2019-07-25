@@ -1,5 +1,7 @@
 button {
 	cursor: pointer;
+	position: relative;
+	overflow: hidden;
 	color: $mnv-color-primary;
 	text-transform: lowercase;
 	background-color: rgba(0, 0, 0, 0);
@@ -7,9 +9,22 @@ button {
 	font-weight: 700;
 	letter-spacing: 1px;
 	border-radius: 3px;
-	border: 2px solid rgba($mnv-color-primary-light, 0);
+	border: none;
 	vertical-align: middle;
 	transition: all $mnv-transition-cubic-03;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 51%;
+		right: 51%;
+		bottom: 10px;
+		background: $mnv-color-primary-light;
+		height: 2px;
+		transition-property: left, right;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
 	&.marginzero {
 		margin: 0px !important;
 	}
@@ -18,7 +33,10 @@ button {
 	&:active {
 		outline: none;
 		color: $mnv-color-primary-light;
-		border: 2px solid $mnv-color-primary-light;
+		&:before {
+			left: 21px;
+			right: 21px;
+		}
 	}
 	&:disabled,
 	&:disabled > *,
@@ -26,7 +44,10 @@ button {
 	&:disabled:active {
 		cursor: default;
 		color: rgba($mnv-text-dark, 0.4);
-		border: 2px solid rgba($mnv-color-primary-light, 0);
+		&:before {
+			left: 51%;
+			right: 51%;
+		}
 	}
 	@include xl {
 		min-width: 90px;
@@ -53,7 +74,7 @@ button {
 		font-size: 16px;
 	}
 	&.outlined {
-		// color: $mnv-color-white;
+		color: $mnv-color-white;
 		position: relative;
 		background-color: rgba(0, 0, 0, 0);
 		border: 2px solid $mnv-color-primary-light;
@@ -83,13 +104,14 @@ button {
 		}
 		&:before {
 			content: '';
-			transition: all $mnv-transition-cubic-03;
 			position: absolute;
 			z-index: -1;
+			transition: all $mnv-transition-cubic-03;
 			top: 0;
-			left: 0px;
+			left: 0;
 			right: 0;
 			bottom: 0;
+			height: 100%;
 			background: $mnv-color-primary-light;
 			transform: scaleX(0);
 			transform-origin: 0 50%;

@@ -6,7 +6,6 @@ button {
 	text-transform: lowercase;
 	background-color: rgba(0, 0, 0, 0);
 	font-family: $mnv-font-alegreya-sans-sc;
-	font-weight: 700;
 	letter-spacing: 1px;
 	border-radius: 3px;
 	border: none;
@@ -34,8 +33,8 @@ button {
 		outline: none;
 		color: $mnv-color-white;
 		&:before {
-			left: 21px;
-			right: 21px;
+			left: 10%;
+			right: 10%;
 		}
 	}
 	&:disabled,
@@ -47,15 +46,13 @@ button {
 	}
 	@include xl {
 		min-width: 90px;
-		padding: 19.5px;
-		margin: 15px;
-		font-size: 21px;
+		padding: 15px;
+		font-size: 35px;
 	}
 	@include lg {
 		min-width: 81px;
-		padding: 17.5px;
-		margin: 13.5px;
-		font-size: 19px;
+		padding: 13.5px;
+		font-size: 24px;
 	}
 	@include md {
 		min-width: 75px;

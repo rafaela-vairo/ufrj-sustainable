@@ -1,4 +1,4 @@
-# mnv-divider
+# mnv-overline
 
 
 
@@ -9,13 +9,13 @@
 
 ### Used by
 
- - [app-home](..\app-home)
+ - [mnv-title](..\mnv-title)
 
 ### Graph
 ```mermaid
 graph TD;
-  app-home --> mnv-divider
-  style mnv-divider fill:#f9f,stroke:#333,stroke-width:4px
+  mnv-title --> mnv-overline
+  style mnv-overline fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

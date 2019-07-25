@@ -16,19 +16,19 @@
 
 ### Used by
 
- - [app-heropage](../app-heropage)
- - [app-home](../app-home)
+ - [app-heropage](..\app-heropage)
+ - [app-home](..\app-home)
 
 ### Depends on
 
 - stencil-route-link
-- [mnv-button](../mnv-button)
+- [mnv-navbutton](..\mnv-navbutton)
 
 ### Graph
 ```mermaid
 graph TD;
   mnv-navbar --> stencil-route-link
-  mnv-navbar --> mnv-button
+  mnv-navbar --> mnv-navbutton
   app-heropage --> mnv-navbar
   app-home --> mnv-navbar
   style mnv-navbar fill:#f9f,stroke:#333,stroke-width:4px
