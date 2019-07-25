@@ -2,19 +2,19 @@ import { Component, h } from '@stencil/core'
 import _ from 'lodash'
 
 let numbers = [
-	{ value: '1.000', priority: '' },
-	{ value: '14.505', priority: '6' },
-	{ value: '3', priority: '3' },
+	{ value: '1', priority: '4' },
+	{ value: '14', priority: '4' },
+	{ value: '335', priority: '6' },
 	{ value: '1.000.000', priority: '4' },
 	{ value: '670.560', priority: '2' },
-	{ value: '500', priority: '' },
-	{ value: '3.863.000', priority: '3' },
-	{ value: '1.000', priority: '' },
+	{ value: '500', priority: '4' },
+	{ value: '3.863.000', priority: '6' },
+	{ value: '1.000', priority: '2' },
 	{ value: '14.505', priority: '2' },
-	{ value: '123', priority: '3' },
-	{ value: '1.000.000', priority: '5' },
+	{ value: '123', priority: '4' },
+	{ value: '1.000.000', priority: '2' },
 	{ value: '670.560', priority: '2' },
-	{ value: '362', priority: '' },
+	{ value: '362', priority: '6' },
 ]
 
 function random_rgba() {
@@ -38,7 +38,11 @@ export class MnvBignumber {
 				{numcolors.map(value => (
 					<mnv-grid item id='number' xl={value[0].priority}>
 						<div
-							class={value[0].value.length < 2 ? 'short' : 'long'}
+							class={
+								value[0].value.length < 4
+									? `short-${value[0].value.length}`
+									: 'long'
+							}
 							id='box'
 							style={{ '--background-color': value[1] }}
 						>

@@ -23,8 +23,16 @@
 	}
 }
 
-.short {
+.short-1 {
 	font-size: 169px;
+}
+
+.short-2 {
+	font-size: 130px;
+}
+
+.short-3 {
+	font-size: 90px;
 }
 
 .long {
@@ -32,6 +40,7 @@
 }
 
 #number {
+	min-width: 200px;
 	padding: 2px;
 	text-align: center;
 	font-size: 60px;
@@ -41,5 +50,7 @@
 
 #numcontainer {
 	margin: -2px;
-	padding: 0px;
+	//padding: 0px;
+	padding: 100px;
+	justify-content: center;
 }
