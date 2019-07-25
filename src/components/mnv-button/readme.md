@@ -20,8 +20,8 @@
 
 ### Used by
 
- - [app-home](..\app-home)
- - [mnv-hero](..\mnv-hero)
+ - [app-home](../app-home)
+ - [mnv-hero](../mnv-hero)
 
 ### Graph
 ```mermaid

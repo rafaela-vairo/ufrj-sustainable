@@ -17,12 +17,12 @@
 
 ### Used by
 
- - [app-home](..\app-home)
- - [mnv-hero](..\mnv-hero)
+ - [app-home](../app-home)
+ - [mnv-hero](../mnv-hero)
 
 ### Depends on
 
-- [mnv-overline](..\mnv-overline)
+- [mnv-overline](../mnv-overline)
 
 ### Graph
 ```mermaid

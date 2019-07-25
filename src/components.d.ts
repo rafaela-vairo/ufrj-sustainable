@@ -20,6 +20,7 @@ export namespace Components {
     'href': string;
   }
   interface MnvBase {}
+  interface MnvBignumber {}
   interface MnvButton {
     'contained': boolean;
     'disabled': boolean;
@@ -55,11 +56,11 @@ export namespace Components {
   interface MnvGrid {
     'container': boolean;
     'item': boolean;
-    'lg': number;
-    'md': number;
-    'sm': number;
+    'lg': string;
+    'md': string;
+    'sm': string;
     'spacing': number;
-    'xl': number;
+    'xl': string;
   }
   interface MnvHero {
     'background': string;
@@ -154,6 +155,12 @@ declare global {
   var HTMLMnvBaseElement: {
     prototype: HTMLMnvBaseElement;
     new (): HTMLMnvBaseElement;
+  };
+
+  interface HTMLMnvBignumberElement extends Components.MnvBignumber, HTMLStencilElement {}
+  var HTMLMnvBignumberElement: {
+    prototype: HTMLMnvBignumberElement;
+    new (): HTMLMnvBignumberElement;
   };
 
   interface HTMLMnvButtonElement extends Components.MnvButton, HTMLStencilElement {}
@@ -287,6 +294,7 @@ declare global {
     'app-root': HTMLAppRootElement;
     'mnv-anchor': HTMLMnvAnchorElement;
     'mnv-base': HTMLMnvBaseElement;
+    'mnv-bignumber': HTMLMnvBignumberElement;
     'mnv-button': HTMLMnvButtonElement;
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
@@ -321,6 +329,7 @@ declare namespace LocalJSX {
     'href'?: string;
   }
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
+  interface MnvBignumber extends JSXBase.HTMLAttributes<HTMLMnvBignumberElement> {}
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
     'disabled'?: boolean;
@@ -356,11 +365,11 @@ declare namespace LocalJSX {
   interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
     'container'?: boolean;
     'item'?: boolean;
-    'lg'?: number;
-    'md'?: number;
-    'sm'?: number;
+    'lg'?: string;
+    'md'?: string;
+    'sm'?: string;
     'spacing'?: number;
-    'xl'?: number;
+    'xl'?: string;
   }
   interface MnvHero extends JSXBase.HTMLAttributes<HTMLMnvHeroElement> {
     'background'?: string;
@@ -429,6 +438,7 @@ declare namespace LocalJSX {
     'app-root': AppRoot;
     'mnv-anchor': MnvAnchor;
     'mnv-base': MnvBase;
+    'mnv-bignumber': MnvBignumber;
     'mnv-button': MnvButton;
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;

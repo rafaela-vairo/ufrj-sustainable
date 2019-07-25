@@ -1,0 +1,45 @@
+:host {
+	--background-color: '';
+}
+
+#box {
+	position: relative;
+	background-color: var(--background-color);
+	background-blend-mode: color;
+	min-height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		mix-blend-mode: color;
+		background-color: $mnv-color-primary;
+		height: 300px;
+		width: 100%;
+	}
+}
+
+.short {
+	font-size: 169px;
+}
+
+.long {
+	font-size: 40px;
+}
+
+#number {
+	padding: 2px;
+	text-align: center;
+	font-size: 60px;
+	font-family: $mnv-font-alegreya-sans;
+	color: $mnv-text-light;
+}
+
+#numcontainer {
+	margin: -2px;
+	padding: 0px;
+}

@@ -8,10 +8,10 @@ export class MnvGrid {
 	@Prop({ reflect: true }) spacing: number
 	@Prop({ reflect: true }) container: boolean
 	@Prop({ reflect: true }) item: boolean
-	@Prop({ reflect: true }) xl: number
-	@Prop({ reflect: true }) lg: number
-	@Prop({ reflect: true }) md: number
-	@Prop({ reflect: true }) sm: number
+	@Prop({ reflect: true }) xl: string
+	@Prop({ reflect: true }) lg: string
+	@Prop({ reflect: true }) md: string
+	@Prop({ reflect: true }) sm: string
 	render() {
 		let spacing = this.spacing ? `grid-spacing-${this.spacing} ` : ''
 		let xl = this.xl ? `grid-xl-${this.xl} ` : ''
