@@ -13,6 +13,7 @@ export class AppHeropage {
 		return (
 			<div class='app-heropage'>
 				<mnv-navbar />
+
 				<mnv-hero
 					herotitle='UFRJ Sustentável'
 					button='Saiba mais'

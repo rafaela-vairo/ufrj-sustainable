@@ -1,0 +1,47 @@
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	opacity: 0.9;
+	display: flex;
+	align-items: center;
+	background: black;
+	width: 100%;
+	color: white;
+}
+.logo {
+	margin: 0 auto;
+}
+.body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	transition: filter 0.5s ease;
+}
+
+.menuc {
+	opacity: 0;
+	animation: 1s appear forwards;
+	animationdelay: 0.2s;
+}
+.menuItem {
+	font-size: 1.2rem;
+	padding: 1rem 0;
+	margin: 0 5%;
+	cursor: pointer;
+	color: #fafafa;
+	transition: color 0.2s ease-in-out;
+	animation: 0.5s slideIn forwards;
+	animation-delay: 0.2s;
+}
+.line {
+	width: 90%;
+	height: 1px;
+	background: gray;
+	margin: 0 auto;
+	animation: 0.5s shrink forwards;
+	animation-delay: 0.2s;
+}
