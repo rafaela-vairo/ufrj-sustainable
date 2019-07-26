@@ -11,6 +11,8 @@ import {
 } from '@stencil/router';
 
 export namespace Components {
+  interface AppAbout {}
+  interface AppBignumbers {}
   interface AppHeropage {
     'match': MatchResults;
   }
@@ -62,6 +64,7 @@ export namespace Components {
   }
   interface MnvGrid {
     'container': boolean;
+    'indented': boolean;
     'item': boolean;
     'lg': string;
     'md': string;
@@ -136,6 +139,18 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLAppAboutElement extends Components.AppAbout, HTMLStencilElement {}
+  var HTMLAppAboutElement: {
+    prototype: HTMLAppAboutElement;
+    new (): HTMLAppAboutElement;
+  };
+
+  interface HTMLAppBignumbersElement extends Components.AppBignumbers, HTMLStencilElement {}
+  var HTMLAppBignumbersElement: {
+    prototype: HTMLAppBignumbersElement;
+    new (): HTMLAppBignumbersElement;
+  };
 
   interface HTMLAppHeropageElement extends Components.AppHeropage, HTMLStencilElement {}
   var HTMLAppHeropageElement: {
@@ -311,6 +326,8 @@ declare global {
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+    'app-about': HTMLAppAboutElement;
+    'app-bignumbers': HTMLAppBignumbersElement;
     'app-heropage': HTMLAppHeropageElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
@@ -344,6 +361,8 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {}
+  interface AppBignumbers extends JSXBase.HTMLAttributes<HTMLAppBignumbersElement> {}
   interface AppHeropage extends JSXBase.HTMLAttributes<HTMLAppHeropageElement> {
     'match'?: MatchResults;
   }
@@ -395,6 +414,7 @@ declare namespace LocalJSX {
   }
   interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
     'container'?: boolean;
+    'indented'?: boolean;
     'item'?: boolean;
     'lg'?: string;
     'md'?: string;
@@ -467,6 +487,8 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'app-about': AppAbout;
+    'app-bignumbers': AppBignumbers;
     'app-heropage': AppHeropage;
     'app-home': AppHome;
     'app-root': AppRoot;

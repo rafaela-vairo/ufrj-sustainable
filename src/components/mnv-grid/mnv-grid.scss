@@ -40,6 +40,18 @@ mnv-grid {
 	}
 }
 
+.indented {
+	@include xl {
+		padding-left: 285px;
+	}
+	@include lg {
+		padding-left: 209px;
+	}
+	@include md {
+		padding-left: 173px;
+	}
+}
+
 .grid-xl-1,
 .grid-xl-2,
 .grid-xl-3,
