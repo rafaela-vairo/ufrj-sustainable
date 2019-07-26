@@ -1,0 +1,21 @@
+:host {
+	--set-height: 0;
+}
+
+.drawer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: var(--set-height, 0);
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background: black;
+	opacity: 0.95;
+	color: #fafafa;
+	transition: height 0.3s ease;
+	z-index: 2;
+}
+.menulist {
+	padding-top: 3rem;
+}
