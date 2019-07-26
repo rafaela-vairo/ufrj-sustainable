@@ -62,6 +62,7 @@ export namespace Components {
     'italictext': boolean;
     'src': string;
   }
+  interface MnvFooter {}
   interface MnvGrid {
     'container': boolean;
     'indented': boolean;
@@ -230,6 +231,12 @@ declare global {
     new (): HTMLMnvFigureCaptionElement;
   };
 
+  interface HTMLMnvFooterElement extends Components.MnvFooter, HTMLStencilElement {}
+  var HTMLMnvFooterElement: {
+    prototype: HTMLMnvFooterElement;
+    new (): HTMLMnvFooterElement;
+  };
+
   interface HTMLMnvGridElement extends Components.MnvGrid, HTMLStencilElement {}
   var HTMLMnvGridElement: {
     prototype: HTMLMnvGridElement;
@@ -341,6 +348,7 @@ declare global {
     'mnv-divider': HTMLMnvDividerElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
+    'mnv-footer': HTMLMnvFooterElement;
     'mnv-grid': HTMLMnvGridElement;
     'mnv-hero': HTMLMnvHeroElement;
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
@@ -412,6 +420,7 @@ declare namespace LocalJSX {
     'italictext'?: boolean;
     'src'?: string;
   }
+  interface MnvFooter extends JSXBase.HTMLAttributes<HTMLMnvFooterElement> {}
   interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
     'container'?: boolean;
     'indented'?: boolean;
@@ -502,6 +511,7 @@ declare namespace LocalJSX {
     'mnv-divider': MnvDivider;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
+    'mnv-footer': MnvFooter;
     'mnv-grid': MnvGrid;
     'mnv-hero': MnvHero;
     'mnv-iconbutton': MnvIconbutton;

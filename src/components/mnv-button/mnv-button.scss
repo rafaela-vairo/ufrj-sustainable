@@ -49,30 +49,7 @@ button {
 			right: 51%;
 		}
 	}
-	@include xl {
-		min-width: 90px;
-		padding: 19.5px;
-		margin: 15px;
-		font-size: 21px;
-	}
-	@include lg {
-		min-width: 81px;
-		padding: 17.5px;
-		margin: 13.5px;
-		font-size: 19px;
-	}
-	@include md {
-		min-width: 75px;
-		padding: 16.5px;
-		margin: 12.5px;
-		font-size: 17px;
-	}
-	@include sm {
-		min-width: 69px;
-		padding: 15px;
-		margin: 11.5px;
-		font-size: 16px;
-	}
+	
 	&.outlined {
 		color: $mnv-color-white;
 		position: relative;
@@ -116,7 +93,20 @@ button {
 			transform: scaleX(0);
 			transform-origin: 0 50%;
 		}
+		@include xl {
+			padding: 19.5px;
+		}
+		@include lg {
+			padding: 17.5px;
+		}
+		@include md {
+			padding: 16.5px;
+		}
+		@include sm {
+			padding: 15px;
+		}
 	}
+	
 	&.contained {
 		background-color: $mnv-color-primary;
 		color: $mnv-text-light;
@@ -143,6 +133,8 @@ button {
 			outline: none;
 			background-color: $mnv-color-primary-light;
 			border-color: $mnv-color-primary-light;
+			box-shadow: 0 3px 5px rgba($mnv-color-black, 0.3),
+				0 3px 5px rgba($mnv-color-primary-dark, 0.3);
 		}
 		&:active {
 			background-color: $mnv-color-primary-light;
@@ -150,9 +142,34 @@ button {
 			box-shadow: 0 15px 30px rgba($mnv-color-black, 0.3),
 				0 11px 15px rgba($mnv-color-primary-dark, 0.3);
 		}
+		@include xl {
+			padding: 19.5px;
+		}
+		@include lg {
+			padding: 17.5px;
+		}
+		@include md {
+			padding: 16.5px;
+		}
+		@include sm {
+			padding: 15px;
+		}
 	}
 
 	&.full {
 		width: 100%;
+
+		@include xl {
+			padding: 19.5px;
+		}
+		@include lg {
+			padding: 17.5px;
+		}
+		@include md {
+			padding: 16.5px;
+		}
+		@include sm {
+			padding: 15px;
+		}
 	}
 }

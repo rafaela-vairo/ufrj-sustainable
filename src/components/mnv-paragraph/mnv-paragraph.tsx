@@ -3,7 +3,7 @@ import { Component, Prop, h } from '@stencil/core'
 @Component({
   tag: 'mnv-paragraph',
   styleUrl: 'mnv-paragraph.scss',
-  shadow: true,
+  // shadow: true,
 })
 export class MnvParagraph {
   /**

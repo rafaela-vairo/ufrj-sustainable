@@ -3,7 +3,7 @@ import { Component, h } from "@stencil/core";
 @Component({
 	tag: "mnv-divider",
 	styleUrl: "mnv-divider.scss",
-	shadow: true
+	// shadow: true
 })
 export class MnvDivider {
 	render() {
