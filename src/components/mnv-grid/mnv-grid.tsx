@@ -12,6 +12,7 @@ export class MnvGrid {
 	@Prop({ reflect: true }) lg: string
 	@Prop({ reflect: true }) md: string
 	@Prop({ reflect: true }) sm: string
+	@Prop({ reflect: true }) indented: boolean
 	render() {
 		let spacing = this.spacing ? `grid-spacing-${this.spacing} ` : ''
 		let xl = this.xl ? `grid-xl-${this.xl} ` : ''
@@ -20,7 +21,8 @@ export class MnvGrid {
 		let sm = this.sm ? `grid-sm-${this.sm} ` : ''
 		let container = this.container && !this.item ? 'grid-container ' : ''
 		let item = this.item && !this.container ? 'grid-item ' : ''
-		let genClass = xl + lg + md + sm + container + item + spacing
+		let indented = this.indented ? `indented` : ''
+		let genClass = xl + lg + md + sm + container + item + spacing + indented
 		return (
 			<Host class={genClass}>
 				<slot />
