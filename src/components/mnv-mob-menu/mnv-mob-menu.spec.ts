@@ -1,19 +1,19 @@
 import { TestWindow } from '@stencil/core/testing';
-import { MnvDrawermobile } from './mnv-drawermobile';
+import { MnvMobMenu } from './mnv-mob-menu';
 
-describe('mnv-drawermobile', () => {
+describe('mnv-mob-menu', () => {
   it('should build', () => {
-    expect(new MnvDrawermobile()).toBeTruthy();
+    expect(new MnvMobMenu()).toBeTruthy();
   });
 
   describe('rendering', () => {
-    let element: HTMLMnvDrawermobileElement;
+    let element: HTMLMnvMobMenuElement;
     let testWindow: TestWindow;
     beforeEach(async () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
-        components: [MnvDrawermobile],
-        html: '<mnv-drawermobile></mnv-drawermobile>'
+        components: [MnvMobMenu],
+        html: '<mnv-mob-menu></mnv-mob-menu>'
       });
     });
 

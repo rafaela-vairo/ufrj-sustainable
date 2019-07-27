@@ -1,5 +1,5 @@
 header {
-    background-blend-mode: multiply;
+	background-blend-mode: multiply;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -8,10 +8,7 @@ header {
 	width: calc(100% - 184px);
 	position: fixed;
 	height: 150px;
-	background: linear-gradient(
-		rgba($mnv-color-black, 0.7),
-		transparent
-	);
+	background: linear-gradient(rgba($mnv-color-black, 0.7), transparent);
 	box-shadow: 0 3px 5px rgba($mnv-color-black, 0);
 	transition: height, padding-top $mnv-transition-cubic-03;
 	@include xl {
@@ -21,10 +18,10 @@ header {
 		padding: 34.5px 80px 0 80px;
 	}
 	@include md {
-
+		display: none;
 	}
 	@include sm {
-
+		display: none;
 	}
 }
 
@@ -52,10 +49,7 @@ header {
 
 .slideDown {
 	height: 150px;
-	background: linear-gradient(
-		rgba($mnv-color-black, 0.7),
-		transparent
-	);
+	background: linear-gradient(rgba($mnv-color-black, 0.7), transparent);
 	box-shadow: 0 3px 5px rgba($mnv-color-black, 0);
 }
 

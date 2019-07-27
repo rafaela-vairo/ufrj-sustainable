@@ -48,9 +48,6 @@ export namespace Components {
     'xs': number;
   }
   interface MnvDivider {}
-  interface MnvDrawermobile {
-    'open': boolean;
-  }
   interface MnvFigure {
     'alt': string;
     'src': string;
@@ -90,11 +87,13 @@ export namespace Components {
     'href': string;
   }
   interface MnvMark {}
-  interface MnvMenubuttonmobile {
+  interface MnvMobButton {
     'open': boolean;
   }
-  interface MnvMenumobile {
-    'hover': boolean;
+  interface MnvMobDrawer {
+    'open': boolean;
+  }
+  interface MnvMobMenu {
     'open': boolean;
   }
   interface MnvNavbar {
@@ -229,12 +228,6 @@ declare global {
     new (): HTMLMnvDividerElement;
   };
 
-  interface HTMLMnvDrawermobileElement extends Components.MnvDrawermobile, HTMLStencilElement {}
-  var HTMLMnvDrawermobileElement: {
-    prototype: HTMLMnvDrawermobileElement;
-    new (): HTMLMnvDrawermobileElement;
-  };
-
   interface HTMLMnvFigureElement extends Components.MnvFigure, HTMLStencilElement {}
   var HTMLMnvFigureElement: {
     prototype: HTMLMnvFigureElement;
@@ -283,16 +276,22 @@ declare global {
     new (): HTMLMnvMarkElement;
   };
 
-  interface HTMLMnvMenubuttonmobileElement extends Components.MnvMenubuttonmobile, HTMLStencilElement {}
-  var HTMLMnvMenubuttonmobileElement: {
-    prototype: HTMLMnvMenubuttonmobileElement;
-    new (): HTMLMnvMenubuttonmobileElement;
+  interface HTMLMnvMobButtonElement extends Components.MnvMobButton, HTMLStencilElement {}
+  var HTMLMnvMobButtonElement: {
+    prototype: HTMLMnvMobButtonElement;
+    new (): HTMLMnvMobButtonElement;
   };
 
-  interface HTMLMnvMenumobileElement extends Components.MnvMenumobile, HTMLStencilElement {}
-  var HTMLMnvMenumobileElement: {
-    prototype: HTMLMnvMenumobileElement;
-    new (): HTMLMnvMenumobileElement;
+  interface HTMLMnvMobDrawerElement extends Components.MnvMobDrawer, HTMLStencilElement {}
+  var HTMLMnvMobDrawerElement: {
+    prototype: HTMLMnvMobDrawerElement;
+    new (): HTMLMnvMobDrawerElement;
+  };
+
+  interface HTMLMnvMobMenuElement extends Components.MnvMobMenu, HTMLStencilElement {}
+  var HTMLMnvMobMenuElement: {
+    prototype: HTMLMnvMobMenuElement;
+    new (): HTMLMnvMobMenuElement;
   };
 
   interface HTMLMnvNavbarElement extends Components.MnvNavbar, HTMLStencilElement {}
@@ -374,7 +373,6 @@ declare global {
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
     'mnv-divider': HTMLMnvDividerElement;
-    'mnv-drawermobile': HTMLMnvDrawermobileElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
     'mnv-footer': HTMLMnvFooterElement;
@@ -383,8 +381,9 @@ declare global {
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
     'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
-    'mnv-menubuttonmobile': HTMLMnvMenubuttonmobileElement;
-    'mnv-menumobile': HTMLMnvMenumobileElement;
+    'mnv-mob-button': HTMLMnvMobButtonElement;
+    'mnv-mob-drawer': HTMLMnvMobDrawerElement;
+    'mnv-mob-menu': HTMLMnvMobMenuElement;
     'mnv-navbar': HTMLMnvNavbarElement;
     'mnv-navbutton': HTMLMnvNavbuttonElement;
     'mnv-overline': HTMLMnvOverlineElement;
@@ -437,9 +436,6 @@ declare namespace LocalJSX {
     'xs'?: number;
   }
   interface MnvDivider extends JSXBase.HTMLAttributes<HTMLMnvDividerElement> {}
-  interface MnvDrawermobile extends JSXBase.HTMLAttributes<HTMLMnvDrawermobileElement> {
-    'open'?: boolean;
-  }
   interface MnvFigure extends JSXBase.HTMLAttributes<HTMLMnvFigureElement> {
     'alt'?: string;
     'src'?: string;
@@ -479,12 +475,13 @@ declare namespace LocalJSX {
     'href'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
-  interface MnvMenubuttonmobile extends JSXBase.HTMLAttributes<HTMLMnvMenubuttonmobileElement> {
+  interface MnvMobButton extends JSXBase.HTMLAttributes<HTMLMnvMobButtonElement> {
     'open'?: boolean;
   }
-  interface MnvMenumobile extends JSXBase.HTMLAttributes<HTMLMnvMenumobileElement> {
-    'hover'?: boolean;
-    'onBackgroundToggle'?: (event: CustomEvent<any>) => void;
+  interface MnvMobDrawer extends JSXBase.HTMLAttributes<HTMLMnvMobDrawerElement> {
+    'open'?: boolean;
+  }
+  interface MnvMobMenu extends JSXBase.HTMLAttributes<HTMLMnvMobMenuElement> {
     'open'?: boolean;
   }
   interface MnvNavbar extends JSXBase.HTMLAttributes<HTMLMnvNavbarElement> {
@@ -551,7 +548,6 @@ declare namespace LocalJSX {
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;
     'mnv-divider': MnvDivider;
-    'mnv-drawermobile': MnvDrawermobile;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
     'mnv-footer': MnvFooter;
@@ -560,8 +556,9 @@ declare namespace LocalJSX {
     'mnv-iconbutton': MnvIconbutton;
     'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
-    'mnv-menubuttonmobile': MnvMenubuttonmobile;
-    'mnv-menumobile': MnvMenumobile;
+    'mnv-mob-button': MnvMobButton;
+    'mnv-mob-drawer': MnvMobDrawer;
+    'mnv-mob-menu': MnvMobMenu;
     'mnv-navbar': MnvNavbar;
     'mnv-navbutton': MnvNavbutton;
     'mnv-overline': MnvOverline;

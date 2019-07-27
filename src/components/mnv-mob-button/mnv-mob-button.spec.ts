@@ -1,19 +1,19 @@
 import { TestWindow } from '@stencil/core/testing';
-import { MnvMenumobile } from './mnv-menumobile';
+import { MnvMobButton } from './mnv-mob-button';
 
-describe('mnv-menumobile', () => {
+describe('mnv-mob-button', () => {
   it('should build', () => {
-    expect(new MnvMenumobile()).toBeTruthy();
+    expect(new MnvMobButton()).toBeTruthy();
   });
 
   describe('rendering', () => {
-    let element: HTMLMnvMenumobileElement;
+    let element: HTMLMnvMobButtonElement;
     let testWindow: TestWindow;
     beforeEach(async () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
-        components: [MnvMenumobile],
-        html: '<mnv-menumobile></mnv-menumobile>'
+        components: [MnvMobButton],
+        html: '<mnv-mob-button></mnv-mob-button>'
       });
     });
 

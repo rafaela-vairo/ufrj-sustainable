@@ -3,7 +3,7 @@ import { Component, h, Prop } from '@stencil/core'
 @Component({
 	tag: 'mnv-hero',
 	styleUrl: 'mnv-hero.scss',
-	shadow: true,
+	shadow: true
 })
 export class Mnvhero {
 	@Prop() background: string
@@ -22,7 +22,7 @@ export class Mnvhero {
 							<mnv-title level='hero'>{this.herotitle}</mnv-title>
 						</mnv-grid>
 						<mnv-grid item md='3' lg='6' xl='6' />
-						<mnv-grid item sm='2' md='6' lg='4' xl='4'>
+						<mnv-grid item sm='12' md='6' lg='4' xl='4'>
 							<mnv-title level='h4'>
 								<slot />
 							</mnv-title>
