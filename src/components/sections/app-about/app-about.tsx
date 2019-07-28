@@ -1,15 +1,23 @@
-import { Component, Host, h } from '@stencil/core'
+import { Component, Host, h, Element, Prop } from '@stencil/core'
 
 @Component({
 	tag: 'app-about',
-	styleUrl: 'app-about.scss',
+	styleUrl: 'app-about.scss'
 })
 export class AppAbout {
+	@Prop() width: number = 500
+	@Element() about: HTMLElement
+	componentDidLoad() {
+		this.width = this.about.clientWidth
+	}
 	render() {
 		return (
 			<Host>
 				<mnv-grid item xl='12' md='12' indented>
 					<mnv-title level='h1'>Sobre a UFRJ</mnv-title>
+				</mnv-grid>
+				<mnv-grid item xl='12' md='12' indented>
+					<mnv-slider width={this.width - 285} />
 				</mnv-grid>
 				<mnv-grid item xl='12' md='12' indented>
 					<mnv-paragraph capitular>

@@ -11,7 +11,9 @@ import {
 } from '@stencil/router';
 
 export namespace Components {
-  interface AppAbout {}
+  interface AppAbout {
+    'width': number;
+  }
   interface AppBignumbers {}
   interface AppHeropage {
     'match': MatchResults;
@@ -116,6 +118,17 @@ export namespace Components {
   }
   interface MnvPre {}
   interface MnvRow {}
+  interface MnvSlide {
+    'image': string;
+  }
+  interface MnvSlider {
+    'cards': any[];
+    'currentIndex': number;
+    'height': number;
+    'images': string[];
+    'translateValue': number;
+    'width': number;
+  }
   interface MnvStrong {}
   interface MnvSubtitle {
     'type': string;
@@ -321,6 +334,18 @@ declare global {
     new (): HTMLMnvRowElement;
   };
 
+  interface HTMLMnvSlideElement extends Components.MnvSlide, HTMLStencilElement {}
+  var HTMLMnvSlideElement: {
+    prototype: HTMLMnvSlideElement;
+    new (): HTMLMnvSlideElement;
+  };
+
+  interface HTMLMnvSliderElement extends Components.MnvSlider, HTMLStencilElement {}
+  var HTMLMnvSliderElement: {
+    prototype: HTMLMnvSliderElement;
+    new (): HTMLMnvSliderElement;
+  };
+
   interface HTMLMnvStrongElement extends Components.MnvStrong, HTMLStencilElement {}
   var HTMLMnvStrongElement: {
     prototype: HTMLMnvStrongElement;
@@ -380,6 +405,8 @@ declare global {
     'mnv-paragraph': HTMLMnvParagraphElement;
     'mnv-pre': HTMLMnvPreElement;
     'mnv-row': HTMLMnvRowElement;
+    'mnv-slide': HTMLMnvSlideElement;
+    'mnv-slider': HTMLMnvSliderElement;
     'mnv-strong': HTMLMnvStrongElement;
     'mnv-subtitle': HTMLMnvSubtitleElement;
     'mnv-title': HTMLMnvTitleElement;
@@ -389,7 +416,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {}
+  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {
+    'width'?: number;
+  }
   interface AppBignumbers extends JSXBase.HTMLAttributes<HTMLAppBignumbersElement> {}
   interface AppHeropage extends JSXBase.HTMLAttributes<HTMLAppHeropageElement> {
     'match'?: MatchResults;
@@ -494,6 +523,17 @@ declare namespace LocalJSX {
   }
   interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
   interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {}
+  interface MnvSlide extends JSXBase.HTMLAttributes<HTMLMnvSlideElement> {
+    'image'?: string;
+  }
+  interface MnvSlider extends JSXBase.HTMLAttributes<HTMLMnvSliderElement> {
+    'cards'?: any[];
+    'currentIndex'?: number;
+    'height'?: number;
+    'images'?: string[];
+    'translateValue'?: number;
+    'width'?: number;
+  }
   interface MnvStrong extends JSXBase.HTMLAttributes<HTMLMnvStrongElement> {}
   interface MnvSubtitle extends JSXBase.HTMLAttributes<HTMLMnvSubtitleElement> {
     'type'?: string;
@@ -551,6 +591,8 @@ declare namespace LocalJSX {
     'mnv-paragraph': MnvParagraph;
     'mnv-pre': MnvPre;
     'mnv-row': MnvRow;
+    'mnv-slide': MnvSlide;
+    'mnv-slider': MnvSlider;
     'mnv-strong': MnvStrong;
     'mnv-subtitle': MnvSubtitle;
     'mnv-title': MnvTitle;
