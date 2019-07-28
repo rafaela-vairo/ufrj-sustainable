@@ -1,4 +1,4 @@
-# mnv-anchor
+# mnv-subtitle
 
 
 
@@ -9,20 +9,20 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `href`   | `href`    |             | `string` | `undefined` |
+| `type`   | `type`    |             | `string` | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [app-home](..\..\app-pages\app-home)
+ - [mnv-card](..\..\layout\mnv-card)
 
 ### Graph
 ```mermaid
 graph TD;
-  app-home --> mnv-anchor
-  style mnv-anchor fill:#f9f,stroke:#333,stroke-width:4px
+  mnv-card --> mnv-subtitle
+  style mnv-subtitle fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -17,7 +17,7 @@
 
 ### Used by
 
- - [app-home](../app-home)
+ - [app-home](..\..\app-pages\app-home)
 
 ### Graph
 ```mermaid

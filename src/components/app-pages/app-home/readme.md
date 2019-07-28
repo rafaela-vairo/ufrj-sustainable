@@ -9,18 +9,18 @@
 
 ### Depends on
 
-- [mnv-base](../mnv-base)
-- [mnv-navbar](../mnv-navbar)
-- [mnv-grid](../mnv-grid)
-- [mnv-paragraph](../mnv-paragraph)
-- [mnv-anchor](../mnv-anchor)
-- [mnv-mark](../mnv-mark)
-- [mnv-tooltip](../mnv-tooltip)
-- [mnv-strong](../mnv-strong)
-- [mnv-divider](../mnv-divider)
-- [mnv-button](../mnv-button)
-- [mnv-title](../mnv-title)
-- [mnv-figure-caption](../mnv-figure-caption)
+- [mnv-base](..\..\layout\mnv-base)
+- [mnv-navbar](..\..\navigation\mnv-navbar)
+- [mnv-grid](..\..\layout\mnv-grid)
+- [mnv-paragraph](..\..\typography\mnv-paragraph)
+- [mnv-anchor](..\..\typography\mnv-anchor)
+- [mnv-mark](..\..\typography\mnv-mark)
+- [mnv-tooltip](..\..\layout\mnv-tooltip)
+- [mnv-strong](..\..\typography\mnv-strong)
+- [mnv-divider](..\..\typography\mnv-divider)
+- [mnv-button](..\..\inputs\mnv-button)
+- [mnv-title](..\..\typography\mnv-title)
+- [mnv-figure-caption](..\..\layout\mnv-figure-caption)
 
 ### Graph
 ```mermaid
