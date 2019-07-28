@@ -33,9 +33,9 @@ export namespace Components {
   }
   interface MnvCard {
     'button': string;
+    'cardtitle': string;
     'overline': string;
     'subtitle': string;
-    'title': string;
   }
   interface MnvCol {
     'class': string;
@@ -82,9 +82,6 @@ export namespace Components {
   interface MnvIconbutton {
     'disabled': boolean;
     'type': string;
-  }
-  interface MnvLink {
-    'href': string;
   }
   interface MnvMark {}
   interface MnvMobButton {
@@ -264,12 +261,6 @@ declare global {
     new (): HTMLMnvIconbuttonElement;
   };
 
-  interface HTMLMnvLinkElement extends Components.MnvLink, HTMLStencilElement {}
-  var HTMLMnvLinkElement: {
-    prototype: HTMLMnvLinkElement;
-    new (): HTMLMnvLinkElement;
-  };
-
   interface HTMLMnvMarkElement extends Components.MnvMark, HTMLStencilElement {}
   var HTMLMnvMarkElement: {
     prototype: HTMLMnvMarkElement;
@@ -379,7 +370,6 @@ declare global {
     'mnv-grid': HTMLMnvGridElement;
     'mnv-hero': HTMLMnvHeroElement;
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
-    'mnv-link': HTMLMnvLinkElement;
     'mnv-mark': HTMLMnvMarkElement;
     'mnv-mob-button': HTMLMnvMobButtonElement;
     'mnv-mob-drawer': HTMLMnvMobDrawerElement;
@@ -421,9 +411,9 @@ declare namespace LocalJSX {
   }
   interface MnvCard extends JSXBase.HTMLAttributes<HTMLMnvCardElement> {
     'button'?: string;
+    'cardtitle'?: string;
     'overline'?: string;
     'subtitle'?: string;
-    'title'?: string;
   }
   interface MnvCol extends JSXBase.HTMLAttributes<HTMLMnvColElement> {
     'class'?: string;
@@ -470,9 +460,6 @@ declare namespace LocalJSX {
   interface MnvIconbutton extends JSXBase.HTMLAttributes<HTMLMnvIconbuttonElement> {
     'disabled'?: boolean;
     'type'?: string;
-  }
-  interface MnvLink extends JSXBase.HTMLAttributes<HTMLMnvLinkElement> {
-    'href'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
   interface MnvMobButton extends JSXBase.HTMLAttributes<HTMLMnvMobButtonElement> {
@@ -554,7 +541,6 @@ declare namespace LocalJSX {
     'mnv-grid': MnvGrid;
     'mnv-hero': MnvHero;
     'mnv-iconbutton': MnvIconbutton;
-    'mnv-link': MnvLink;
     'mnv-mark': MnvMark;
     'mnv-mob-button': MnvMobButton;
     'mnv-mob-drawer': MnvMobDrawer;
