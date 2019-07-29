@@ -12,6 +12,8 @@ import {
 
 export namespace Components {
   interface AppAbout {
+    'maintext': string;
+    'maintitle': string;
     'width': number;
   }
   interface AppBignumbers {}
@@ -34,10 +36,11 @@ export namespace Components {
     'type': string;
   }
   interface MnvCard {
-    'button': string;
-    'cardtitle': string;
-    'overline': string;
-    'subtitle': string;
+    'button': any;
+    'cardtitle': any;
+    'overline': any;
+    'subtitle': any;
+    'width': number;
   }
   interface MnvCol {
     'class': string;
@@ -417,6 +420,8 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {
+    'maintext'?: string;
+    'maintitle'?: string;
     'width'?: number;
   }
   interface AppBignumbers extends JSXBase.HTMLAttributes<HTMLAppBignumbersElement> {}
@@ -439,10 +444,11 @@ declare namespace LocalJSX {
     'type'?: string;
   }
   interface MnvCard extends JSXBase.HTMLAttributes<HTMLMnvCardElement> {
-    'button'?: string;
-    'cardtitle'?: string;
-    'overline'?: string;
-    'subtitle'?: string;
+    'button'?: any;
+    'cardtitle'?: any;
+    'overline'?: any;
+    'subtitle'?: any;
+    'width'?: number;
   }
   interface MnvCol extends JSXBase.HTMLAttributes<HTMLMnvColElement> {
     'class'?: string;

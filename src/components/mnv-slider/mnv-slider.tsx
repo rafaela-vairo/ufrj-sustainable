@@ -7,110 +7,142 @@ import { Component, h, Prop, Element } from '@stencil/core'
 export class MnvSlider {
 	@Prop() cards: any[] = [
 		{
-			cardtitle: 'título um',
-			subtitle: 'subtítulo um',
-			button: 'botão'
+			overline: 'Overline 1',
+			cardtitle: 'Título 1',
+			subtitle: 'Subtitle 1',
+			maintext:
+				'A Universidade Federal do Rio de Janeiro (UFRJ) é a maior federal do Brasil e a primeira instituição oficial de ensino superior do país, em atividade desde 1792 e organizada como estrutura universitária em 1920.',
+			button: 'Button'
 		},
 		{
-			cardtitle: 'título dois',
-			subtitle: 'subtítulo dois',
-			button: 'botão'
+			overline: 'Overline 2',
+			cardtitle: 'Título 2',
+			subtitle: 'Subtitle 2',
+			maintext: 'Main text message lorem ipsum',
+			button: 'Button'
 		},
 		{
-			cardtitle: 'título três',
-			subtitle: 'subtítulo três',
-			button: 'botão'
+			overline: 'Overline 3',
+			cardtitle: 'Título 3',
+			subtitle: 'Subtitle 3',
+			maintext: 'Main text message lorem ipsum',
+			button: 'Button'
+		},
+		{
+			overline: 'Overline 4',
+			cardtitle: 'Título 4',
+			subtitle: 'Subtitle 4',
+			maintext: 'Main text message lorem ipsum',
+			button: 'Button'
+		},
+		{
+			overline: 'Overline 5',
+			cardtitle: 'Título 5',
+			subtitle: 'Subtitle 5',
+			maintext: 'Main text message lorem ipsum',
+			button: 'Button'
+		},
+		{
+			overline: 'Overline 6',
+			cardtitle: 'Título 6',
+			subtitle: 'Subtitle 6',
+			maintext: 'Main text message lorem ipsum',
+			button: 'Button'
 		}
 	]
-	@Prop() images: string[] = [
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/desert.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/mountains.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/redsky.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/sandy-shores.jpg',
-		'https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/tree-of-life.jpg'
-	]
+	@Prop() images: string[]
 	@Prop() currentIndex: number = 0
 	@Prop() translateValue: number = 0
-	@Prop() height: number = 500
-	@Prop() width: number = 500
+	@Prop() height: number
+	@Prop() width: number
 	@Element() slide: HTMLElement
 	goToPrevSlide = () => {
 		if (this.currentIndex === 0) return
 		this.currentIndex = this.currentIndex - 1
-		this.translateValue = this.translateValue + this.slideWidth()
+		this.translateValue = this.translateValue + 570
 	}
 
 	goToNextSlide = () => {
-		if (this.currentIndex === this.images.length - 1) {
+		if (this.currentIndex === this.cards.length - 1) {
 			return {
 				currentIndex: 0,
 				translateValue: 0
 			}
 		}
 		this.currentIndex = this.currentIndex + 1
-		this.translateValue = this.translateValue + -this.slideWidth()
+		this.translateValue = this.translateValue + -570
 	}
 
-	slideWidth = () => {
+	/* slideWidth = () => {
 		return this.slide.clientWidth
-	}
+	} */
 
 	render() {
+		let setHeight = this.height ? `${this.height}px` : null
+		let setWidth = this.width ? `${this.width}px` : null
 		return (
-			<div
-				class='slider'
-				style={{
-					width: `${this.width}px`,
-					height: `${this.height}px`
-				}}
-			>
-				<div
-					class='slider-wrapper'
-					style={{
-						transform: `translateX(${this.translateValue}px)`,
-						transition: 'transform ease-out 0.3s'
-					}}
-				>
-					{this.images.map(image => (
-						<mnv-slide image={image} />
-					))}
+			<div class='slider-root'>
+				<div class='arrow-root'>
+					<div
+						class='backArrow arrow'
+						style={{
+							color: `${
+								this.currentIndex === 0 ? 'rgba(255,255,255, 0.3)' : 'white'
+							}`,
+							cursor: `${this.currentIndex === 0 ? 'default' : 'pointer'}`
+						}}
+						onClick={this.goToPrevSlide}
+					>
+						<i class='material-icons' aria-hidden='true'>
+							arrow_back_ios
+						</i>
+					</div>
+					<div
+						class='nextArrow arrow'
+						style={{
+							color: `${
+								this.currentIndex === this.cards.length - 1
+									? 'rgba(255,255,255, 0.3)'
+									: 'white'
+							}`,
+							cursor: `${
+								this.currentIndex === this.cards.length - 1
+									? 'default'
+									: 'pointer'
+							}`
+						}}
+						onClick={this.goToNextSlide}
+					>
+						<i class='material-icons' aria-hidden='true'>
+							arrow_forward_ios
+						</i>
+					</div>
 				</div>
-				<div
-					class='nextArrow arrow'
-					style={{
-						color: `${
-							this.currentIndex === this.images.length - 1
-								? 'rgba(255,255,255, 0.3)'
-								: 'white'
-						}`,
-						cursor: `${
-							this.currentIndex === this.images.length - 1
-								? 'default'
-								: 'pointer'
-						}`
-					}}
-					onClick={this.goToNextSlide}
-				>
-					<i class='material-icons' aria-hidden='true'>
-						arrow_forward_ios
-					</i>
-				</div>
-				<div
-					class='backArrow arrow'
-					style={{
-						color: `${
-							this.currentIndex === 0 ? 'rgba(255,255,255, 0.3)' : 'white'
-						}`,
-						cursor: `${this.currentIndex === 0 ? 'default' : 'pointer'}`
-					}}
-					onClick={this.goToPrevSlide}
-				>
-					<i class='material-icons' aria-hidden='true'>
-						arrow_back_ios
-					</i>
+
+				<div class='slider'>
+					<div
+						class='slider-wrapper'
+						style={{
+							height: setHeight,
+							width: setWidth,
+							transform: `translateX(${this.translateValue}px)`,
+							transition: 'transform 0.3s cubic-bezier(.25,.8,.25,1)'
+						}}
+					>
+						{this.cards.map(card => (
+							<mnv-slide>
+								<mnv-card
+									overline={card.overline}
+									cardtitle={card.cardtitle}
+									subtitle={card.subtitle}
+									button={card.button}
+									width={540}
+								>
+									{card.maintext}
+								</mnv-card>
+							</mnv-slide>
+						))}
+					</div>
 				</div>
 			</div>
 		)

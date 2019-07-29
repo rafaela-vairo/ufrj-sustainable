@@ -6,14 +6,15 @@ import { Component, h, Prop } from '@stencil/core'
 	shadow: true
 })
 export class MnvCard {
-	@Prop({ reflect: true }) overline: string
-	@Prop() cardtitle: string
-	@Prop() subtitle: string
-	@Prop() button: string
+	@Prop({ reflect: true }) overline: any
+	@Prop() cardtitle: any
+	@Prop() subtitle: any
+	@Prop() button: any
+	@Prop() width: number
 
 	render() {
 		return (
-			<div>
+			<div class='card-root' style={{ width: `${this.width}px` }}>
 				<div class='header'>
 					<mnv-title level='h5' overline={this.overline}>
 						{this.cardtitle}

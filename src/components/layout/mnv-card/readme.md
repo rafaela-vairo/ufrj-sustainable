@@ -9,13 +9,18 @@
 
 | Property    | Attribute   | Description | Type     | Default     |
 | ----------- | ----------- | ----------- | -------- | ----------- |
-| `button`    | `button`    |             | `string` | `undefined` |
-| `cardtitle` | `cardtitle` |             | `string` | `undefined` |
-| `overline`  | `overline`  |             | `string` | `undefined` |
-| `subtitle`  | `subtitle`  |             | `string` | `undefined` |
+| `button`    | `button`    |             | `any`    | `undefined` |
+| `cardtitle` | `cardtitle` |             | `any`    | `undefined` |
+| `overline`  | `overline`  |             | `any`    | `undefined` |
+| `subtitle`  | `subtitle`  |             | `any`    | `undefined` |
+| `width`     | `width`     |             | `number` | `undefined` |
 
 
 ## Dependencies
+
+### Used by
+
+ - [mnv-slider](..\..\mnv-slider)
 
 ### Depends on
 
@@ -34,6 +39,7 @@ graph TD;
   mnv-card --> mnv-paragraph
   mnv-card --> mnv-button
   mnv-title --> mnv-overline
+  mnv-slider --> mnv-card
   style mnv-card fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -1,47 +1,46 @@
 footer {
-    background-color: $mnv-color-primary-dark;
-    color: $mnv-text-light;
-    width: 100vw;
-    position: relative;
+	background-color: $mnv-color-primary-dark;
+	color: $mnv-text-light;
+	width: 100vw;
+	position: relative;
 
-    @include xl {
-        padding: (1.5*30) 0px;
-    }
-    @include lg {
-        padding: (1.5*27) 0px;
-    }
-    @include md {
-        padding: (1.5*25) 0px;
-    }
-    @include sm {
-        padding: (1.5*23) 0px;
-    }
+	@include xl {
+		padding: (1.5 * 30) 0px;
+	}
+	@include lg {
+		padding: (1.5 * 27) 0px;
+	}
+	@include md {
+		padding: (1.5 * 25) 0px;
+	}
+	@include sm {
+		padding: (1.5 * 23) 0px;
+	}
 
-    .contato {
-        margin-top: 30px;
-    }
+	.contato {
+		margin-top: 30px;
+	}
 
-    mnv-figure {
-        margin: auto;
-    }
+	mnv-figure {
+		margin: auto;
+	}
 
-    mnv-title > h5 {
-        color: $mnv-text-light;
-    }
+	mnv-title > h5 {
+		color: $mnv-text-light;
+	}
 
-    mnv-paragraph > * {
-        margin: 10px 0px;
-    }
+	mnv-paragraph > * {
+		margin: 10px 0px;
+	}
 
-    i {
-        &:first {
-            margin-top: 40px;
-        }
-    }
+	i {
+		&:first {
+			margin-top: 40px;
+		}
+	}
 
-    hr {
-        width: 100%;
-        color: rgba($mnv-color-white, .3);
-    }
-    
+	hr {
+		width: 100%;
+		color: rgba($mnv-color-white, 0.3);
+	}
 }
