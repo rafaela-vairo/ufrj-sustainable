@@ -11,19 +11,19 @@
 	overflow: hidden;
 
 	@include xl {
-		margin: calc(30px / 2);
+		margin: 30px;
 	}
 
 	@include lg {
-		margin: calc(27px / 2);
+		margin: 27px;
 	}
 
 	@include md {
-		margin: calc(25px / 2);
+		margin: 25px;
 	}
 
 	@include sm {
-		margin: calc(23px / 2);
+		margin: 23px;
 	}
 
 	&:hover {
@@ -35,11 +35,11 @@
 				font-weight: 700;
 
 				@include xl {
-					height: 50px;
+					height: 45px;
 				}
 
 				@include lg {
-					height: 43px;
+					height: 40.5px;
 				}
 			}
 		}
@@ -139,7 +139,7 @@
 		}
 
 		@include sm {
-			padding-bottom: 57.5px;
+			padding-bottom: 46px;
 		}
 	}
 

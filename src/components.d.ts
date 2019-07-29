@@ -88,6 +88,7 @@ export namespace Components {
     'disabled': boolean;
     'type': string;
   }
+  interface MnvListCard {}
   interface MnvMark {}
   interface MnvMobButton {
     'open': boolean;
@@ -277,6 +278,12 @@ declare global {
     new (): HTMLMnvIconbuttonElement;
   };
 
+  interface HTMLMnvListCardElement extends Components.MnvListCard, HTMLStencilElement {}
+  var HTMLMnvListCardElement: {
+    prototype: HTMLMnvListCardElement;
+    new (): HTMLMnvListCardElement;
+  };
+
   interface HTMLMnvMarkElement extends Components.MnvMark, HTMLStencilElement {}
   var HTMLMnvMarkElement: {
     prototype: HTMLMnvMarkElement;
@@ -398,6 +405,7 @@ declare global {
     'mnv-grid': HTMLMnvGridElement;
     'mnv-hero': HTMLMnvHeroElement;
     'mnv-iconbutton': HTMLMnvIconbuttonElement;
+    'mnv-list-card': HTMLMnvListCardElement;
     'mnv-mark': HTMLMnvMarkElement;
     'mnv-mob-button': HTMLMnvMobButtonElement;
     'mnv-mob-drawer': HTMLMnvMobDrawerElement;
@@ -496,6 +504,7 @@ declare namespace LocalJSX {
     'disabled'?: boolean;
     'type'?: string;
   }
+  interface MnvListCard extends JSXBase.HTMLAttributes<HTMLMnvListCardElement> {}
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
   interface MnvMobButton extends JSXBase.HTMLAttributes<HTMLMnvMobButtonElement> {
     'open'?: boolean;
@@ -587,6 +596,7 @@ declare namespace LocalJSX {
     'mnv-grid': MnvGrid;
     'mnv-hero': MnvHero;
     'mnv-iconbutton': MnvIconbutton;
+    'mnv-list-card': MnvListCard;
     'mnv-mark': MnvMark;
     'mnv-mob-button': MnvMobButton;
     'mnv-mob-drawer': MnvMobDrawer;
