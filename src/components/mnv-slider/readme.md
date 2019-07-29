@@ -21,7 +21,7 @@
 
 ### Used by
 
- - [app-about](..\sections\app-about)
+ - [app-heropage](..\app-pages\app-heropage)
 
 ### Depends on
 
@@ -39,7 +39,7 @@ graph TD;
   mnv-card --> mnv-paragraph
   mnv-card --> mnv-button
   mnv-title --> mnv-overline
-  app-about --> mnv-slider
+  app-heropage --> mnv-slider
   style mnv-slider fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

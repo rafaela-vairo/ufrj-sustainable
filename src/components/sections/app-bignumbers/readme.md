@@ -7,6 +7,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [app-heropage](..\..\app-pages\app-heropage)
+
 ### Depends on
 
 - [mnv-grid](..\..\layout\mnv-grid)
@@ -21,6 +25,7 @@ graph TD;
   app-bignumbers --> mnv-bignumber
   mnv-title --> mnv-overline
   mnv-bignumber --> mnv-grid
+  app-heropage --> app-bignumbers
   style app-bignumbers fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

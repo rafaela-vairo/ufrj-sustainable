@@ -31,14 +31,15 @@ window.addEventListener('scroll', onScroll, false) */
 @Component({
 	tag: 'mnv-navbar',
 	styleUrl: 'mnv-navbar.scss',
+	shadow: true
 })
 export class MnvNavbar {
 	@Prop({ reflect: true }) setClass: string = ' '
 	@Listen('scroll', { target: 'window' })
 	handleScroll() {
-		if (window.scrollY > (window.innerHeight - 160) ) {
+		if (window.scrollY > window.innerHeight - 160) {
 			this.setClass = 'slideUp'
-		} else if (window.scrollY < (window.innerHeight - 160)) {
+		} else if (window.scrollY < window.innerHeight - 160) {
 			this.setClass = 'slideDown'
 		}
 	}
@@ -47,7 +48,10 @@ export class MnvNavbar {
 		return (
 			<header class={this.setClass} id='header'>
 				<stencil-route-link url='/'>
-					<img class="link-brand" src="../../assets/icon/ufrj-100-anos-branco-horizontal.svg"/>
+					<img
+						class='link-brand'
+						src='../../assets/icon/ufrj-100-anos-branco-horizontal.svg'
+					/>
 				</stencil-route-link>
 				<div class='links'>
 					<stencil-route-link url='/althome/stencil'>

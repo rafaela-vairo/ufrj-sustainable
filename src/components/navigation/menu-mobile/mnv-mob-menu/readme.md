@@ -7,12 +7,17 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type      | Default |
-| -------- | --------- | ----------- | --------- | ------- |
-| `open`   | `open`    |             | `boolean` | `false` |
+| Property   | Attribute   | Description | Type      | Default      |
+| ---------- | ----------- | ----------- | --------- | ------------ |
+| `open`     | `open`      |             | `boolean` | `false`      |
+| `setClass` | `set-class` |             | `string`  | `'menuroot'` |
 
 
 ## Dependencies
+
+### Used by
+
+ - [app-heropage](..\..\..\app-pages\app-heropage)
 
 ### Depends on
 
@@ -24,6 +29,7 @@
 graph TD;
   mnv-mob-menu --> mnv-mob-button
   mnv-mob-menu --> mnv-mob-drawer
+  app-heropage --> mnv-mob-menu
   style mnv-mob-menu fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

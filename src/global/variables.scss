@@ -12,6 +12,7 @@ $mnv-color-primary: rgba(0, 51, 153, 1);
 $mnv-color-primary-light: rgba(90, 122, 255, 1);
 $mnv-color-primary-dark: rgba(2, 34, 86, 1);
 $mnv-color-bg-light: rgba(235, 243, 247, 1);
+$mnv-color-bg-light2: rgba(248, 252, 251, 1);
 $mnv-color-black: rgba(0, 6, 40, 1);
 $mnv-color-white: rgba(248, 252, 251, 1);
 
@@ -42,6 +43,6 @@ $mnv-font-bold: 700;
 $mnv-font-semibold: 600;
 $mnv-font-emphasis: italic;
 
-$mnv-transition-cubic-03: 0.3s cubic-bezier(.25,.8,.25,1);
-$mnv-transition-cubic-02: 0.2s cubic-bezier(.25,.8,.25,1);
-$mnv-transition-cubic-01: 0.1s cubic-bezier(.25,.8,.25,1);
+$mnv-transition-cubic-03: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+$mnv-transition-cubic-02: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+$mnv-transition-cubic-01: 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);

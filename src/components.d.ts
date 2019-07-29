@@ -99,6 +99,7 @@ export namespace Components {
   }
   interface MnvMobMenu {
     'open': boolean;
+    'setClass': string;
   }
   interface MnvNavbar {
     'setClass': string;
@@ -523,6 +524,7 @@ declare namespace LocalJSX {
   }
   interface MnvMobMenu extends JSXBase.HTMLAttributes<HTMLMnvMobMenuElement> {
     'open'?: boolean;
+    'setClass'?: string;
   }
   interface MnvNavbar extends JSXBase.HTMLAttributes<HTMLMnvNavbarElement> {
     'setClass'?: string;

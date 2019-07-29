@@ -7,15 +7,15 @@ export const config: Config = {
 	outputTargets: [
 		{
 			type: 'dist',
-			esmLoaderPath: '../loader',
+			esmLoaderPath: '../loader'
 		},
 		{
-			type: 'docs-readme',
+			type: 'docs-readme'
 		},
 		{
-			type: 'www',
-			serviceWorker: null, // disable service workers
-		},
+			type: 'www'
+			//serviceWorker: null, // disable service workers
+		}
 	],
 	plugins: [
 		sass({
@@ -23,8 +23,8 @@ export const config: Config = {
 				'src/global/variables.scss',
 				'src/global/mixins.scss',
 				'src/global/fonts.scss',
-				'src/global/reset.scss',
-			],
-		}),
-	],
+				'src/global/reset.scss'
+			]
+		})
+	]
 }

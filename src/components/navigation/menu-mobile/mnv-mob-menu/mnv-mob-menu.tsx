@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core'
+import { Component, Prop, Listen, h } from '@stencil/core'
 
 @Component({
 	tag: 'mnv-mob-menu',
@@ -7,6 +7,15 @@ import { Component, Prop, h } from '@stencil/core'
 })
 export class MnvMobMenu {
 	@Prop() open: boolean = false
+	@Prop({ reflect: true }) setClass: string = 'menuroot'
+	@Listen('scroll', { target: 'window' })
+	handleScroll() {
+		if (window.scrollY > window.innerHeight - 160) {
+			this.setClass = 'menuroot slideUp'
+		} else if (window.scrollY < window.innerHeight - 160) {
+			this.setClass = 'menuroot slideDown'
+		}
+	}
 
 	handleMenuClick() {
 		this.open = !this.open
@@ -17,7 +26,7 @@ export class MnvMobMenu {
 
 	render() {
 		return (
-			<div class='menuroot'>
+			<header class={this.setClass}>
 				<mnv-mob-button
 					onClick={() => this.handleMenuClick()}
 					open={this.open}
@@ -42,7 +51,7 @@ export class MnvMobMenu {
 						Ensino
 					</a>
 				</mnv-mob-drawer>
-			</div>
+			</header>
 		)
 	}
 }
