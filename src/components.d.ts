@@ -26,6 +26,7 @@ export namespace Components {
     'href': string;
   }
   interface MnvBase {}
+  interface MnvBg {}
   interface MnvBignumber {}
   interface MnvButton {
     'contained': boolean;
@@ -203,6 +204,12 @@ declare global {
   var HTMLMnvBaseElement: {
     prototype: HTMLMnvBaseElement;
     new (): HTMLMnvBaseElement;
+  };
+
+  interface HTMLMnvBgElement extends Components.MnvBg, HTMLStencilElement {}
+  var HTMLMnvBgElement: {
+    prototype: HTMLMnvBgElement;
+    new (): HTMLMnvBgElement;
   };
 
   interface HTMLMnvBignumberElement extends Components.MnvBignumber, HTMLStencilElement {}
@@ -386,6 +393,7 @@ declare global {
     'app-root': HTMLAppRootElement;
     'mnv-anchor': HTMLMnvAnchorElement;
     'mnv-base': HTMLMnvBaseElement;
+    'mnv-bg': HTMLMnvBgElement;
     'mnv-bignumber': HTMLMnvBignumberElement;
     'mnv-button': HTMLMnvButtonElement;
     'mnv-card': HTMLMnvCardElement;
@@ -434,6 +442,7 @@ declare namespace LocalJSX {
     'href'?: string;
   }
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
+  interface MnvBg extends JSXBase.HTMLAttributes<HTMLMnvBgElement> {}
   interface MnvBignumber extends JSXBase.HTMLAttributes<HTMLMnvBignumberElement> {}
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
@@ -575,6 +584,7 @@ declare namespace LocalJSX {
     'app-root': AppRoot;
     'mnv-anchor': MnvAnchor;
     'mnv-base': MnvBase;
+    'mnv-bg': MnvBg;
     'mnv-bignumber': MnvBignumber;
     'mnv-button': MnvButton;
     'mnv-card': MnvCard;
