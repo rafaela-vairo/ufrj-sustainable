@@ -1,8 +1,23 @@
+@font-face {
+	font-family: 'Fira Code';
+	src: url('https://cdn.jsdelivr.net/npm/firacode@1.206.0/distr/eot/FiraCode-Medium.eot');
+	src: url('https://cdn.jsdelivr.net/npm/firacode@1.206.0/distr/eot/FiraCode-Medium.eot')
+			format('embedded-opentype'),
+		url('https://cdn.jsdelivr.net/npm/firacode@1.206.0/distr/woff2/FiraCode-Medium.woff2')
+			format('woff2'),
+		url('https://cdn.jsdelivr.net/npm/firacode@1.206.0/distr/woff/FiraCode-Medium.woff')
+			format('woff'),
+		url('https://cdn.jsdelivr.net/npm/firacode@1.206.0/distr/ttf/FiraCode-Medium.ttf')
+			format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 :host * {
-    white-space: pre-wrap;
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
-    font-family: 'Fira Code', monospace;
-    @include xl {
+	white-space: pre-wrap;
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	font-family: 'Fira Code', monospace;
+	@include xl {
 		font-size: 21px;
 		line-height: 30px;
 	}

@@ -151,20 +151,6 @@ export namespace Components {
     'label': string;
     'length': string;
   }
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
 }
 
 declare global {
@@ -391,12 +377,6 @@ declare global {
     prototype: HTMLMnvTooltipElement;
     new (): HTMLMnvTooltipElement;
   };
-
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement;
     'app-bignumbers': HTMLAppBignumbersElement;
@@ -435,7 +415,6 @@ declare global {
     'mnv-subtitle': HTMLMnvSubtitleElement;
     'mnv-title': HTMLMnvTitleElement;
     'mnv-tooltip': HTMLMnvTooltipElement;
-    'my-component': HTMLMyComponentElement;
   }
 }
 
@@ -580,20 +559,6 @@ declare namespace LocalJSX {
     'label'?: string;
     'length'?: string;
   }
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
 
   interface IntrinsicElements {
     'app-about': AppAbout;
@@ -633,7 +598,6 @@ declare namespace LocalJSX {
     'mnv-subtitle': MnvSubtitle;
     'mnv-title': MnvTitle;
     'mnv-tooltip': MnvTooltip;
-    'my-component': MyComponent;
   }
 }
 

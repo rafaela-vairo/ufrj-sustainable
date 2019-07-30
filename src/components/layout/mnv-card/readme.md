@@ -9,7 +9,7 @@
 
 | Property    | Attribute   | Description | Type     | Default     |
 | ----------- | ----------- | ----------- | -------- | ----------- |
-| `button`    | `button`    |             | `any`    | `undefined` |
+| `button`    | `button`    |             | `string` | `undefined` |
 | `cardtitle` | `cardtitle` |             | `any`    | `undefined` |
 | `overline`  | `overline`  |             | `any`    | `undefined` |
 | `subtitle`  | `subtitle`  |             | `any`    | `undefined` |
@@ -20,6 +20,7 @@
 
 ### Used by
 
+ - [mnv-list-card](..\..\mnv-list-card)
  - [mnv-slider](..\..\mnv-slider)
 
 ### Depends on
@@ -39,6 +40,7 @@ graph TD;
   mnv-card --> mnv-paragraph
   mnv-card --> mnv-button
   mnv-title --> mnv-overline
+  mnv-list-card --> mnv-card
   mnv-slider --> mnv-card
   style mnv-card fill:#f9f,stroke:#333,stroke-width:4px
 ```

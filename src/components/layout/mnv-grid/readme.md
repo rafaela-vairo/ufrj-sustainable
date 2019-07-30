@@ -25,22 +25,22 @@
 
  - [app-about](..\..\sections\app-about)
  - [app-bignumbers](..\..\sections\app-bignumbers)
- - [app-heropage](..\..\app-pages\app-heropage)
  - [app-home](..\..\app-pages\app-home)
  - [mnv-bignumber](..\mnv-bignumber)
  - [mnv-footer](..\mnv-footer)
  - [mnv-hero](..\mnv-hero)
+ - [mnv-list-card](..\..\mnv-list-card)
 
 ### Graph
 ```mermaid
 graph TD;
   app-about --> mnv-grid
   app-bignumbers --> mnv-grid
-  app-heropage --> mnv-grid
   app-home --> mnv-grid
   mnv-bignumber --> mnv-grid
   mnv-footer --> mnv-grid
   mnv-hero --> mnv-grid
+  mnv-list-card --> mnv-grid
   style mnv-grid fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

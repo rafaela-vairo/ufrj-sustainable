@@ -3,7 +3,6 @@ import { sass } from '@stencil/sass'
 
 export const config: Config = {
 	namespace: 'mnv-ds',
-	globalScript: 'src/global/scripts.ts',
 	outputTargets: [
 		{
 			type: 'dist',
@@ -13,18 +12,16 @@ export const config: Config = {
 			type: 'docs-readme'
 		},
 		{
-			type: 'www'
+			type: 'www',
 			//serviceWorker: null, // disable service workers
+			serviceWorker: {
+				globPatterns: ['**/*.{js,css,json,html,ico,png}']
+			}
 		}
 	],
 	plugins: [
 		sass({
-			injectGlobalPaths: [
-				'src/global/variables.scss',
-				'src/global/mixins.scss',
-				'src/global/fonts.scss',
-				'src/global/reset.scss'
-			]
+			injectGlobalPaths: ['src/global/variables.scss', 'src/global/mixins.scss']
 		})
 	]
 }

@@ -21,13 +21,11 @@
 
 ### Depends on
 
-- stencil-route-link
 - [mnv-navbutton](..\mnv-navbutton)
 
 ### Graph
 ```mermaid
 graph TD;
-  mnv-navbar --> stencil-route-link
   mnv-navbar --> mnv-navbutton
   app-heropage --> mnv-navbar
   app-home --> mnv-navbar

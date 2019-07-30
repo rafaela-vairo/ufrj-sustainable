@@ -1,0 +1,43 @@
+# mnv-list-card
+
+
+
+<!-- Auto Generated Below -->
+
+
+## Properties
+
+| Property   | Attribute | Description | Type    | Default     |
+| ---------- | --------- | ----------- | ------- | ----------- |
+| `contents` | --        |             | `any[]` | `undefined` |
+
+
+## Dependencies
+
+### Used by
+
+ - [app-heropage](..\app-pages\app-heropage)
+
+### Depends on
+
+- [mnv-grid](..\layout\mnv-grid)
+- [mnv-card](..\layout\mnv-card)
+
+### Graph
+```mermaid
+graph TD;
+  mnv-list-card --> mnv-grid
+  mnv-list-card --> mnv-card
+  mnv-card --> mnv-title
+  mnv-card --> mnv-subtitle
+  mnv-card --> mnv-divider
+  mnv-card --> mnv-paragraph
+  mnv-card --> mnv-button
+  mnv-title --> mnv-overline
+  app-heropage --> mnv-list-card
+  style mnv-list-card fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

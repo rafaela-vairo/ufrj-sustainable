@@ -37,7 +37,6 @@ graph TD;
   app-home --> mnv-button
   app-home --> mnv-title
   app-home --> mnv-figure-caption
-  mnv-navbar --> stencil-route-link
   mnv-navbar --> mnv-navbutton
   mnv-title --> mnv-overline
   style app-home fill:#f9f,stroke:#333,stroke-width:4px

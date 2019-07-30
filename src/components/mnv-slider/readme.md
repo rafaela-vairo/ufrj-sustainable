@@ -19,10 +19,6 @@
 
 ## Dependencies
 
-### Used by
-
- - [app-heropage](..\app-pages\app-heropage)
-
 ### Depends on
 
 - [mnv-slide](..\mnv-slide)
@@ -39,7 +35,6 @@ graph TD;
   mnv-card --> mnv-paragraph
   mnv-card --> mnv-button
   mnv-title --> mnv-overline
-  app-heropage --> mnv-slider
   style mnv-slider fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -5,6 +5,13 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property    | Attribute | Description | Type    | Default     |
+| ----------- | --------- | ----------- | ------- | ----------- |
+| `locations` | --        |             | `any[]` | `undefined` |
+
+
 ## Dependencies
 
 ### Depends on

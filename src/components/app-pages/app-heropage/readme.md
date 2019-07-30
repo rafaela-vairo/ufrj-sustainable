@@ -22,8 +22,7 @@
 - [mnv-hero](..\..\layout\mnv-hero)
 - [mnv-bg](..\..\mnv-bg)
 - [app-about](..\..\sections\app-about)
-- [mnv-grid](..\..\layout\mnv-grid)
-- [mnv-slider](..\..\mnv-slider)
+- [mnv-list-card](..\..\mnv-list-card)
 - [app-bignumbers](..\..\sections\app-bignumbers)
 
 ### Graph
@@ -35,10 +34,8 @@ graph TD;
   app-heropage --> mnv-hero
   app-heropage --> mnv-bg
   app-heropage --> app-about
-  app-heropage --> mnv-grid
-  app-heropage --> mnv-slider
+  app-heropage --> mnv-list-card
   app-heropage --> app-bignumbers
-  mnv-navbar --> stencil-route-link
   mnv-navbar --> mnv-navbutton
   mnv-mob-menu --> mnv-mob-button
   mnv-mob-menu --> mnv-mob-drawer
@@ -49,8 +46,8 @@ graph TD;
   app-about --> mnv-grid
   app-about --> mnv-title
   app-about --> mnv-paragraph
-  mnv-slider --> mnv-slide
-  mnv-slider --> mnv-card
+  mnv-list-card --> mnv-grid
+  mnv-list-card --> mnv-card
   mnv-card --> mnv-title
   mnv-card --> mnv-subtitle
   mnv-card --> mnv-divider
