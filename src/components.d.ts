@@ -68,7 +68,9 @@ export namespace Components {
     'italictext': boolean;
     'src': string;
   }
-  interface MnvFooter {}
+  interface MnvFooter {
+    'locations': any[];
+  }
   interface MnvGrid {
     'container': boolean;
     'indented': boolean;
@@ -495,7 +497,9 @@ declare namespace LocalJSX {
     'italictext'?: boolean;
     'src'?: string;
   }
-  interface MnvFooter extends JSXBase.HTMLAttributes<HTMLMnvFooterElement> {}
+  interface MnvFooter extends JSXBase.HTMLAttributes<HTMLMnvFooterElement> {
+    'locations'?: any[];
+  }
   interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
     'container'?: boolean;
     'indented'?: boolean;
