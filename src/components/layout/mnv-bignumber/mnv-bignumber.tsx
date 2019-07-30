@@ -3,10 +3,10 @@ import _ from 'lodash'
 
 let numbers = [
 	{ number: '52.333', priority: '3', text: 'estudantes de graduação' },
-	{ number: '15.346', priority: '3', text: 'estudantes de pós-graduação' },
+	{ number: '15.346', priority: '3', text: 'estudantes de pós‑graduação' },
 	{ number: '176', priority: '3', text: 'cursos de graduação' },
 	{ number: '48', priority: '3', text: 'cursos noturnos' },
-	{ number: '132', priority: '3', text: 'programas de pós-graduação' },
+	{ number: '132', priority: '3', text: 'programas de pós‑graduação' },
 	{ number: '3', priority: '2', text: 'graduações a distância' },
 	{ number: '5', priority: '3', text: 'institutos de atenção à saúde' },
 	{ number: '1.200', priority: '2', text: 'laboratórios' },

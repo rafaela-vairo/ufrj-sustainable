@@ -28,10 +28,10 @@ export class AppHeropage {
 						<app-about id='about' />
 					</div>
 					<div>
-						<app-bignumbers id='numeros' />
+						<mnv-list-card />
 					</div>
 					<div>
-						<mnv-list-card />
+						<app-bignumbers id='numeros' />
 					</div>
 				</mnv-bg>
 			</div>

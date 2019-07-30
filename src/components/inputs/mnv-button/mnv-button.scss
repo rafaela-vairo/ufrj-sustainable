@@ -49,7 +49,7 @@ button {
 			right: 51%;
 		}
 	}
-	
+
 	&.outlined {
 		color: $mnv-color-white;
 		position: relative;
@@ -95,18 +95,30 @@ button {
 		}
 		@include xl {
 			padding: 19.5px;
+			min-width: 90;
+			margin: 15;
+			font-size: 23px;
 		}
 		@include lg {
 			padding: 17.5px;
+			min-width: 81;
+			margin: 13.5;
+			font-size: 21px;
 		}
 		@include md {
 			padding: 16.5px;
+			min-width: 75;
+			margin: 12.5;
+			font-size: 19px;
 		}
 		@include sm {
 			padding: 15px;
+			min-width: 69;
+			margin: 11.5;
+			font-size: 18px;
 		}
 	}
-	
+
 	&.contained {
 		background-color: $mnv-color-primary;
 		color: $mnv-text-light;
