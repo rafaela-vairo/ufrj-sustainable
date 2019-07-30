@@ -89,7 +89,9 @@ export namespace Components {
     'disabled': boolean;
     'type': string;
   }
-  interface MnvListCard {}
+  interface MnvListCard {
+    'contents': any[];
+  }
   interface MnvMark {}
   interface MnvMobButton {
     'open': boolean;
@@ -514,7 +516,9 @@ declare namespace LocalJSX {
     'disabled'?: boolean;
     'type'?: string;
   }
-  interface MnvListCard extends JSXBase.HTMLAttributes<HTMLMnvListCardElement> {}
+  interface MnvListCard extends JSXBase.HTMLAttributes<HTMLMnvListCardElement> {
+    'contents'?: any[];
+  }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
   interface MnvMobButton extends JSXBase.HTMLAttributes<HTMLMnvMobButtonElement> {
     'open'?: boolean;

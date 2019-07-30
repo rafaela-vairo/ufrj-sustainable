@@ -3,7 +3,8 @@ import { Component, h, Prop } from '@stencil/core'
 
 @Component({
 	tag: 'mnv-list-card',
-	styleUrl: 'mnv-list-card.scss',
+    styleUrl: 'mnv-list-card.scss',
+    shadow: true,
 })
 export class MnvListCard {
 	@Prop() contents: any[]
@@ -25,12 +26,12 @@ export class MnvListCard {
 		return (
 			<mnv-grid container>
 				{this.contents.map((content, key) => (
-					<mnv-grid key={key} item sm='12' md='6' lg='4' xl='4' class='align'>
+					<mnv-grid item key={key} sm='12' md='6' lg='4' xl='4' class="align">
 						<mnv-card
 							cardtitle={content.title}
 							subtitle={content.subtitle}
-							button='Veja Mais'
-							width={100}
+                            button='Veja Mais'
+                            class="card"
 						>
 							{content.text}
 						</mnv-card>

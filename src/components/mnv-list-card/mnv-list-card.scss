@@ -1,6 +1,19 @@
 :host > * {
 
-    .align {
+    @include xl {
+        padding-left: 285px !important;
+        padding-right: 285px !important;
+    }
+    @include lg {
+        padding-left: 209px !important;
+        padding-right: 209px !important;
+    }
+
+    mnv-grid.grid-item {
         justify-content: center;
+    }
+
+    mnv-card {
+        flex: 1;
     }
 }
