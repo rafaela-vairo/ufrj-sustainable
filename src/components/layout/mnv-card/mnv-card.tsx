@@ -9,7 +9,7 @@ export class MnvCard {
 	@Prop({ reflect: true }) overline: any
 	@Prop() cardtitle: any
 	@Prop() subtitle: any
-	@Prop() button: any
+	@Prop() button: string
 	@Prop() width: number
 
 	render() {
