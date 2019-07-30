@@ -11,7 +11,7 @@ export class MnvFooter {
 				<mnv-grid item sm='12' md='4'>
 					<mnv-figure
 						alt='Mapa da UFRJ'
-						src='https://taiga.tic.ufrj.br/media/attachments/7/d/8/e/500f0b768c01773b1ceddab8d3143526bf8a1c44afca7ff78dc1b799126c/mapa_campi_ufrj2.svg.300x200_q85_crop.png'
+						src='https://taiga.tic.ufrj.br/media/attachments/a/0/3/4/c444d3a27896dac18b8ffe71aefdb419212828b35b2e3c083f1afd0dc7a3/mapa_campi_ufrj2.svg.300x200_q85_crop.png'
 					/>
 				</mnv-grid>
 				<mnv-grid item sm='12' md='4'>

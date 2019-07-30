@@ -21,6 +21,10 @@ footer {
 		margin-top: 30px;
 	}
 
+	mnv-grid.grid-item:first-child {
+		justify-content: center;
+	}
+
 	mnv-figure {
 		margin: auto;
 	}

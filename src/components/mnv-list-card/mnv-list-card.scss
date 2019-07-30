@@ -1,3 +1,6 @@
-mnv-list-card {
-    /* Component styles go here */
+:host > * {
+
+    .align {
+        justify-content: center;
+    }
 }
