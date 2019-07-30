@@ -9,12 +9,10 @@ export class AppBignumbers {
 	render() {
 		return (
 			<Host>
-				<mnv-grid item xl='12' md='12' indented>
+				<div id='title'>
 					<mnv-title level='h1'>UFRJ em números</mnv-title>
-				</mnv-grid>
-				<mnv-grid item xl='12' md='12'>
-					<mnv-bignumber />
-				</mnv-grid>
+				</div>
+				<mnv-bignumber />
 			</Host>
 		)
 	}

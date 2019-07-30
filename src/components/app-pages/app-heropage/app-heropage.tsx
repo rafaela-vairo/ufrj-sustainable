@@ -24,8 +24,12 @@ export class AppHeropage {
 					universidade federal do Brasil
 				</mnv-hero>
 				<mnv-bg>
-					<app-about id='about' />
-					<app-bignumbers id='numeros' />
+					<div>
+						<app-about id='about' />
+					</div>
+					<div>
+						<app-bignumbers id='numeros' />
+					</div>
 				</mnv-bg>
 			</div>
 		)

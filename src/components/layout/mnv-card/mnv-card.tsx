@@ -3,7 +3,7 @@ import { Component, h, Prop } from '@stencil/core'
 @Component({
 	tag: 'mnv-card',
 	styleUrl: 'mnv-card.scss',
-	shadow: true
+	shadow: true,
 })
 export class MnvCard {
 	@Prop({ reflect: true }) overline: any
