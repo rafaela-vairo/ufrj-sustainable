@@ -1,3 +1,7 @@
+a {
+	text-decoration: none;
+}
+
 .menuroot {
 	position: fixed;
 	top: 0;
@@ -25,10 +29,57 @@
 }
 
 .menuitem {
-	font-family: $mnv-font-alegreya-sans-sc;
-	text-transform: lowercase;
-	font-size: 26px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
 	color: $mnv-color-primary;
+	text-transform: lowercase;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $mnv-font-alegreya-sans-sc;
+	font-size: 26px;
+	letter-spacing: 1px;
+	margin-bottom: 23px;
+	border-radius: 3px;
+	border: none;
+	vertical-align: middle;
+	transition: all $mnv-transition-cubic-03;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 51%;
+		right: 51%;
+		bottom: 2px;
+		background: $mnv-color-primary-light;
+		height: 2px;
+		transition-property: left, right;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
+	&.marginzero {
+		margin: 0px !important;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+		color: $mnv-color-primary-light;
+		&:before {
+			left: 0;
+			right: 0;
+		}
+	}
+	&:disabled,
+	&:disabled > *,
+	&:disabled:hover,
+	&:disabled:active {
+		cursor: default;
+		color: rgba($mnv-text-dark, 0.4);
+		&:before {
+			left: 51%;
+			right: 51%;
+		}
+	}
 }
 
 img.link-brand {

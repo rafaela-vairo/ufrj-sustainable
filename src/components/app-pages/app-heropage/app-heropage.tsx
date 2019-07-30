@@ -3,7 +3,7 @@ import { MatchResults } from '@stencil/router'
 
 @Component({
 	tag: 'app-heropage',
-	styleUrl: 'app-heropage.scss'
+	styleUrl: 'app-heropage.scss',
 })
 export class AppHeropage {
 	@Prop() match: MatchResults
@@ -15,6 +15,7 @@ export class AppHeropage {
 				<mnv-navbar />
 				<mnv-mob-menu />
 				<mnv-hero
+					id='home'
 					herotitle='UFRJ Sustentável'
 					button='Saiba mais'
 					bgimg='https://panorama.ufrj.br/wp-content/uploads/2019/05/DSC_0057-1215x810.jpg'
@@ -23,13 +24,8 @@ export class AppHeropage {
 					universidade federal do Brasil
 				</mnv-hero>
 				<mnv-bg>
-					<app-about />
-					<mnv-grid container>
-						<mnv-grid item xl='12' md='12' indented>
-							<mnv-slider />
-						</mnv-grid>
-					</mnv-grid>
-					<app-bignumbers />
+					<app-about id='about' />
+					<app-bignumbers id='numeros' />
 				</mnv-bg>
 			</div>
 		)

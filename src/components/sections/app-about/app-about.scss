@@ -1,3 +1,9 @@
 .about-root {
 	width: 100%;
+	@include md {
+		padding-top: 70px;
+	}
+	@include sm {
+		padding-top: 70px;
+	}
 }
