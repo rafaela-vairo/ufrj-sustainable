@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core'
+import { Component, h } from '@stencil/core'
 
 @Component({
 	tag: 'app-bignumbers',
@@ -8,12 +8,24 @@ import { Component, Host, h } from '@stencil/core'
 export class AppBignumbers {
 	render() {
 		return (
-			<Host>
-				<div id='title'>
+			<div>
+				{/* <div id='title'>
 					<mnv-title level='h1'>UFRJ em números</mnv-title>
 				</div>
-				<mnv-bignumber />
-			</Host>
+				<mnv-bignumber /> */}
+				<mnv-grid container>
+					<mnv-grid item xl='2' />
+					<mnv-grid item xl='8'>
+						<mnv-title level='h1'>UFRJ em números</mnv-title>
+					</mnv-grid>
+					<mnv-grid item xl='2' />
+					<mnv-grid item xl='2' />
+					<mnv-grid item xl='8'>
+						<mnv-bignumber />
+					</mnv-grid>
+					<mnv-grid item xl='2' />
+				</mnv-grid>
+			</div>
 		)
 	}
 }

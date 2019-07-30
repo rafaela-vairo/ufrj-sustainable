@@ -1,3 +1,6 @@
+.alternating > div:nth-of-type(even) {
+	background-color: $mnv-color-bg-light2 !important;
+}
 .alternating > div:nth-of-type(odd) {
 	background-color: $mnv-color-bg-light !important;
 }
