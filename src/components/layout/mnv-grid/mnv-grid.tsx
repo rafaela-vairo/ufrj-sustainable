@@ -5,14 +5,15 @@ import { Component, Prop, Host, h } from '@stencil/core'
 	styleUrl: 'mnv-grid.scss',
 })
 export class MnvGrid {
-	@Prop({ reflect: true }) spacing: number
-	@Prop({ reflect: true }) container: boolean
-	@Prop({ reflect: true }) item: boolean
-	@Prop({ reflect: true }) xl: string
-	@Prop({ reflect: true }) lg: string
-	@Prop({ reflect: true }) md: string
-	@Prop({ reflect: true }) sm: string
-	@Prop({ reflect: true }) indented: boolean
+	@Prop() spacing: number
+	@Prop() container: boolean
+	@Prop() item: boolean
+	@Prop() xl: string
+	@Prop() lg: string
+	@Prop() md: string
+	@Prop() sm: string
+	@Prop() block: boolean
+	@Prop() indented: boolean
 	render() {
 		let spacing = this.spacing ? `grid-spacing-${this.spacing} ` : ''
 		let xl = this.xl ? `grid-xl-${this.xl} ` : ''
@@ -22,7 +23,9 @@ export class MnvGrid {
 		let container = this.container && !this.item ? 'grid-container ' : ''
 		let item = this.item && !this.container ? 'grid-item ' : ''
 		let indented = this.indented ? `indented` : ''
-		let genClass = xl + lg + md + sm + container + item + spacing + indented
+		let block = this.block ? `block` : ''
+		let genClass =
+			xl + lg + md + sm + container + item + spacing + indented + block
 		return (
 			<Host class={genClass}>
 				<slot />

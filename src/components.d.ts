@@ -14,7 +14,6 @@ export namespace Components {
   interface AppAbout {
     'maintext': string;
     'maintitle': string;
-    'width': number;
   }
   interface AppBignumbers {}
   interface AppHeropage {
@@ -72,6 +71,7 @@ export namespace Components {
     'locations': any[];
   }
   interface MnvGrid {
+    'block': boolean;
     'container': boolean;
     'indented': boolean;
     'item': boolean;
@@ -422,7 +422,6 @@ declare namespace LocalJSX {
   interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {
     'maintext'?: string;
     'maintitle'?: string;
-    'width'?: number;
   }
   interface AppBignumbers extends JSXBase.HTMLAttributes<HTMLAppBignumbersElement> {}
   interface AppHeropage extends JSXBase.HTMLAttributes<HTMLAppHeropageElement> {
@@ -480,6 +479,7 @@ declare namespace LocalJSX {
     'locations'?: any[];
   }
   interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
+    'block'?: boolean;
     'container'?: boolean;
     'indented'?: boolean;
     'item'?: boolean;

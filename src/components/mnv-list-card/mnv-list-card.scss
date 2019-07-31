@@ -1,19 +1,31 @@
 :host > * {
+	@include xl {
+		padding-left: calc(300px * 1.3) !important;
+		padding-right: calc(300px * 1.3) !important;
+	}
+	@include lg {
+		padding-left: calc(209px * 1.27) !important;
+		padding-right: calc(209px * 1.27) !important;
+	}
 
-    @include xl {
-        padding-left: calc(285px * 1.3) !important;
-        padding-right: calc(285px * 1.3) !important;
-    }
-    @include lg {
-        padding-left: calc(209px * 1.27) !important;
-        padding-right: calc(209px * 1.27) !important;
-    }
+	.card-root {
+		justify-content: center;
+	}
 
-    mnv-grid.grid-item {
-        justify-content: center;
-    }
+	.card-title {
+		margin-bottom: 34px;
+	}
 
-    mnv-card {
-        flex: 1;
-    }
+	mnv-grid.grid-item {
+		padding: 0;
+	}
+
+	mnv-card {
+		flex: 1;
+		margin: -15px;
+	}
+
+	mnv-title {
+		margin-left: 15px;
+	}
 }

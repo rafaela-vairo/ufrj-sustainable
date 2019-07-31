@@ -1,6 +1,6 @@
 :host {
 	font-family: $mnv-font-alegreya-sans;
-	&.capitular::first-letter {
+	.capitular::first-letter {
 		font-family: $mnv-font-playfair-display;
 		float: left;
 		@include xl {
