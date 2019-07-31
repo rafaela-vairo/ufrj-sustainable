@@ -1,4 +1,4 @@
-# app-about
+# mnv-about
 
 
 
@@ -29,12 +29,12 @@
 ### Graph
 ```mermaid
 graph TD;
-  app-about --> mnv-grid
-  app-about --> mnv-title
-  app-about --> mnv-paragraph
+  mnv-about --> mnv-grid
+  mnv-about --> mnv-title
+  mnv-about --> mnv-paragraph
   mnv-title --> mnv-overline
-  app-heropage --> app-about
-  style app-about fill:#f9f,stroke:#333,stroke-width:4px
+  app-heropage --> mnv-about
+  style mnv-about fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

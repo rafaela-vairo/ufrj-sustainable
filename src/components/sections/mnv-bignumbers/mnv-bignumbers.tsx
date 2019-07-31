@@ -1,8 +1,8 @@
 import { Component, h } from '@stencil/core'
 
 @Component({
-	tag: 'app-bignumbers',
-	styleUrl: 'app-bignumbers.scss',
+	tag: 'mnv-bignumbers',
+	styleUrl: 'mnv-bignumbers.scss',
 	shadow: true,
 })
 export class AppBignumbers {

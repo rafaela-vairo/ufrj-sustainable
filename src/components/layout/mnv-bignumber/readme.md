@@ -9,7 +9,7 @@
 
 ### Used by
 
- - [app-bignumbers](..\..\sections\app-bignumbers)
+ - [mnv-bignumbers](..\..\sections\mnv-bignumbers)
 
 ### Depends on
 
@@ -19,7 +19,7 @@
 ```mermaid
 graph TD;
   mnv-bignumber --> mnv-grid
-  app-bignumbers --> mnv-bignumber
+  mnv-bignumbers --> mnv-bignumber
   style mnv-bignumber fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

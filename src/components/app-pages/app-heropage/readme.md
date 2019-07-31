@@ -1,9 +1,6 @@
 # app-heropage
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -11,21 +8,21 @@
 | -------- | --------- | ----------- | -------------- | ----------- |
 | `match`  | --        |             | `MatchResults` | `undefined` |
 
-
 ## Dependencies
 
 ### Depends on
 
-- [mnv-base](..\..\layout\mnv-base)
-- [mnv-navbar](..\..\navigation\mnv-navbar)
-- [mnv-mob-menu](..\..\navigation\menu-mobile\mnv-mob-menu)
-- [mnv-hero](..\..\layout\mnv-hero)
-- [mnv-bg](..\..\mnv-bg)
-- [app-about](..\..\sections\app-about)
-- [mnv-list-card](..\..\mnv-list-card)
-- [app-bignumbers](..\..\sections\app-bignumbers)
+- [mnv-base](....\layout\mnv-base)
+- [mnv-navbar](....\navigation\mnv-navbar)
+- [mnv-mob-menu](....\navigation\menu-mobile\mnv-mob-menu)
+- [mnv-hero](....\layout\mnv-hero)
+- [mnv-bg](....\mnv-bg)
+- [mnv-about](....\sections\mnv-about)
+- [mnv-list-card](....\mnv-list-card)
+- [mnv-bignumbers](....\sections\mnv-bignumbers)
 
 ### Graph
+
 ```mermaid
 graph TD;
   app-heropage --> mnv-base
@@ -33,9 +30,9 @@ graph TD;
   app-heropage --> mnv-mob-menu
   app-heropage --> mnv-hero
   app-heropage --> mnv-bg
-  app-heropage --> app-about
+  app-heropage --> mnv-about
   app-heropage --> mnv-list-card
-  app-heropage --> app-bignumbers
+  app-heropage --> mnv-bignumbers
   mnv-navbar --> mnv-navbutton
   mnv-mob-menu --> mnv-mob-button
   mnv-mob-menu --> mnv-mob-drawer
@@ -43,9 +40,9 @@ graph TD;
   mnv-hero --> mnv-title
   mnv-hero --> mnv-button
   mnv-title --> mnv-overline
-  app-about --> mnv-grid
-  app-about --> mnv-title
-  app-about --> mnv-paragraph
+  mnv-about --> mnv-grid
+  mnv-about --> mnv-title
+  mnv-about --> mnv-paragraph
   mnv-list-card --> mnv-grid
   mnv-list-card --> mnv-card
   mnv-card --> mnv-title
@@ -53,13 +50,13 @@ graph TD;
   mnv-card --> mnv-divider
   mnv-card --> mnv-paragraph
   mnv-card --> mnv-button
-  app-bignumbers --> mnv-grid
-  app-bignumbers --> mnv-title
-  app-bignumbers --> mnv-bignumber
+  mnv-bignumbers --> mnv-grid
+  mnv-bignumbers --> mnv-title
+  mnv-bignumbers --> mnv-bignumber
   mnv-bignumber --> mnv-grid
   style app-heropage fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

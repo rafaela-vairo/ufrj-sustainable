@@ -17,7 +17,7 @@
 
 ### Used by
 
- - [app-about](..\..\sections\app-about)
+ - [mnv-about](..\..\sections\mnv-about)
  - [app-home](..\..\app-pages\app-home)
  - [mnv-card](..\..\layout\mnv-card)
  - [mnv-footer](..\..\layout\mnv-footer)
@@ -25,7 +25,7 @@
 ### Graph
 ```mermaid
 graph TD;
-  app-about --> mnv-paragraph
+  mnv-about --> mnv-paragraph
   app-home --> mnv-paragraph
   mnv-card --> mnv-paragraph
   mnv-footer --> mnv-paragraph

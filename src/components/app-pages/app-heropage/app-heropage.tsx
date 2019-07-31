@@ -25,11 +25,13 @@ export class AppHeropage {
 				</mnv-hero>
 				<mnv-bg>
 					<div>
-						<app-about id='about' />
+						<mnv-about id='about' />
 					</div>
-
 					<div>
-						<app-bignumbers id='numeros' />
+						<mnv-expositor />
+					</div>
+					<div>
+						<mnv-bignumbers id='numeros' />
 					</div>
 					<div>
 						<mnv-list-card />

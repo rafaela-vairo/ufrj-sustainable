@@ -1,9 +1,6 @@
 # mnv-grid
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -18,24 +15,24 @@
 | `spacing`   | `spacing`   |             | `number`  | `undefined` |
 | `xl`        | `xl`        |             | `string`  | `undefined` |
 
-
 ## Dependencies
 
 ### Used by
 
- - [app-about](..\..\sections\app-about)
- - [app-bignumbers](..\..\sections\app-bignumbers)
- - [app-home](..\..\app-pages\app-home)
- - [mnv-bignumber](..\mnv-bignumber)
- - [mnv-footer](..\mnv-footer)
- - [mnv-hero](..\mnv-hero)
- - [mnv-list-card](..\..\mnv-list-card)
+- [mnv-about](....\sections\mnv-about)
+- [mnv-bignumbers](....\sections\mnv-bignumbers)
+- [app-home](....\app-pages\app-home)
+- [mnv-bignumber](..\mnv-bignumber)
+- [mnv-footer](..\mnv-footer)
+- [mnv-hero](..\mnv-hero)
+- [mnv-list-card](....\mnv-list-card)
 
 ### Graph
+
 ```mermaid
 graph TD;
-  app-about --> mnv-grid
-  app-bignumbers --> mnv-grid
+  mnv-about --> mnv-grid
+  mnv-bignumbers --> mnv-grid
   app-home --> mnv-grid
   mnv-bignumber --> mnv-grid
   mnv-footer --> mnv-grid
@@ -44,6 +41,6 @@ graph TD;
   style mnv-grid fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

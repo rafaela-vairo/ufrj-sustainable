@@ -1,4 +1,4 @@
-# app-bignumbers
+# mnv-bignumbers
 
 
 
@@ -20,13 +20,13 @@
 ### Graph
 ```mermaid
 graph TD;
-  app-bignumbers --> mnv-grid
-  app-bignumbers --> mnv-title
-  app-bignumbers --> mnv-bignumber
+  mnv-bignumbers --> mnv-grid
+  mnv-bignumbers --> mnv-title
+  mnv-bignumbers --> mnv-bignumber
   mnv-title --> mnv-overline
   mnv-bignumber --> mnv-grid
-  app-heropage --> app-bignumbers
-  style app-bignumbers fill:#f9f,stroke:#333,stroke-width:4px
+  app-heropage --> mnv-bignumbers
+  style mnv-bignumbers fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

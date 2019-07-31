@@ -11,22 +11,22 @@ import {
 } from '@stencil/router';
 
 export namespace Components {
-  interface AppAbout {
-    'maintext': string;
-    'maintitle': string;
-  }
-  interface AppBignumbers {}
   interface AppHeropage {
     'match': MatchResults;
   }
   interface AppHome {}
   interface AppRoot {}
+  interface MnvAbout {
+    'maintext': string;
+    'maintitle': string;
+  }
   interface MnvAnchor {
     'href': string;
   }
   interface MnvBase {}
   interface MnvBg {}
   interface MnvBignumber {}
+  interface MnvBignumbers {}
   interface MnvButton {
     'contained': boolean;
     'disabled': boolean;
@@ -53,6 +53,10 @@ export namespace Components {
     'xs': number;
   }
   interface MnvDivider {}
+  interface MnvExpositor {
+    'maintext': string;
+    'maintitle': string;
+  }
   interface MnvFigure {
     'alt': string;
     'src': string;
@@ -156,18 +160,6 @@ export namespace Components {
 declare global {
 
 
-  interface HTMLAppAboutElement extends Components.AppAbout, HTMLStencilElement {}
-  var HTMLAppAboutElement: {
-    prototype: HTMLAppAboutElement;
-    new (): HTMLAppAboutElement;
-  };
-
-  interface HTMLAppBignumbersElement extends Components.AppBignumbers, HTMLStencilElement {}
-  var HTMLAppBignumbersElement: {
-    prototype: HTMLAppBignumbersElement;
-    new (): HTMLAppBignumbersElement;
-  };
-
   interface HTMLAppHeropageElement extends Components.AppHeropage, HTMLStencilElement {}
   var HTMLAppHeropageElement: {
     prototype: HTMLAppHeropageElement;
@@ -184,6 +176,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLMnvAboutElement extends Components.MnvAbout, HTMLStencilElement {}
+  var HTMLMnvAboutElement: {
+    prototype: HTMLMnvAboutElement;
+    new (): HTMLMnvAboutElement;
   };
 
   interface HTMLMnvAnchorElement extends Components.MnvAnchor, HTMLStencilElement {}
@@ -208,6 +206,12 @@ declare global {
   var HTMLMnvBignumberElement: {
     prototype: HTMLMnvBignumberElement;
     new (): HTMLMnvBignumberElement;
+  };
+
+  interface HTMLMnvBignumbersElement extends Components.MnvBignumbers, HTMLStencilElement {}
+  var HTMLMnvBignumbersElement: {
+    prototype: HTMLMnvBignumbersElement;
+    new (): HTMLMnvBignumbersElement;
   };
 
   interface HTMLMnvButtonElement extends Components.MnvButton, HTMLStencilElement {}
@@ -238,6 +242,12 @@ declare global {
   var HTMLMnvDividerElement: {
     prototype: HTMLMnvDividerElement;
     new (): HTMLMnvDividerElement;
+  };
+
+  interface HTMLMnvExpositorElement extends Components.MnvExpositor, HTMLStencilElement {}
+  var HTMLMnvExpositorElement: {
+    prototype: HTMLMnvExpositorElement;
+    new (): HTMLMnvExpositorElement;
   };
 
   interface HTMLMnvFigureElement extends Components.MnvFigure, HTMLStencilElement {}
@@ -378,20 +388,21 @@ declare global {
     new (): HTMLMnvTooltipElement;
   };
   interface HTMLElementTagNameMap {
-    'app-about': HTMLAppAboutElement;
-    'app-bignumbers': HTMLAppBignumbersElement;
     'app-heropage': HTMLAppHeropageElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
+    'mnv-about': HTMLMnvAboutElement;
     'mnv-anchor': HTMLMnvAnchorElement;
     'mnv-base': HTMLMnvBaseElement;
     'mnv-bg': HTMLMnvBgElement;
     'mnv-bignumber': HTMLMnvBignumberElement;
+    'mnv-bignumbers': HTMLMnvBignumbersElement;
     'mnv-button': HTMLMnvButtonElement;
     'mnv-card': HTMLMnvCardElement;
     'mnv-col': HTMLMnvColElement;
     'mnv-container': HTMLMnvContainerElement;
     'mnv-divider': HTMLMnvDividerElement;
+    'mnv-expositor': HTMLMnvExpositorElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
     'mnv-footer': HTMLMnvFooterElement;
@@ -419,22 +430,22 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {
-    'maintext'?: string;
-    'maintitle'?: string;
-  }
-  interface AppBignumbers extends JSXBase.HTMLAttributes<HTMLAppBignumbersElement> {}
   interface AppHeropage extends JSXBase.HTMLAttributes<HTMLAppHeropageElement> {
     'match'?: MatchResults;
   }
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
   interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {}
+  interface MnvAbout extends JSXBase.HTMLAttributes<HTMLMnvAboutElement> {
+    'maintext'?: string;
+    'maintitle'?: string;
+  }
   interface MnvAnchor extends JSXBase.HTMLAttributes<HTMLMnvAnchorElement> {
     'href'?: string;
   }
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
   interface MnvBg extends JSXBase.HTMLAttributes<HTMLMnvBgElement> {}
   interface MnvBignumber extends JSXBase.HTMLAttributes<HTMLMnvBignumberElement> {}
+  interface MnvBignumbers extends JSXBase.HTMLAttributes<HTMLMnvBignumbersElement> {}
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
     'disabled'?: boolean;
@@ -461,6 +472,10 @@ declare namespace LocalJSX {
     'xs'?: number;
   }
   interface MnvDivider extends JSXBase.HTMLAttributes<HTMLMnvDividerElement> {}
+  interface MnvExpositor extends JSXBase.HTMLAttributes<HTMLMnvExpositorElement> {
+    'maintext'?: string;
+    'maintitle'?: string;
+  }
   interface MnvFigure extends JSXBase.HTMLAttributes<HTMLMnvFigureElement> {
     'alt'?: string;
     'src'?: string;
@@ -561,20 +576,21 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
-    'app-about': AppAbout;
-    'app-bignumbers': AppBignumbers;
     'app-heropage': AppHeropage;
     'app-home': AppHome;
     'app-root': AppRoot;
+    'mnv-about': MnvAbout;
     'mnv-anchor': MnvAnchor;
     'mnv-base': MnvBase;
     'mnv-bg': MnvBg;
     'mnv-bignumber': MnvBignumber;
+    'mnv-bignumbers': MnvBignumbers;
     'mnv-button': MnvButton;
     'mnv-card': MnvCard;
     'mnv-col': MnvCol;
     'mnv-container': MnvContainer;
     'mnv-divider': MnvDivider;
+    'mnv-expositor': MnvExpositor;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
     'mnv-footer': MnvFooter;

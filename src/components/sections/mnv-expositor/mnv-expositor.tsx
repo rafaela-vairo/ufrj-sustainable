@@ -1,7 +1,7 @@
-import { Component, h, Element, Prop } from '@stencil/core'
+import { Component, h, Prop } from '@stencil/core'
 
-const abouttext = {
-	title: 'Sobre a UFRJ',
+const content = {
+	title: 'Projetos',
 	text: `A Universidade Federal do Rio de Janeiro(UFRJ) é a maior federal do Brasil e a primeira instituição
 	 oficial de ensino superior do país, em atividade desde 1792 e organizada como estrutura universitária em 1920.
 	 Com ótimas colocações em rankings acadêmicos nacionais e internacionais, a Universidade fará 100 anos em 2020.
@@ -11,24 +11,26 @@ const abouttext = {
 }
 
 @Component({
-	tag: 'app-about',
-	styleUrl: 'app-about.scss',
+	tag: 'mnv-expositor',
+	styleUrl: 'mnv-expositor.scss',
 })
 export class AppAbout {
-	@Element() about: HTMLElement
-	@Prop() maintitle: string = abouttext.title
-	@Prop() maintext: string = abouttext.text
+	@Prop() maintitle: string = content.title
+	@Prop() maintext: string = content.text
 
 	render() {
 		return (
-			<div class='about-root'>
+			<div class='root'>
 				<mnv-grid container>
-					<mnv-grid item xl='2' lg='2' />
-					<mnv-grid item block xl='8' lg='12' md='12' sm='12'>
-						<mnv-title level='h1'>{this.maintitle}</mnv-title>
-						<mnv-paragraph class='main-text'>{this.maintext}</mnv-paragraph>
+					<mnv-grid item block>
+						<div class='base'>
+							<div class='text-block'>
+								<mnv-title level='h1'>{this.maintitle}</mnv-title>
+								<mnv-paragraph>{this.maintext}</mnv-paragraph>
+								<mnv-button contained>botão</mnv-button>
+							</div>
+						</div>
 					</mnv-grid>
-					<mnv-grid item xl='2' lg='2' />
 				</mnv-grid>
 			</div>
 		)
