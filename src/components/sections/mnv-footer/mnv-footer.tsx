@@ -74,7 +74,7 @@ export class MnvFooter {
 											) : null}
 										</mnv-paragraph>
 									</div>
-									<hr />
+									{/* <hr /> */}
 								</div>
 							</mnv-grid>
 						))}

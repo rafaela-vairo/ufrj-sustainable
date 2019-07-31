@@ -37,9 +37,9 @@ export class MnvNavbar {
 	@Prop({ reflect: true }) setClass: string = ' '
 	@Listen('scroll', { target: 'window' })
 	handleScroll() {
-		if (window.scrollY > window.innerHeight - 160) {
+		if (window.scrollY > window.innerHeight - 860) {
 			this.setClass = 'slideUp'
-		} else if (window.scrollY < window.innerHeight - 160) {
+		} else if (window.scrollY < window.innerHeight - 860) {
 			this.setClass = 'slideDown'
 		}
 	}

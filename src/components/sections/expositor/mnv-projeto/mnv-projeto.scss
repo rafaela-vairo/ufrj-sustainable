@@ -1,0 +1,38 @@
+:host {
+	--project-img: '';
+}
+
+.text-block {
+	@include xl {
+		padding: 90px 285px 90px 285px;
+	}
+	@include lg {
+		padding: 54px 208px 54px 208px;
+	}
+	@include md {
+		padding: 50px;
+	}
+	@include sm {
+		padding: 23px;
+	}
+}
+
+.project-img-main {
+	background: var(--project-img) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	@include xl {
+		height: 780px;
+	}
+	@include lg {
+		height: 657px;
+	}
+	@include md {
+		height: 375px;
+	}
+	@include sm {
+		height: 210px;
+	}
+}

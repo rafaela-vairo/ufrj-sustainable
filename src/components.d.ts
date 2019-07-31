@@ -54,8 +54,10 @@ export namespace Components {
   }
   interface MnvDivider {}
   interface MnvExpositor {
-    'maintext': string;
-    'maintitle': string;
+    'projects': any[];
+    'sectionImg': string;
+    'sectionSubtitle': string;
+    'sectionTitle': string;
   }
   interface MnvFigure {
     'alt': string;
@@ -131,6 +133,13 @@ export namespace Components {
     'capitular': boolean;
   }
   interface MnvPre {}
+  interface MnvProjeto {
+    'projButton': string;
+    'projImg': string;
+    'projImgLegenda': string;
+    'projText': string;
+    'projTitle': string;
+  }
   interface MnvRow {}
   interface MnvSlide {
     'image': string;
@@ -150,6 +159,7 @@ export namespace Components {
   interface MnvTitle {
     'level': string;
     'overline': string;
+    'white': boolean;
   }
   interface MnvTooltip {
     'label': string;
@@ -346,6 +356,12 @@ declare global {
     new (): HTMLMnvPreElement;
   };
 
+  interface HTMLMnvProjetoElement extends Components.MnvProjeto, HTMLStencilElement {}
+  var HTMLMnvProjetoElement: {
+    prototype: HTMLMnvProjetoElement;
+    new (): HTMLMnvProjetoElement;
+  };
+
   interface HTMLMnvRowElement extends Components.MnvRow, HTMLStencilElement {}
   var HTMLMnvRowElement: {
     prototype: HTMLMnvRowElement;
@@ -419,6 +435,7 @@ declare global {
     'mnv-overline': HTMLMnvOverlineElement;
     'mnv-paragraph': HTMLMnvParagraphElement;
     'mnv-pre': HTMLMnvPreElement;
+    'mnv-projeto': HTMLMnvProjetoElement;
     'mnv-row': HTMLMnvRowElement;
     'mnv-slide': HTMLMnvSlideElement;
     'mnv-slider': HTMLMnvSliderElement;
@@ -473,8 +490,10 @@ declare namespace LocalJSX {
   }
   interface MnvDivider extends JSXBase.HTMLAttributes<HTMLMnvDividerElement> {}
   interface MnvExpositor extends JSXBase.HTMLAttributes<HTMLMnvExpositorElement> {
-    'maintext'?: string;
-    'maintitle'?: string;
+    'projects'?: any[];
+    'sectionImg'?: string;
+    'sectionSubtitle'?: string;
+    'sectionTitle'?: string;
   }
   interface MnvFigure extends JSXBase.HTMLAttributes<HTMLMnvFigureElement> {
     'alt'?: string;
@@ -550,6 +569,13 @@ declare namespace LocalJSX {
     'capitular'?: boolean;
   }
   interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
+  interface MnvProjeto extends JSXBase.HTMLAttributes<HTMLMnvProjetoElement> {
+    'projButton'?: string;
+    'projImg'?: string;
+    'projImgLegenda'?: string;
+    'projText'?: string;
+    'projTitle'?: string;
+  }
   interface MnvRow extends JSXBase.HTMLAttributes<HTMLMnvRowElement> {}
   interface MnvSlide extends JSXBase.HTMLAttributes<HTMLMnvSlideElement> {
     'image'?: string;
@@ -569,6 +595,7 @@ declare namespace LocalJSX {
   interface MnvTitle extends JSXBase.HTMLAttributes<HTMLMnvTitleElement> {
     'level'?: string;
     'overline'?: string;
+    'white'?: boolean;
   }
   interface MnvTooltip extends JSXBase.HTMLAttributes<HTMLMnvTooltipElement> {
     'label'?: string;
@@ -607,6 +634,7 @@ declare namespace LocalJSX {
     'mnv-overline': MnvOverline;
     'mnv-paragraph': MnvParagraph;
     'mnv-pre': MnvPre;
+    'mnv-projeto': MnvProjeto;
     'mnv-row': MnvRow;
     'mnv-slide': MnvSlide;
     'mnv-slider': MnvSlider;

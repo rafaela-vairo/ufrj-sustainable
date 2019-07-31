@@ -28,11 +28,15 @@ export class AppHeropage {
 						<mnv-about id='about' />
 					</div>
 					<div>
+						<mnv-bignumbers id='numeros' />
+					</div>
+					<div>
 						<mnv-expositor />
 					</div>
 					<div>
-						<mnv-bignumbers id='numeros' />
+						<mnv-expositor sectionSubtitle='Iniciativas do CT' />
 					</div>
+
 					<div>
 						<mnv-list-card />
 					</div>
