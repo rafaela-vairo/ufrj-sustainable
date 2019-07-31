@@ -1,12 +1,12 @@
 :host > * {
 
     @include xl {
-        padding-left: 285px !important;
-        padding-right: 285px !important;
+        padding-left: calc(285px * 1.3) !important;
+        padding-right: calc(285px * 1.3) !important;
     }
     @include lg {
-        padding-left: 209px !important;
-        padding-right: 209px !important;
+        padding-left: calc(209px * 1.27) !important;
+        padding-right: calc(209px * 1.27) !important;
     }
 
     mnv-grid.grid-item {

@@ -26,12 +26,12 @@ export class MnvListCard {
 		return (
 			<mnv-grid container>
 				{this.contents.map((content, key) => (
-					<mnv-grid item key={key} sm='12' md='6' lg='4' xl='4' class="align">
+					<mnv-grid item key={key} sm='12' md='6' lg='6' xl='4'>
 						<mnv-card
 							cardtitle={content.title}
 							subtitle={content.subtitle}
-                            button='Veja Mais'
-                            class="card"
+              button='Veja Mais'
+              class="card"
 						>
 							{content.text}
 						</mnv-card>
