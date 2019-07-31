@@ -3,6 +3,19 @@ footer {
 	color: $mnv-text-light;
 	width: 100vw;
 	position: relative;
+	.address {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		width: 100%;
+	}
+	.address-root {
+		justify-content: center;
+		& > * {
+			padding: 0;
+		}
+	}
 
 	@include xl {
 		padding: (1.5 * 30) 0px;
@@ -25,8 +38,9 @@ footer {
 	// 	flex-flow: row;
 	// }
 
-	mnv-figure {
-		margin: auto;
+	.map {
+		padding: 30px;
+		width: 100%;
 	}
 
 	mnv-title > h5 {
@@ -34,7 +48,7 @@ footer {
 	}
 
 	mnv-paragraph > * {
-		margin: 10px 0px;
+		//margin: 10px 0px;
 	}
 
 	i {

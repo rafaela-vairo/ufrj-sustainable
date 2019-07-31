@@ -5,7 +5,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	z-index: 999;
-	width: calc(100% - 184px);
 	position: fixed;
 	height: 150px;
 	background: linear-gradient(rgba($mnv-color-black, 0.7), transparent);
@@ -13,9 +12,11 @@ header {
 	transition: height, padding-top $mnv-transition-cubic-03;
 	@include xl {
 		padding: 39.5px 92px 0 92px;
+		width: calc(100% - 184px);
 	}
 	@include lg {
 		padding: 34.5px 80px 0 80px;
+		width: calc(100% - 160px);
 	}
 	@include md {
 		visibility: hidden;
