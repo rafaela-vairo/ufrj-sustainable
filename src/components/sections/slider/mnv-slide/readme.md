@@ -16,7 +16,7 @@
 
 ### Used by
 
- - [mnv-slider](..\mnv-slider)
+ - [mnv-slider](../mnv-slider)
 
 ### Graph
 ```mermaid

@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core'
-import Axios from 'axios'
+//import Axios from 'axios'
 
 var linkNode = document.createElement('link')
 linkNode.type = 'text/css'
@@ -14,9 +14,9 @@ linkIcons.rel = 'stylesheet'
 linkIcons.href = '//fonts.googleapis.com/icon?family=Material+Icons'
 document.head.appendChild(linkIcons) */
 
-export const config = Axios.create({
+/* export const config = Axios.create({
 	baseURL: 'https://sust-dev.olimpo.tic.ufrj.br/wp-json/',
-})
+}) */
 
 @Component({
 	tag: 'mnv-base',

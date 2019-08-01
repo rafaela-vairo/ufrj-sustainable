@@ -11,20 +11,19 @@
 | ----------- | ----------- | ----------- | -------- | ----------------- |
 | `maintext`  | `maintext`  |             | `string` | `abouttext.text`  |
 | `maintitle` | `maintitle` |             | `string` | `abouttext.title` |
-| `width`     | `width`     |             | `number` | `undefined`       |
 
 
 ## Dependencies
 
 ### Used by
 
- - [app-heropage](..\..\app-pages\app-heropage)
+ - [app-heropage](../../app-pages/app-heropage)
 
 ### Depends on
 
-- [mnv-grid](..\..\layout\mnv-grid)
-- [mnv-title](..\..\typography\mnv-title)
-- [mnv-paragraph](..\..\typography\mnv-paragraph)
+- [mnv-grid](../../layout/mnv-grid)
+- [mnv-title](../../typography/mnv-title)
+- [mnv-paragraph](../../typography/mnv-paragraph)
 
 ### Graph
 ```mermaid

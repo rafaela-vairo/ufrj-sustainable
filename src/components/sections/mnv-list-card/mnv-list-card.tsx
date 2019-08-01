@@ -13,12 +13,42 @@ export class MnvListCard {
 		// this.contents = await getAsync();
 
 		this.contents = [
-			{ title: 'Titulo 1', subtitle: 'Subtitulo 1', text: 'Teste 1' },
-			{ title: 'Titulo 2', subtitle: 'Subtitulo 2', text: 'Teste 2' },
-			{ title: 'Titulo 3', subtitle: 'Subtitulo 3', text: 'Teste 3' },
-			{ title: 'Titulo 4', subtitle: 'Subtitulo 4', text: 'Teste 4' },
-			{ title: 'Titulo 5', subtitle: 'Subtitulo 5', text: 'Teste 5' },
-			{ title: 'Titulo 6', subtitle: 'Subtitulo 6', text: 'Teste 6' },
+			{
+				title: 'Titulo 1',
+				subtitle: 'Subtitulo 1',
+				text: 'Teste 1',
+				link: 'https://google.com',
+			},
+			{
+				title: 'Titulo 2',
+				subtitle: 'Subtitulo 2',
+				text: 'Teste 2',
+				link: 'https://stenciljs.com',
+			},
+			{
+				title: 'Titulo 3',
+				subtitle: 'Subtitulo 3',
+				text: 'Teste 3',
+				link: 'https://google.com',
+			},
+			{
+				title: 'Titulo 4',
+				subtitle: 'Subtitulo 4',
+				text: 'Teste 4',
+				link: 'https://google.com',
+			},
+			{
+				title: 'Titulo 5',
+				subtitle: 'Subtitulo 5',
+				text: 'Teste 5',
+				link: 'https://google.com',
+			},
+			{
+				title: 'Titulo 6',
+				subtitle: 'Subtitulo 6',
+				text: 'Teste 6',
+				link: 'https://google.com',
+			},
 		]
 	}
 
@@ -43,6 +73,7 @@ export class MnvListCard {
 								cardtitle={content.title}
 								subtitle={content.subtitle}
 								button='Veja Mais'
+								link={content.link}
 								class='card'
 							>
 								{content.text}

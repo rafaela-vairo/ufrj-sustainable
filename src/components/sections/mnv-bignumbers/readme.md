@@ -5,17 +5,24 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property     | Attribute | Description | Type    | Default     |
+| ------------ | --------- | ----------- | ------- | ----------- |
+| `setNumbers` | --        |             | `any[]` | `undefined` |
+
+
 ## Dependencies
 
 ### Used by
 
- - [app-heropage](..\..\app-pages\app-heropage)
+ - [app-heropage](../../app-pages/app-heropage)
 
 ### Depends on
 
-- [mnv-grid](..\..\layout\mnv-grid)
-- [mnv-title](..\..\typography\mnv-title)
-- [mnv-bignumber](..\..\layout\mnv-bignumber)
+- [mnv-grid](../../layout/mnv-grid)
+- [mnv-title](../../typography/mnv-title)
+- [mnv-bignumber](../../layout/mnv-bignumber)
 
 ### Graph
 ```mermaid
