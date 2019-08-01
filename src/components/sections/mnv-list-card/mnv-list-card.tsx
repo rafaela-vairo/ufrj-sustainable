@@ -1,5 +1,6 @@
-import { Component, h, Prop, Host } from '@stencil/core'
+import { Component, h, Prop, Host } from '@stencil/core';
 import Api from '../../../services/api';
+import _ from 'lodash';
 
 @Component({
 	tag: 'mnv-list-card',
@@ -7,11 +8,19 @@ import Api from '../../../services/api';
 	shadow: true,
 })
 export class MnvListCard {
-	@Prop() cards: any[]
+	@Prop() cards: any[];
+	@Prop() title: string = 'Ensino';
 
 	async componentDidLoad() {
 		try {
-			this.cards = (await Api.get('acf/v3/cartao/?per_page=999')).data;
+			this.cards = (await Api.get('acf/v3/options/adm-secoes/?per_page=999')).data.acf.secoes;
+			this.cards =  _.filter(this.cards, { 'acf_fc_layout': 'secao_cartoes', 'secao_titulo': this.title });
+			if (this.cards.length > 1) {
+				console.log('Seção possui títulos duplicados');
+				this.cards = [];
+				return;
+			}
+			this.cards = this.cards[0].cartao_conteudo;
 		} catch (e) {
 			this.cards = [];
 			console.log(e);
@@ -29,19 +38,20 @@ export class MnvListCard {
 						<mnv-grid
 							item
 							class='card-root'
-							key={card.id}
+							key={card.ID}
 							sm='12'
 							md='6'
 							lg='6'
 							xl='6'
 						>
 							<mnv-card
-								cardtitle={card.acf.cartao_subtitulo}
-								subtitle={card.acf.cartao_categoria.name}
+								cardtitle={card.post_title}
+								subtitle={card.post_type}
 								button='Veja Mais'
+								link={card.guid}
 								class='card'
 							>
-								{card.acf.cartao_descricao}
+								{card.post_content}
 							</mnv-card>
 						</mnv-grid>
 					)}

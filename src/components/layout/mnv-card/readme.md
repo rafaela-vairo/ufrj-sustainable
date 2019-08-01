@@ -7,29 +7,30 @@
 
 ## Properties
 
-| Property    | Attribute   | Description | Type     | Default     |
-| ----------- | ----------- | ----------- | -------- | ----------- |
-| `button`    | `button`    |             | `string` | `undefined` |
-| `cardtitle` | `cardtitle` |             | `any`    | `undefined` |
-| `overline`  | `overline`  |             | `any`    | `undefined` |
-| `subtitle`  | `subtitle`  |             | `any`    | `undefined` |
-| `width`     | `width`     |             | `number` | `undefined` |
+| Property    | Attribute   | Description | Type     | Default               |
+| ----------- | ----------- | ----------- | -------- | --------------------- |
+| `button`    | `button`    |             | `string` | `undefined`           |
+| `cardtitle` | `cardtitle` |             | `any`    | `undefined`           |
+| `link`      | `link`      |             | `string` | `'http://google.com'` |
+| `overline`  | `overline`  |             | `any`    | `undefined`           |
+| `subtitle`  | `subtitle`  |             | `any`    | `undefined`           |
+| `width`     | `width`     |             | `number` | `undefined`           |
 
 
 ## Dependencies
 
 ### Used by
 
- - [mnv-list-card](..\..\mnv-list-card)
- - [mnv-slider](..\..\mnv-slider)
+ - [mnv-list-card](../../sections/mnv-list-card)
+ - [mnv-slider](../../sections/slider/mnv-slider)
 
 ### Depends on
 
-- [mnv-title](..\..\typography\mnv-title)
-- [mnv-subtitle](..\..\typography\mnv-subtitle)
-- [mnv-divider](..\..\typography\mnv-divider)
-- [mnv-paragraph](..\..\typography\mnv-paragraph)
-- [mnv-button](..\..\inputs\mnv-button)
+- [mnv-title](../../typography/mnv-title)
+- [mnv-subtitle](../../typography/mnv-subtitle)
+- [mnv-divider](../../typography/mnv-divider)
+- [mnv-paragraph](../../typography/mnv-paragraph)
+- [mnv-button](../../inputs/mnv-button)
 
 ### Graph
 ```mermaid

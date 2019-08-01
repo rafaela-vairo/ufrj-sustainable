@@ -42,6 +42,7 @@ export namespace Components {
   interface MnvCard {
     'button': string;
     'cardtitle': any;
+    'link': string;
     'overline': any;
     'subtitle': any;
     'width': number;
@@ -103,6 +104,7 @@ export namespace Components {
   }
   interface MnvListCard {
     'cards': any[];
+    'title': string;
   }
   interface MnvMark {}
   interface MnvMobButton {
@@ -482,6 +484,7 @@ declare namespace LocalJSX {
   interface MnvCard extends JSXBase.HTMLAttributes<HTMLMnvCardElement> {
     'button'?: string;
     'cardtitle'?: any;
+    'link'?: string;
     'overline'?: any;
     'subtitle'?: any;
     'width'?: number;
@@ -543,6 +546,7 @@ declare namespace LocalJSX {
   }
   interface MnvListCard extends JSXBase.HTMLAttributes<HTMLMnvListCardElement> {
     'cards'?: any[];
+    'title'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
   interface MnvMobButton extends JSXBase.HTMLAttributes<HTMLMnvMobButtonElement> {

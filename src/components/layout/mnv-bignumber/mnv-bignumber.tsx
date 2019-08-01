@@ -1,28 +1,6 @@
 import { Component, h, Prop } from '@stencil/core'
 import _ from 'lodash'
 
-/* let numbers = [
-	{ number: '52.333', priority: '3', text: 'estudantes de graduação' },
-	{ number: '15.346', priority: '3', text: 'estudantes de pós‑graduação' },
-	{ number: '176', priority: '3', text: 'cursos de graduação' },
-	{ number: '48', priority: '3', text: 'cursos noturnos' },
-	{ number: '132', priority: '3', text: 'programas de pós‑graduação' },
-	{ number: '3', priority: '2', text: 'graduações a distância' },
-	{ number: '5', priority: '3', text: 'institutos de atenção à saúde' },
-	{ number: '1.200', priority: '2', text: 'laboratórios' },
-	{ number: '1.700', priority: '3', text: 'projetos de extensão' },
-	{ number: '3', priority: '3', text: 'hospitais' },
-	{ number: '13', priority: '3', text: 'museus' },
-	{ number: '41', priority: '3', text: 'bibliotecas' },
-	{ number: '665', priority: '3', text: 'estudantes estrangeiros' },
-	{ number: '455', priority: '2', text: 'alunos em intercâmbio, via DRI' },
-	{
-		number: '16.182',
-		priority: '3',
-		text: 'docentes, técnicos e terceirizados',
-	},
-] */
-
 function random_rgba() {
 	var o = Math.round,
 		r = Math.random,
@@ -42,7 +20,6 @@ export class MnvBignumber {
 			this.numbers,
 			_.times(this.numbers.length, random_rgba)
 		)
-		console.log(this.numbers)
 		return (
 			<mnv-grid container id='numcontainer'>
 				{numcolors.map(value => (

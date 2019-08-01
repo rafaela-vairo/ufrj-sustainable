@@ -5,15 +5,22 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property  | Attribute | Description | Type    | Default     |
+| --------- | --------- | ----------- | ------- | ----------- |
+| `numbers` | --        |             | `any[]` | `undefined` |
+
+
 ## Dependencies
 
 ### Used by
 
- - [mnv-bignumbers](..\..\sections\mnv-bignumbers)
+ - [mnv-bignumbers](../../sections/mnv-bignumbers)
 
 ### Depends on
 
-- [mnv-grid](..\mnv-grid)
+- [mnv-grid](../mnv-grid)
 
 ### Graph
 ```mermaid

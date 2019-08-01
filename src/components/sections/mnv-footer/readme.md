@@ -16,16 +16,14 @@
 
 ### Depends on
 
-- [mnv-grid](..\mnv-grid)
-- [mnv-figure](..\mnv-figure)
-- [mnv-title](..\..\typography\mnv-title)
-- [mnv-paragraph](..\..\typography\mnv-paragraph)
+- [mnv-grid](../../layout/mnv-grid)
+- [mnv-title](../../typography/mnv-title)
+- [mnv-paragraph](../../typography/mnv-paragraph)
 
 ### Graph
 ```mermaid
 graph TD;
   mnv-footer --> mnv-grid
-  mnv-footer --> mnv-figure
   mnv-footer --> mnv-title
   mnv-footer --> mnv-paragraph
   mnv-title --> mnv-overline

@@ -20,7 +20,6 @@ export class AppBignumbers {
 
 	async componentDidLoad() {
 		this.setNumbers = await getNumbers()
-		console.log(this.setNumbers)
 	}
 	render() {
 		return (

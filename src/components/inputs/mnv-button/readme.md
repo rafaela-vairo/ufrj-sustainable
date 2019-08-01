@@ -21,9 +21,10 @@
 
 ### Used by
 
- - [app-home](..\..\app-pages\app-home)
- - [mnv-card](..\..\layout\mnv-card)
- - [mnv-hero](..\..\layout\mnv-hero)
+ - [app-home](../../app-pages/app-home)
+ - [mnv-card](../../layout/mnv-card)
+ - [mnv-hero](../../sections/mnv-hero)
+ - [mnv-projeto](../../sections/expositor/mnv-projeto)
 
 ### Graph
 ```mermaid
@@ -31,6 +32,7 @@ graph TD;
   app-home --> mnv-button
   mnv-card --> mnv-button
   mnv-hero --> mnv-button
+  mnv-projeto --> mnv-button
   style mnv-button fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
