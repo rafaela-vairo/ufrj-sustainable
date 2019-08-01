@@ -1,5 +1,4 @@
 import { Component, h, Prop, Host } from '@stencil/core';
-import Api from '../../../services/api';
 import _ from 'lodash';
 
 @Component({
@@ -8,23 +7,17 @@ import _ from 'lodash';
 	shadow: true,
 })
 export class MnvListCard {
-	@Prop() cards: any[];
+	@Prop() data: any[];
 	@Prop() title: string = 'Ensino';
 
 	async componentDidLoad() {
-		try {
-			this.cards = (await Api.get('acf/v3/options/adm-secoes/?per_page=999')).data.acf.secoes;
-			this.cards =  _.filter(this.cards, { 'acf_fc_layout': 'secao_cartoes', 'secao_titulo': this.title });
-			if (this.cards.length > 1) {
-				console.log('Seção possui títulos duplicados');
-				this.cards = [];
-				return;
-			}
-			this.cards = this.cards[0].cartao_conteudo;
-		} catch (e) {
-			this.cards = [];
-			console.log(e);
+		this.data = _.filter(this.data, { 'acf_fc_layout': 'secao_cartoes', 'secao_titulo': this.title });
+		if (this.data.length > 1) {
+			console.log('Seção possui títulos duplicados');
+			this.data = [];
+			return;
 		}
+		this.data = this.data[0].cartao_conteudo;
 	}
 
 	render() {
@@ -32,9 +25,9 @@ export class MnvListCard {
 			<Host>
 				<mnv-grid container>
 					<mnv-grid item class='card-title' xl='8' lg='12' md='12' sm='12'>
-						<mnv-title level='h1'>Ensino</mnv-title>
+						<mnv-title level='h1'>{this.title}</mnv-title>
 					</mnv-grid>
-					{this.cards.map(card =>
+					{this.data.map(card =>
 						<mnv-grid
 							item
 							class='card-root'
