@@ -36,3 +36,68 @@
 		height: 210px;
 	}
 }
+
+.legenda {
+	font-family: $mnv-font-alegreya-sans;
+	color: $mnv-text-dark-60;
+	@include xl {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 0.37px;
+	}
+	@include lg {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 20px;
+		line-height: 27px;
+		letter-spacing: 0.33px;
+	}
+	div {
+		@include xl {
+			margin-right: -175px;
+			padding-left: 45px;
+			-webkit-transform-origin: bottom left;
+			transform-origin: left 0;
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+		@include lg {
+			margin-right: -175px;
+			padding-left: 45px;
+			-webkit-transform-origin: bottom left;
+			transform-origin: left 0;
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+		@include md {
+			display: none;
+		}
+		@include sm {
+			display: none;
+		}
+	}
+}
+.legenda-mobile {
+	font-family: $mnv-font-alegreya-sans;
+	color: $mnv-text-dark-60;
+	@include xl {
+		display: none;
+	}
+	@include lg {
+		display: none;
+	}
+	@include md {
+		font-size: 18px;
+		line-height: 25px;
+		letter-spacing: 0.3px;
+		margin-bottom: 12.5px;
+	}
+	@include sm {
+		font-size: 17px;
+		line-height: 23px;
+		letter-spacing: 0.28px;
+		margin-bottom: 13.5px;
+	}
+}

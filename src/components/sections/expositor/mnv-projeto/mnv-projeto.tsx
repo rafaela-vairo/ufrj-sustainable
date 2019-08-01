@@ -24,7 +24,11 @@ export class AppAbout {
 				) : (
 					''
 				)}
+				<div class='legenda'>
+					<div>{this.projImgLegenda}</div>
+				</div>
 				<div class='text-block'>
+					<div class='legenda-mobile'>{this.projImgLegenda}</div>
 					<mnv-title level='h4'>{this.projTitle}</mnv-title>
 					<mnv-paragraph>{this.projText}</mnv-paragraph>
 					<mnv-button contained>{this.projButton}</mnv-button>
