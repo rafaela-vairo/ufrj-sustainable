@@ -102,7 +102,7 @@ export namespace Components {
     'type': string;
   }
   interface MnvListCard {
-    'contents': any[];
+    'cards': any[];
   }
   interface MnvMark {}
   interface MnvMobButton {
@@ -542,7 +542,7 @@ declare namespace LocalJSX {
     'type'?: string;
   }
   interface MnvListCard extends JSXBase.HTMLAttributes<HTMLMnvListCardElement> {
-    'contents'?: any[];
+    'cards'?: any[];
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
   interface MnvMobButton extends JSXBase.HTMLAttributes<HTMLMnvMobButtonElement> {
