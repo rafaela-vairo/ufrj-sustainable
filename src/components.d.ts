@@ -42,6 +42,7 @@ export namespace Components {
   interface MnvCard {
     'button': string;
     'cardtitle': any;
+    'link': string;
     'overline': any;
     'subtitle': any;
     'width': number;
@@ -482,6 +483,7 @@ declare namespace LocalJSX {
   interface MnvCard extends JSXBase.HTMLAttributes<HTMLMnvCardElement> {
     'button'?: string;
     'cardtitle'?: any;
+    'link'?: string;
     'overline'?: any;
     'subtitle'?: any;
     'width'?: number;

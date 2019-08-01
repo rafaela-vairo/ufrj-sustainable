@@ -10,6 +10,7 @@ export class MnvCard {
 	@Prop() cardtitle: any
 	@Prop() subtitle: any
 	@Prop() button: string
+	@Prop() link: string = 'http://google.com'
 	@Prop() width: number
 
 	render() {
@@ -28,9 +29,11 @@ export class MnvCard {
 					</mnv-paragraph>
 				</div>
 				<div class='action'>
-					<mnv-button marginzero contained full>
-						{this.button}
-					</mnv-button>
+					<form action={this.link}>
+						<mnv-button marginzero contained full type='submit'>
+							{this.button}
+						</mnv-button>
+					</form>
 				</div>
 			</div>
 		)
