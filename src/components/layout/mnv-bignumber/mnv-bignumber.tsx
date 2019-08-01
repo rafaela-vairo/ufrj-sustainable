@@ -1,7 +1,7 @@
-import { Component, h } from '@stencil/core'
+import { Component, h, Prop } from '@stencil/core'
 import _ from 'lodash'
 
-let numbers = [
+/* let numbers = [
 	{ number: '52.333', priority: '3', text: 'estudantes de graduação' },
 	{ number: '15.346', priority: '3', text: 'estudantes de pós‑graduação' },
 	{ number: '176', priority: '3', text: 'cursos de graduação' },
@@ -21,7 +21,7 @@ let numbers = [
 		priority: '3',
 		text: 'docentes, técnicos e terceirizados',
 	},
-]
+] */
 
 function random_rgba() {
 	var o = Math.round,
@@ -30,30 +30,34 @@ function random_rgba() {
 	return `rgba(${o(r() * s - 200)}, ${o(r() * s - 50)}, ${o(r() * s)}, 1)`
 }
 
-const numcolors = _.zip(numbers, _.times(numbers.length, random_rgba))
-
 @Component({
 	tag: 'mnv-bignumber',
 	styleUrl: 'mnv-bignumber.scss',
 	shadow: true,
 })
 export class MnvBignumber {
+	@Prop() numbers: Array<any>
 	render() {
+		const numcolors = _.zip(
+			this.numbers,
+			_.times(this.numbers.length, random_rgba)
+		)
+		console.log(this.numbers)
 		return (
 			<mnv-grid container id='numcontainer'>
 				{numcolors.map(value => (
 					<mnv-grid item id='number'>
 						<div
 							class={
-								value[0].number.length < 4
-									? `short-${value[0].number.length}`
+								value[0].acf.numero_valor.length < 4
+									? `short-${value[0].acf.numero_valor.length}`
 									: 'long'
 							}
 							id='box'
 							style={{ '--background-color': value[1] }}
 						>
-							<div class='inner-number'>{value[0].number}</div>
-							<div class='inner-text'>{value[0].text}</div>
+							<div class='inner-number'>{value[0].acf.numero_valor}</div>
+							<div class='inner-text'>{value[0].acf.numero_descricao}</div>
 						</div>
 					</mnv-grid>
 				))}

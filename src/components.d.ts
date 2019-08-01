@@ -25,8 +25,12 @@ export namespace Components {
   }
   interface MnvBase {}
   interface MnvBg {}
-  interface MnvBignumber {}
-  interface MnvBignumbers {}
+  interface MnvBignumber {
+    'numbers': Array<any>;
+  }
+  interface MnvBignumbers {
+    'setNumbers': any[];
+  }
   interface MnvButton {
     'contained': boolean;
     'disabled': boolean;
@@ -461,8 +465,12 @@ declare namespace LocalJSX {
   }
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
   interface MnvBg extends JSXBase.HTMLAttributes<HTMLMnvBgElement> {}
-  interface MnvBignumber extends JSXBase.HTMLAttributes<HTMLMnvBignumberElement> {}
-  interface MnvBignumbers extends JSXBase.HTMLAttributes<HTMLMnvBignumbersElement> {}
+  interface MnvBignumber extends JSXBase.HTMLAttributes<HTMLMnvBignumberElement> {
+    'numbers'?: Array<any>;
+  }
+  interface MnvBignumbers extends JSXBase.HTMLAttributes<HTMLMnvBignumbersElement> {
+    'setNumbers'?: any[];
+  }
   interface MnvButton extends JSXBase.HTMLAttributes<HTMLMnvButtonElement> {
     'contained'?: boolean;
     'disabled'?: boolean;

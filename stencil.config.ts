@@ -3,25 +3,29 @@ import { sass } from '@stencil/sass'
 
 export const config: Config = {
 	namespace: 'mnv-ds',
+	globalScript: 'src/global/script.js',
 	outputTargets: [
 		{
 			type: 'dist',
-			esmLoaderPath: '../loader'
+			esmLoaderPath: '../loader',
 		},
 		{
-			type: 'docs-readme'
+			type: 'docs-readme',
 		},
 		{
 			type: 'www',
 			//serviceWorker: null, // disable service workers
 			serviceWorker: {
-				globPatterns: ['**/*.{js,css,json,html,ico,png}']
-			}
-		}
+				globPatterns: ['**/*.{js,css,json,html,ico,png}'],
+			},
+		},
 	],
 	plugins: [
 		sass({
-			injectGlobalPaths: ['src/global/variables.scss', 'src/global/mixins.scss']
-		})
-	]
+			injectGlobalPaths: [
+				'src/global/variables.scss',
+				'src/global/mixins.scss',
+			],
+		}),
+	],
 }

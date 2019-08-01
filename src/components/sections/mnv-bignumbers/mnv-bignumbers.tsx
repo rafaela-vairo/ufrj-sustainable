@@ -1,4 +1,14 @@
-import { Component, h } from '@stencil/core'
+import { Component, h, Prop } from '@stencil/core'
+import Api from '../../../global/scripts.js'
+
+const getNumbers = async () => {
+	try {
+		return (await Api.get('/acf/v3/numero/?per_page=99')).data
+	} catch (e) {
+		console.log(e)
+		return null
+	}
+}
 
 @Component({
 	tag: 'mnv-bignumbers',
@@ -6,6 +16,12 @@ import { Component, h } from '@stencil/core'
 	shadow: true,
 })
 export class AppBignumbers {
+	@Prop() setNumbers: any[]
+
+	async componentDidLoad() {
+		this.setNumbers = await getNumbers()
+		console.log(this.setNumbers)
+	}
 	render() {
 		return (
 			<div>
@@ -21,7 +37,7 @@ export class AppBignumbers {
 					<mnv-grid item xl='2' lg='2' />
 					<mnv-grid item xl='2' lg='2' />
 					<mnv-grid item xl='8' lg='8' md='12' sm='12'>
-						<mnv-bignumber />
+						<mnv-bignumber numbers={this.setNumbers} />
 					</mnv-grid>
 					<mnv-grid item xl='2' lg='2' />
 				</mnv-grid>
