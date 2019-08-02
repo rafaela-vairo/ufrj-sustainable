@@ -26,11 +26,11 @@ export class MnvListCard {
 					<mnv-grid item class='card-title' xl='8' lg='12' md='12' sm='12'>
 						<mnv-title level='h1'>{this.name}</mnv-title>
 					</mnv-grid>
-					{this.data['cartao_conteudo'].map(card =>
+					{this.data['cartao_conteudo'].map((card, key) =>
 						<mnv-grid
 							item
 							class='card-root'
-							key={card.projeto_imagem.id}
+							key={key}
 							sm='12'
 							md='6'
 							lg='6'
