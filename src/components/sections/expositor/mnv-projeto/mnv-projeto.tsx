@@ -4,12 +4,12 @@ import { Component, h, Prop, Host } from '@stencil/core'
 	tag: 'mnv-projeto',
 	styleUrl: 'mnv-projeto.scss',
 })
-export class AppAbout {
-	@Prop() projTitle: string = 'Título'
-	@Prop() projText: string = 'Texto'
+export class MnvProjeto {
+	@Prop() projTitle: string = 'Title'
+	@Prop() projText: string = 'Text'
 	@Prop() projImg: string
-	@Prop() projImgLegenda: string = 'Foto: Arthur Moaes'
-	@Prop() projButton: string = 'Ver mais'
+	@Prop() projImgLegenda: string = 'Image: Arthur Moaes'
+	@Prop() projButton: string = 'More info'
 
 	render() {
 		return (
