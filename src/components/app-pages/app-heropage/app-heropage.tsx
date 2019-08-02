@@ -3,7 +3,7 @@ import { MatchResults } from '@stencil/router'
 import Axios from 'axios'
 
 const dataBase = Axios.create({
-	baseURL: 'https://sust-dev.olimpo.tic.ufrj.br/wp-json/',
+	baseURL: 'https://admin.sustainable.ufrj.br/wp-json/',
 })
 
 @Component({
@@ -52,13 +52,21 @@ export class AppHeropage {
 						<mnv-expositor-base id='projetos' data={this.data['secoes']} />
 					</div>
 					<div>
-						<mnv-list-card name="Ensino" data={this.data.secoes} />
+						<mnv-list-card name='Ensino' id='ensino' data={this.data.secoes} />
 					</div>
 					<div>
-						<mnv-list-card name="Pesquisa" data={this.data.secoes} />
+						<mnv-list-card
+							name='Pesquisa'
+							id='pesquisa'
+							data={this.data.secoes}
+						/>
 					</div>
 					<div>
-						<mnv-list-card name="Extensão" data={this.data.secoes} />
+						<mnv-list-card
+							name='Extensão'
+							id='extensao'
+							data={this.data.secoes}
+						/>
 					</div>
 				</mnv-bg>
 			</div>

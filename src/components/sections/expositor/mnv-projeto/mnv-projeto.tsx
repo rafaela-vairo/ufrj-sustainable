@@ -10,6 +10,7 @@ export class MnvProjeto {
 	@Prop() projImg: string
 	@Prop() projImgLegenda: string = 'Image: Arthur Moaes'
 	@Prop() projButton: string = 'More info'
+	@Prop() projButtonUrl: string
 
 	render() {
 		return (
@@ -31,7 +32,11 @@ export class MnvProjeto {
 					<div class='legenda-mobile'>{this.projImgLegenda}</div>
 					<mnv-title level='h4'>{this.projTitle}</mnv-title>
 					<mnv-paragraph>{this.projText}</mnv-paragraph>
-					<mnv-button contained>{this.projButton}</mnv-button>
+					<form action={this.projButtonUrl}>
+						<mnv-button contained type='submit'>
+							{this.projButton}
+						</mnv-button>
+					</form>
 				</div>
 			</Host>
 		)

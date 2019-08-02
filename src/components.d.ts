@@ -149,6 +149,7 @@ export namespace Components {
   interface MnvPre {}
   interface MnvProjeto {
     'projButton': string;
+    'projButtonUrl': string;
     'projImg': string;
     'projImgLegenda': string;
     'projText': string;
@@ -603,6 +604,7 @@ declare namespace LocalJSX {
   interface MnvPre extends JSXBase.HTMLAttributes<HTMLMnvPreElement> {}
   interface MnvProjeto extends JSXBase.HTMLAttributes<HTMLMnvProjetoElement> {
     'projButton'?: string;
+    'projButtonUrl'?: string;
     'projImg'?: string;
     'projImgLegenda'?: string;
     'projText'?: string;
