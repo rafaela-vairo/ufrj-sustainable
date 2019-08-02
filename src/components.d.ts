@@ -9,16 +9,21 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import {
   MatchResults,
 } from '@stencil/router';
+import {
+  locations,
+} from './components/sections/mnv-footer/mnv-footer';
 
 export namespace Components {
   interface AppHeropage {
+    'data': any;
     'match': MatchResults;
+    'numbers': any;
   }
   interface AppHome {}
   interface AppRoot {}
   interface MnvAbout {
-    'maintext': string;
-    'maintitle': string;
+    'mainText': string;
+    'mainTitle': string;
   }
   interface MnvAnchor {
     'href': string;
@@ -26,7 +31,7 @@ export namespace Components {
   interface MnvBase {}
   interface MnvBg {}
   interface MnvBignumber {
-    'numbers': Array<any>;
+    'numbers': any;
   }
   interface MnvBignumbers {
     'setNumbers': any[];
@@ -64,6 +69,12 @@ export namespace Components {
     'sectionSubtitle': string;
     'sectionTitle': string;
   }
+  interface MnvExpositorBase {
+    'projects': any[];
+    'sectionImg': string;
+    'sectionSubtitle': string;
+    'sectionTitle': string;
+  }
   interface MnvFigure {
     'alt': string;
     'src': string;
@@ -79,7 +90,7 @@ export namespace Components {
     'src': string;
   }
   interface MnvFooter {
-    'locations': any[];
+    'locations': Array<locations>;
   }
   interface MnvGrid {
     'block': boolean;
@@ -103,7 +114,7 @@ export namespace Components {
     'type': string;
   }
   interface MnvListCard {
-    'cards': any[];
+    'data': any[];
     'title': string;
   }
   interface MnvMark {}
@@ -266,6 +277,12 @@ declare global {
     new (): HTMLMnvExpositorElement;
   };
 
+  interface HTMLMnvExpositorBaseElement extends Components.MnvExpositorBase, HTMLStencilElement {}
+  var HTMLMnvExpositorBaseElement: {
+    prototype: HTMLMnvExpositorBaseElement;
+    new (): HTMLMnvExpositorBaseElement;
+  };
+
   interface HTMLMnvFigureElement extends Components.MnvFigure, HTMLStencilElement {}
   var HTMLMnvFigureElement: {
     prototype: HTMLMnvFigureElement;
@@ -425,6 +442,7 @@ declare global {
     'mnv-container': HTMLMnvContainerElement;
     'mnv-divider': HTMLMnvDividerElement;
     'mnv-expositor': HTMLMnvExpositorElement;
+    'mnv-expositor-base': HTMLMnvExpositorBaseElement;
     'mnv-figure': HTMLMnvFigureElement;
     'mnv-figure-caption': HTMLMnvFigureCaptionElement;
     'mnv-footer': HTMLMnvFooterElement;
@@ -454,13 +472,15 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppHeropage extends JSXBase.HTMLAttributes<HTMLAppHeropageElement> {
+    'data'?: any;
     'match'?: MatchResults;
+    'numbers'?: any;
   }
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
   interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {}
   interface MnvAbout extends JSXBase.HTMLAttributes<HTMLMnvAboutElement> {
-    'maintext'?: string;
-    'maintitle'?: string;
+    'mainText'?: string;
+    'mainTitle'?: string;
   }
   interface MnvAnchor extends JSXBase.HTMLAttributes<HTMLMnvAnchorElement> {
     'href'?: string;
@@ -468,7 +488,7 @@ declare namespace LocalJSX {
   interface MnvBase extends JSXBase.HTMLAttributes<HTMLMnvBaseElement> {}
   interface MnvBg extends JSXBase.HTMLAttributes<HTMLMnvBgElement> {}
   interface MnvBignumber extends JSXBase.HTMLAttributes<HTMLMnvBignumberElement> {
-    'numbers'?: Array<any>;
+    'numbers'?: any;
   }
   interface MnvBignumbers extends JSXBase.HTMLAttributes<HTMLMnvBignumbersElement> {
     'setNumbers'?: any[];
@@ -506,6 +526,12 @@ declare namespace LocalJSX {
     'sectionSubtitle'?: string;
     'sectionTitle'?: string;
   }
+  interface MnvExpositorBase extends JSXBase.HTMLAttributes<HTMLMnvExpositorBaseElement> {
+    'projects'?: any[];
+    'sectionImg'?: string;
+    'sectionSubtitle'?: string;
+    'sectionTitle'?: string;
+  }
   interface MnvFigure extends JSXBase.HTMLAttributes<HTMLMnvFigureElement> {
     'alt'?: string;
     'src'?: string;
@@ -521,7 +547,7 @@ declare namespace LocalJSX {
     'src'?: string;
   }
   interface MnvFooter extends JSXBase.HTMLAttributes<HTMLMnvFooterElement> {
-    'locations'?: any[];
+    'locations'?: Array<locations>;
   }
   interface MnvGrid extends JSXBase.HTMLAttributes<HTMLMnvGridElement> {
     'block'?: boolean;
@@ -545,7 +571,7 @@ declare namespace LocalJSX {
     'type'?: string;
   }
   interface MnvListCard extends JSXBase.HTMLAttributes<HTMLMnvListCardElement> {
-    'cards'?: any[];
+    'data'?: any[];
     'title'?: string;
   }
   interface MnvMark extends JSXBase.HTMLAttributes<HTMLMnvMarkElement> {}
@@ -630,6 +656,7 @@ declare namespace LocalJSX {
     'mnv-container': MnvContainer;
     'mnv-divider': MnvDivider;
     'mnv-expositor': MnvExpositor;
+    'mnv-expositor-base': MnvExpositorBase;
     'mnv-figure': MnvFigure;
     'mnv-figure-caption': MnvFigureCaption;
     'mnv-footer': MnvFooter;

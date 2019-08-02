@@ -31,7 +31,7 @@ window.addEventListener('scroll', onScroll, false) */
 @Component({
 	tag: 'mnv-navbar',
 	styleUrl: 'mnv-navbar.scss',
-	shadow: true,
+	shadow: true
 })
 export class MnvNavbar {
 	@Prop({ reflect: true }) setClass: string = ' '
@@ -60,7 +60,7 @@ export class MnvNavbar {
 					<a href='#numeros'>
 						<mnv-navbutton class='link'>números</mnv-navbutton>
 					</a>
-					<a>
+					<a href='#projetos'>
 						<mnv-navbutton class='link'>projetos</mnv-navbutton>
 					</a>
 					<a href='#'>

@@ -3,22 +3,25 @@ import { MatchResults } from '@stencil/router'
 import Axios from 'axios'
 
 const dataBase = Axios.create({
-	baseURL: 'https://sust-dev.olimpo.tic.ufrj.br/wp-json/',
+	baseURL: 'https://sust-dev.olimpo.tic.ufrj.br/wp-json/'
 })
 
 @Component({
 	tag: 'app-heropage',
-	styleUrl: 'app-heropage.scss',
+	styleUrl: 'app-heropage.scss'
 })
 export class AppHeropage {
 	@Prop() match: MatchResults
 	@Prop() data: any
+	@Prop() numbers: any
 
 	async componentDidLoad() {
 		this.data = (await dataBase.get(
 			'acf/v3/options/adm-secoes/?per_page=999'
 		)).data.acf
 		console.log(this.data)
+		this.numbers = (await dataBase.get('/acf/v3/numero/?per_page=99')).data
+		console.log(this.numbers)
 	}
 
 	render() {
@@ -29,22 +32,25 @@ export class AppHeropage {
 				<mnv-mob-menu />
 				<mnv-hero
 					id='home'
-					herotitle={this.data.cabecalho.cabecalho_titulo}
+					herotitle={this.data['cabecalho']['cabecalho_titulo']}
 					button='Saiba mais'
-					bgimg='https://panorama.ufrj.br/wp-content/uploads/2019/05/DSC_0057-1215x810.jpg'
+					bgimg={this.data['cabecalho']['cabecalho_imagem']['url']}
 				>
-					Descubra as tecnologias e projetos verdes desenvolvidos na maior
-					universidade federal do Brasil
+					{this.data['cabecalho']['cabecalho_descricao']}
 				</mnv-hero>
 				<mnv-bg>
 					<div>
-						<mnv-about id='about' />
+						<mnv-about
+							id='about'
+							mainTitle={this.data['apresentacao']['apresentacao_titulo']}
+							mainText={this.data['apresentacao']['apresentacao_texto']}
+						/>
 					</div>
 					<div>
-						<mnv-bignumbers id='numeros' />
+						<mnv-bignumbers id='numeros' setNumbers={this.numbers} />
 					</div>
 					<div>
-						<mnv-expositor />
+						<mnv-expositor id='projetos' />
 					</div>
 					<div>
 						<mnv-expositor sectionSubtitle='Iniciativas do CT' />

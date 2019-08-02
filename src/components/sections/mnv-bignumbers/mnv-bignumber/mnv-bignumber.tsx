@@ -11,10 +11,10 @@ function random_rgba() {
 @Component({
 	tag: 'mnv-bignumber',
 	styleUrl: 'mnv-bignumber.scss',
-	shadow: true,
+	shadow: true
 })
 export class MnvBignumber {
-	@Prop() numbers: Array<any>
+	@Prop() numbers: any
 	render() {
 		const numcolors = _.zip(
 			this.numbers,
@@ -26,15 +26,17 @@ export class MnvBignumber {
 					<mnv-grid item id='number'>
 						<div
 							class={
-								value[0].acf.numero_valor.length < 4
-									? `short-${value[0].acf.numero_valor.length}`
+								value[0]['acf']['numero_valor'].length < 4
+									? `short-${value[0]['acf']['numero_valor'].length}`
 									: 'long'
 							}
 							id='box'
 							style={{ '--background-color': value[1] }}
 						>
-							<div class='inner-number'>{value[0].acf.numero_valor}</div>
-							<div class='inner-text'>{value[0].acf.numero_descricao}</div>
+							<div class='inner-number'>{value[0]['acf']['numero_valor']}</div>
+							<div class='inner-text'>
+								{value[0]['acf']['numero_descricao']}
+							</div>
 						</div>
 					</mnv-grid>
 				))}
