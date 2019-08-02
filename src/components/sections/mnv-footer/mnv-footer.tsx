@@ -12,7 +12,7 @@ export interface locations {
 
 @Component({
 	tag: 'mnv-footer',
-	styleUrl: 'mnv-footer.scss'
+	styleUrl: 'mnv-footer.scss',
 })
 export class MnvFooter {
 	@Prop() locations: Array<locations>
@@ -25,24 +25,24 @@ export class MnvFooter {
 				floor: '2° andar - Cidade Universitária',
 				cep: 'Rio de Janeiro, RJ - CEP 21941-901',
 				phone: '+55 (21) 3938-9600',
-				fax: '+55 (21) 3938-1605'
+				fax: '+55 (21) 3938-1605',
 			},
 			{
 				name: 'Campus Duque de Caxias',
 				address: 'Rod. Washigton Luiz, KM 104 - 5°',
-				phone: '(21) 2679-1018'
+				phone: '(21) 2679-1018',
 			},
 			{
 				name: 'Pólo Xerém UFRJ',
 				address: 'Estr. de Xerém, 27°',
-				phone: '(21) 2679-2098'
+				phone: '(21) 2679-2098',
 			},
 			{
 				name: 'Acesso à Graduação da UFRJ',
 				address: '',
 				phone: '3938-9430',
-				email: 'acessograduacao@ufrj.br'
-			}
+				email: 'acessograduacao@ufrj.br',
+			},
 		]
 	}
 
@@ -53,7 +53,7 @@ export class MnvFooter {
 					<img
 						class='map'
 						alt='Mapa da UFRJ'
-						src='../../../assets/mapa_campi_ufrj2.svg'
+						src='../../../assets/mapa_campi_ufrj2_refined.svg'
 					/>
 				</mnv-grid>
 				<mnv-grid item sm='12' md='12' lg='6' xl='6' class='address-root'>

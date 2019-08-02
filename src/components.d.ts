@@ -64,16 +64,13 @@ export namespace Components {
   }
   interface MnvDivider {}
   interface MnvExpositor {
-    'projects': any[];
-    'sectionImg': string;
+    'projects': any;
     'sectionSubtitle': string;
     'sectionTitle': string;
+    'spotlight': any;
   }
   interface MnvExpositorBase {
-    'projects': any[];
-    'sectionImg': string;
-    'sectionSubtitle': string;
-    'sectionTitle': string;
+    'data': any;
   }
   interface MnvFigure {
     'alt': string;
@@ -521,16 +518,13 @@ declare namespace LocalJSX {
   }
   interface MnvDivider extends JSXBase.HTMLAttributes<HTMLMnvDividerElement> {}
   interface MnvExpositor extends JSXBase.HTMLAttributes<HTMLMnvExpositorElement> {
-    'projects'?: any[];
-    'sectionImg'?: string;
+    'projects'?: any;
     'sectionSubtitle'?: string;
     'sectionTitle'?: string;
+    'spotlight'?: any;
   }
   interface MnvExpositorBase extends JSXBase.HTMLAttributes<HTMLMnvExpositorBaseElement> {
-    'projects'?: any[];
-    'sectionImg'?: string;
-    'sectionSubtitle'?: string;
-    'sectionTitle'?: string;
+    'data'?: any;
   }
   interface MnvFigure extends JSXBase.HTMLAttributes<HTMLMnvFigureElement> {
     'alt'?: string;

@@ -1,6 +1,6 @@
 import { Component, h, Prop } from '@stencil/core'
 
-const section = {
+/* const section = {
 	title: 'Projetos',
 	subtitle: 'Tecnologias sustentáveis',
 	img:
@@ -33,17 +33,17 @@ const projects = [
 		img:
 			'https://media.gettyimages.com/photos/large-factory-detail-at-night-picture-id522556128?s=2048x2048',
 	},
-]
+] */
 
 @Component({
 	tag: 'mnv-expositor',
 	styleUrl: 'mnv-expositor.scss',
 })
-export class AppAbout {
-	@Prop() sectionTitle: string = section.title
-	@Prop() sectionSubtitle: string = section.subtitle
-	@Prop() sectionImg: string = section.img
-	@Prop() projects: any[] = projects
+export class MnvExpositor {
+	@Prop() sectionTitle: string
+	@Prop() sectionSubtitle: string
+	@Prop() spotlight
+	@Prop() projects
 
 	render() {
 		return (
@@ -51,7 +51,7 @@ export class AppAbout {
 				<div
 					class='header'
 					style={{
-						'--main-background': `url('${this.projects[0].img}')`,
+						'--main-background': `url('${this.spotlight.projeto_imagem.url}')`,
 					}}
 				>
 					<mnv-grid container>
@@ -65,15 +65,17 @@ export class AppAbout {
 					<mnv-grid item block>
 						<div class='base'>
 							<mnv-projeto
-								projTitle={this.projects[0].title}
-								projText={this.projects[0].text}
+								projTitle={this.spotlight.projeto_titulo}
+								projText={this.spotlight.projeto_descricao}
 								projImg=''
+								projImgLegenda={this.spotlight.projeto_imagem.caption}
 							/>
-							{projects.slice(1).map(project => (
+							{this.projects.map(project => (
 								<mnv-projeto
-									projTitle={project.title}
-									projText={project.text}
-									projImg={project.img}
+									projTitle={project.projeto_titulo}
+									projText={project.projeto_descricao}
+									projImg={project.projeto_imagem.url}
+									projImgLegenda={project.projeto_imagem.caption}
 								/>
 							))}
 						</div>

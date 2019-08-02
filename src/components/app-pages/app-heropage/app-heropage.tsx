@@ -3,12 +3,12 @@ import { MatchResults } from '@stencil/router'
 import Axios from 'axios'
 
 const dataBase = Axios.create({
-	baseURL: 'https://sust-dev.olimpo.tic.ufrj.br/wp-json/'
+	baseURL: 'https://sust-dev.olimpo.tic.ufrj.br/wp-json/',
 })
 
 @Component({
 	tag: 'app-heropage',
-	styleUrl: 'app-heropage.scss'
+	styleUrl: 'app-heropage.scss',
 })
 export class AppHeropage {
 	@Prop() match: MatchResults
@@ -33,7 +33,6 @@ export class AppHeropage {
 				<mnv-hero
 					id='home'
 					herotitle={this.data['cabecalho']['cabecalho_titulo']}
-					button='Saiba mais'
 					bgimg={this.data['cabecalho']['cabecalho_imagem']['url']}
 				>
 					{this.data['cabecalho']['cabecalho_descricao']}
@@ -50,10 +49,7 @@ export class AppHeropage {
 						<mnv-bignumbers id='numeros' setNumbers={this.numbers} />
 					</div>
 					<div>
-						<mnv-expositor id='projetos' />
-					</div>
-					<div>
-						<mnv-expositor sectionSubtitle='Iniciativas do CT' />
+						<mnv-expositor-base id='projetos' data={this.data['secoes']} />
 					</div>
 					<div>
 						<mnv-list-card name="Ensino" data={this.data.secoes} />
