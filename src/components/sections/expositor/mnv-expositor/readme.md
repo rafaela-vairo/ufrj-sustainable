@@ -7,25 +7,25 @@
 
 ## Properties
 
-| Property          | Attribute          | Description | Type     | Default            |
-| ----------------- | ------------------ | ----------- | -------- | ------------------ |
-| `projects`        | --                 |             | `any[]`  | `projects`         |
-| `sectionImg`      | `section-img`      |             | `string` | `section.img`      |
-| `sectionSubtitle` | `section-subtitle` |             | `string` | `section.subtitle` |
-| `sectionTitle`    | `section-title`    |             | `string` | `section.title`    |
+| Property          | Attribute          | Description | Type     | Default     |
+| ----------------- | ------------------ | ----------- | -------- | ----------- |
+| `projects`        | `projects`         |             | `any`    | `undefined` |
+| `sectionSubtitle` | `section-subtitle` |             | `string` | `undefined` |
+| `sectionTitle`    | `section-title`    |             | `string` | `undefined` |
+| `spotlight`       | `spotlight`        |             | `any`    | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [app-heropage](../../../app-pages/app-heropage)
+ - [mnv-expositor-base](..\mnv-expositor-base)
 
 ### Depends on
 
-- [mnv-grid](../../../layout/mnv-grid)
-- [mnv-title](../../../typography/mnv-title)
-- [mnv-projeto](../mnv-projeto)
+- [mnv-grid](..\..\..\layout\mnv-grid)
+- [mnv-title](..\..\..\typography\mnv-title)
+- [mnv-projeto](..\mnv-projeto)
 
 ### Graph
 ```mermaid
@@ -37,7 +37,7 @@ graph TD;
   mnv-projeto --> mnv-title
   mnv-projeto --> mnv-paragraph
   mnv-projeto --> mnv-button
-  app-heropage --> mnv-expositor
+  mnv-expositor-base --> mnv-expositor
   style mnv-expositor fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

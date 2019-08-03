@@ -3,12 +3,12 @@ import { MatchResults } from '@stencil/router'
 import Axios from 'axios'
 
 const dataBase = Axios.create({
-	baseURL: 'https://admin.sustainable.ufrj.br/wp-json/',
+	baseURL: 'https://admin.sustainable.ufrj.br/wp-json/'
 })
 
 @Component({
 	tag: 'app-heropage',
-	styleUrl: 'app-heropage.scss',
+	styleUrl: 'app-heropage.scss'
 })
 export class AppHeropage {
 	@Prop() match: MatchResults
@@ -46,25 +46,29 @@ export class AppHeropage {
 						/>
 					</div>
 					<div>
-						<mnv-bignumbers id='numeros' setNumbers={this.numbers} />
+						<mnv-bignumbers id='numbers' setNumbers={this.numbers} />
 					</div>
 					<div>
-						<mnv-expositor-base id='projetos' data={this.data['secoes']} />
-					</div>
-					<div>
-						<mnv-list-card name='Ensino' id='ensino' data={this.data.secoes} />
+						<mnv-expositor-base id='projects' data={this.data['secoes']} />
 					</div>
 					<div>
 						<mnv-list-card
-							name='Pesquisa'
-							id='pesquisa'
+							name='Teaching'
+							id='teaching'
 							data={this.data.secoes}
 						/>
 					</div>
 					<div>
 						<mnv-list-card
-							name='Extensão'
-							id='extensao'
+							name='Research'
+							id='research'
+							data={this.data.secoes}
+						/>
+					</div>
+					<div>
+						<mnv-list-card
+							name='Extension'
+							id='extension'
 							data={this.data.secoes}
 						/>
 					</div>

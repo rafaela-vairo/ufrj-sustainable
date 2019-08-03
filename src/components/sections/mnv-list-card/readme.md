@@ -7,22 +7,23 @@
 
 ## Properties
 
-| Property   | Attribute | Description | Type    | Default     |
-| ---------- | --------- | ----------- | ------- | ----------- |
-| `contents` | --        |             | `any[]` | `undefined` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `data`   | `data`    |             | `any`    | `undefined` |
+| `name`   | `name`    |             | `string` | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [app-heropage](../../app-pages/app-heropage)
+ - [app-heropage](..\..\app-pages\app-heropage)
 
 ### Depends on
 
-- [mnv-grid](../../layout/mnv-grid)
-- [mnv-title](../../typography/mnv-title)
-- [mnv-card](../../layout/mnv-card)
+- [mnv-grid](..\..\layout\mnv-grid)
+- [mnv-title](..\..\typography\mnv-title)
+- [mnv-card](..\..\layout\mnv-card)
 
 ### Graph
 ```mermaid

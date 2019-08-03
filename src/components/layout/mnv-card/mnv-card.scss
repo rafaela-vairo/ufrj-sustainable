@@ -1,10 +1,21 @@
 .card-root {
-	min-height: 500px;
-	max-height: 500px;
 	background-color: $mnv-color-white;
+	@include xl {
+		height: 433px;
+	}
+	@include lg {
+		height: 419px;
+	}
+	@include md {
+		height: 426px;
+	}
+	@include sm {
+		height: 382px;
+	}
 }
 
 :host > * {
+	cursor: pointer;
 	min-width: 300px;
 	position: relative;
 	box-shadow: -5px 5px 10px -6px #999, 5px 5px 10px -6px #999;
@@ -50,38 +61,24 @@
 		padding: 30px 30px 0 30px;
 
 		mnv-overline {
-			@include xl {
-				padding-bottom: 15px;
-			}
-
-			@include lg {
-				padding-bottom: 13.5px;
-			}
-
-			@include md {
-				padding-bottom: 12.5px;
-			}
-
-			@include sm {
-				padding-bottom: 11.5px;
-			}
+			text-transform: uppercase;
 		}
 
 		mnv-title h5 {
 			@include xl {
-				padding-bottom: 15px;
+				padding: 15px 0 10px 0;
 			}
 
 			@include lg {
-				padding-bottom: 13.5px;
+				padding: 13.5px 0 9px 0;
 			}
 
 			@include md {
-				padding-bottom: 12.5px;
+				padding: 12.5px 0 8.3px 0;
 			}
 
 			@include sm {
-				padding-bottom: 5.75px;
+				padding: 5.75px 0 3.8px 0;
 			}
 		}
 
@@ -125,7 +122,7 @@
 	}
 
 	div.body {
-		padding: 30px;
+		padding: 0 30px 75px 30px;
 
 		@include xl {
 			padding-bottom: 75px;
@@ -203,12 +200,12 @@
 
 			@include md {
 				height: 37.5px;
-				font-size: 17px;
+				font-size: 19px;
 			}
 
 			@include sm {
 				height: 34.5px;
-				font-size: 16px;
+				font-size: 18px;
 			}
 
 			&:active {

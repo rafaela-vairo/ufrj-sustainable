@@ -9,8 +9,8 @@
 
 ### Used by
 
- - [app-home](../../app-pages/app-home)
- - [mnv-card](../../layout/mnv-card)
+ - [app-home](..\..\app-pages\app-home)
+ - [mnv-card](..\..\layout\mnv-card)
 
 ### Graph
 ```mermaid

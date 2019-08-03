@@ -5,24 +5,26 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type           | Default     |
-| -------- | --------- | ----------- | -------------- | ----------- |
-| `match`  | --        |             | `MatchResults` | `undefined` |
+| Property  | Attribute | Description | Type           | Default     |
+| --------- | --------- | ----------- | -------------- | ----------- |
+| `data`    | `data`    |             | `any`          | `undefined` |
+| `match`   | --        |             | `MatchResults` | `undefined` |
+| `numbers` | `numbers` |             | `any`          | `undefined` |
 
 
 ## Dependencies
 
 ### Depends on
 
-- [mnv-base](../../layout/mnv-base)
-- [mnv-navbar](../../navigation/menu-desktop/mnv-navbar)
-- [mnv-mob-menu](../../navigation/menu-mobile/mnv-mob-menu)
-- [mnv-hero](../../sections/mnv-hero)
-- [mnv-bg](../../layout/mnv-bg)
-- [mnv-about](../../sections/mnv-about)
-- [mnv-bignumbers](../../sections/mnv-bignumbers)
-- [mnv-expositor](../../sections/expositor/mnv-expositor)
-- [mnv-list-card](../../sections/mnv-list-card)
+- [mnv-base](..\..\layout\mnv-base)
+- [mnv-navbar](..\..\navigation\menu-desktop\mnv-navbar)
+- [mnv-mob-menu](..\..\navigation\menu-mobile\mnv-mob-menu)
+- [mnv-hero](..\..\sections\mnv-hero)
+- [mnv-bg](..\..\layout\mnv-bg)
+- [mnv-about](..\..\sections\mnv-about)
+- [mnv-bignumbers](..\..\sections\mnv-bignumbers)
+- [mnv-expositor-base](..\..\sections\expositor\mnv-expositor-base)
+- [mnv-list-card](..\..\sections\mnv-list-card)
 
 ### Graph
 ```mermaid
@@ -34,7 +36,7 @@ graph TD;
   app-heropage --> mnv-bg
   app-heropage --> mnv-about
   app-heropage --> mnv-bignumbers
-  app-heropage --> mnv-expositor
+  app-heropage --> mnv-expositor-base
   app-heropage --> mnv-list-card
   mnv-navbar --> mnv-navbutton
   mnv-mob-menu --> mnv-mob-button
@@ -50,6 +52,7 @@ graph TD;
   mnv-bignumbers --> mnv-title
   mnv-bignumbers --> mnv-bignumber
   mnv-bignumber --> mnv-grid
+  mnv-expositor-base --> mnv-expositor
   mnv-expositor --> mnv-grid
   mnv-expositor --> mnv-title
   mnv-expositor --> mnv-projeto

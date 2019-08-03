@@ -45,49 +45,49 @@ export class MnvMobMenu {
 						href='#about'
 						onClick={() => this.handleLinkClick()}
 					>
-						A UFRJ
+						The UFRJ
 					</a>
 					<a
 						class='menuitem'
-						href='#numeros'
+						href='#numbers'
 						onClick={() => this.handleLinkClick()}
 					>
-						Números
+						Figures
 					</a>
 					<a
 						class='menuitem'
-						href='#projetos'
+						href='#projects'
 						onClick={() => this.handleLinkClick()}
 					>
-						Projetos
+						Projects
 					</a>
 					<a
 						class='menuitem'
-						href='#ensino'
+						href='#teaching'
 						onClick={() => this.handleLinkClick()}
 					>
-						Ensino
+						Teaching
 					</a>
 					<a
 						class='menuitem'
-						href='#pesquisa'
+						href='#research'
 						onClick={() => this.handleLinkClick()}
 					>
-						Pesquisa
+						Research
 					</a>
 					<a
 						class='menuitem'
-						href='#extensao'
+						href='#extension'
 						onClick={() => this.handleLinkClick()}
 					>
-						Extensão
+						Extension
 					</a>
 					<a
 						class='menuitem'
 						href='#footer'
 						onClick={() => this.handleLinkClick()}
 					>
-						Contato
+						Contact
 					</a>
 				</mnv-mob-drawer>
 			</header>

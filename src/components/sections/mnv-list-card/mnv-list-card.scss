@@ -22,10 +22,25 @@
 
 	mnv-card {
 		flex: 1;
-		margin: -15px;
+		@include xl {
+			margin: -15px;
+		}
+		@include lg {
+			margin: -13.5px;
+		}
+		@include md {
+			margin: -12.5px;
+		}
+		@include sm {
+			margin: -11.5px 0;
+		}
 	}
 
 	mnv-title {
 		margin-left: 15px;
 	}
+}
+
+mnv-grid.list-card-root {
+	padding-bottom: 100px;
 }

@@ -55,25 +55,25 @@ export class MnvNavbar {
 				</a>
 				<div class='links'>
 					<a href='#about'>
-						<mnv-navbutton class='link'>a ufrj</mnv-navbutton>
+						<mnv-navbutton class='link'>the ufrj</mnv-navbutton>
 					</a>
-					<a href='#numeros'>
-						<mnv-navbutton class='link'>números</mnv-navbutton>
+					<a href='#numbers'>
+						<mnv-navbutton class='link'>figures</mnv-navbutton>
 					</a>
-					<a href='#projetos'>
-						<mnv-navbutton class='link'>projetos</mnv-navbutton>
+					<a href='#projects'>
+						<mnv-navbutton class='link'>projects</mnv-navbutton>
 					</a>
-					<a href='#'>
-						<mnv-navbutton class='link'>ensino</mnv-navbutton>
+					<a href='#teaching'>
+						<mnv-navbutton class='link'>teaching</mnv-navbutton>
 					</a>
-					<a href='#'>
-						<mnv-navbutton class='link'>pesquisa</mnv-navbutton>
+					<a href='#research'>
+						<mnv-navbutton class='link'>research</mnv-navbutton>
 					</a>
-					<a href='#'>
-						<mnv-navbutton class='link'>extensão</mnv-navbutton>
+					<a href='#extension'>
+						<mnv-navbutton class='link'>extension</mnv-navbutton>
 					</a>
 					<a href='#footer'>
-						<mnv-navbutton class='link'>contato</mnv-navbutton>
+						<mnv-navbutton class='link'>contact</mnv-navbutton>
 					</a>
 				</div>
 			</header>

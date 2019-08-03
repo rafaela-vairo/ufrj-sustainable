@@ -22,14 +22,14 @@
 
 ### Used by
 
- - [app-home](../../app-pages/app-home)
- - [mnv-about](../../sections/mnv-about)
- - [mnv-bignumber](../mnv-bignumber)
- - [mnv-bignumbers](../../sections/mnv-bignumbers)
- - [mnv-expositor](../../sections/expositor/mnv-expositor)
- - [mnv-footer](../../sections/mnv-footer)
- - [mnv-hero](../../sections/mnv-hero)
- - [mnv-list-card](../../sections/mnv-list-card)
+ - [app-home](..\..\app-pages\app-home)
+ - [mnv-about](..\..\sections\mnv-about)
+ - [mnv-bignumber](..\..\sections\mnv-bignumbers\mnv-bignumber)
+ - [mnv-bignumbers](..\..\sections\mnv-bignumbers)
+ - [mnv-expositor](..\..\sections\expositor\mnv-expositor)
+ - [mnv-footer](..\..\sections\mnv-footer)
+ - [mnv-hero](..\..\sections\mnv-hero)
+ - [mnv-list-card](..\..\sections\mnv-list-card)
 
 ### Graph
 ```mermaid

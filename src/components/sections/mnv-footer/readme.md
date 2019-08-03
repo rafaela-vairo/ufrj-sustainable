@@ -7,18 +7,18 @@
 
 ## Properties
 
-| Property    | Attribute | Description | Type    | Default     |
-| ----------- | --------- | ----------- | ------- | ----------- |
-| `locations` | --        |             | `any[]` | `undefined` |
+| Property    | Attribute | Description | Type          | Default     |
+| ----------- | --------- | ----------- | ------------- | ----------- |
+| `locations` | --        |             | `locations[]` | `undefined` |
 
 
 ## Dependencies
 
 ### Depends on
 
-- [mnv-grid](../../layout/mnv-grid)
-- [mnv-title](../../typography/mnv-title)
-- [mnv-paragraph](../../typography/mnv-paragraph)
+- [mnv-grid](..\..\layout\mnv-grid)
+- [mnv-title](..\..\typography\mnv-title)
+- [mnv-paragraph](..\..\typography\mnv-paragraph)
 
 ### Graph
 ```mermaid

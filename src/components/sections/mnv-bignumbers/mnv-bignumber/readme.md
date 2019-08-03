@@ -7,20 +7,20 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type    | Default     |
-| --------- | --------- | ----------- | ------- | ----------- |
-| `numbers` | --        |             | `any[]` | `undefined` |
+| Property  | Attribute | Description | Type  | Default     |
+| --------- | --------- | ----------- | ----- | ----------- |
+| `numbers` | `numbers` |             | `any` | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [mnv-bignumbers](../../sections/mnv-bignumbers)
+ - [mnv-bignumbers](..)
 
 ### Depends on
 
-- [mnv-grid](../mnv-grid)
+- [mnv-grid](..\..\..\layout\mnv-grid)
 
 ### Graph
 ```mermaid

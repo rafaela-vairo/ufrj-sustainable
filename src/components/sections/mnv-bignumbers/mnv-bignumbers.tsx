@@ -3,7 +3,7 @@ import { Component, h, Prop } from '@stencil/core'
 @Component({
 	tag: 'mnv-bignumbers',
 	styleUrl: 'mnv-bignumbers.scss',
-	shadow: true,
+	shadow: true
 })
 export class AppBignumbers {
 	@Prop() setNumbers: any[]
@@ -14,7 +14,7 @@ export class AppBignumbers {
 				<mnv-grid container>
 					<mnv-grid item xl='2' lg='2' />
 					<mnv-grid item xl='8' lg='8' md='12' sm='12'>
-						<mnv-title level='h1'>UFRJ figures</mnv-title>
+						<mnv-title level='h1'>UFRJ Figures</mnv-title>
 					</mnv-grid>
 					<mnv-grid item xl='2' lg='2' />
 					<mnv-grid item xl='2' lg='2' />
