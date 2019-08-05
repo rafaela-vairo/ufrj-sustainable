@@ -3,7 +3,7 @@ import { Component, Prop, Listen, h } from '@stencil/core'
 @Component({
 	tag: 'mnv-mob-menu',
 	styleUrl: 'mnv-mob-menu.scss',
-	shadow: true
+	shadow: true,
 })
 export class MnvMobMenu {
 	@Prop() open: boolean = false
@@ -88,7 +88,7 @@ export class MnvMobMenu {
 						href='#footer'
 						onClick={() => this.handleLinkClick()}
 					>
-						Contact
+						Campuses
 					</a>
 				</mnv-mob-drawer>
 			</header>

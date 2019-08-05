@@ -31,7 +31,7 @@ window.addEventListener('scroll', onScroll, false) */
 @Component({
 	tag: 'mnv-navbar',
 	styleUrl: 'mnv-navbar.scss',
-	shadow: true
+	shadow: true,
 })
 export class MnvNavbar {
 	@Prop({ reflect: true }) setClass: string = ' '
@@ -74,7 +74,7 @@ export class MnvNavbar {
 						<mnv-navbutton class='link'>extension</mnv-navbutton>
 					</a>
 					<a href='#footer'>
-						<mnv-navbutton class='link'>contact</mnv-navbutton>
+						<mnv-navbutton class='link'>campuses</mnv-navbutton>
 					</a>
 				</div>
 			</header>

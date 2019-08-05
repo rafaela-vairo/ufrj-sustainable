@@ -42,12 +42,12 @@ export class MnvFooter {
 				</mnv-grid>
 				<mnv-grid item sm='12' md='4' lg='4' xl='4' class='address-root'>
 					<div class='address'>
-						<mnv-title level='h5'>Downtown campuses</mnv-title>
+						<mnv-title level='h5'>Campuses</mnv-title>
 						<mnv-paragraph>
 							<ol>
 								<li>University City</li>
 								<li>Praia Vermelha campus</li>
-								<li>Centro campus</li>
+								<li>Downtown campuses</li>
 								<li>Duque de Caxias campus</li>
 								<li>Macaé campus</li>
 							</ol>
@@ -55,28 +55,16 @@ export class MnvFooter {
 					</div>
 					<div class='social'>
 						<a href='https://www.instagram.com/ufrj.oficial/'>
-							<img
-								alt='Instagram'
-								src='../../../assets/instagram-brands.svg'
-							/>
+							<img alt='Instagram' src='../../../assets/instagram-brands.svg' />
 						</a>
 						<a href='https://www.facebook.com/PortalUFRJ/'>
-							<img
-								alt='Facebook'
-								src='../../../assets/facebook-brands.svg'
-							/>
+							<img alt='Facebook' src='../../../assets/facebook-brands.svg' />
 						</a>
 						<a href='https://twitter.com/ufrj?lang=en'>
-							<img
-								alt='Twitter'
-								src='../../../assets/twitter-brands.svg'
-							/>
+							<img alt='Twitter' src='../../../assets/twitter-brands.svg' />
 						</a>
 						<a href='https://www.youtube.com/user/WebTVUFRJ'>
-							<img
-								alt='Youtube'
-								src='../../../assets/youtube-brands.svg'
-							/>
+							<img alt='Youtube' src='../../../assets/youtube-brands.svg' />
 						</a>
 					</div>
 				</mnv-grid>
