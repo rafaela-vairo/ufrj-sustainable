@@ -1,9 +1,10 @@
 import { Component, h, Prop } from '@stencil/core'
+//import Launch from 'material-design-icons/action/svg/production/ic_launch_24px.svg'
 
 @Component({
 	tag: 'mnv-card',
 	styleUrl: 'mnv-card.scss',
-	shadow: true
+	shadow: true,
 })
 export class MnvCard {
 	@Prop({ reflect: true }) overline: any
@@ -20,6 +21,7 @@ export class MnvCard {
 			<div onClick={this.handleClick}>
 				<div class='card-root' style={{ width: `${this.width}px` }}>
 					<div class='header'>
+						{/* <img src={Launch} /> */}
 						<mnv-title level='h5' overline={this.overline}>
 							{this.cardtitle}
 						</mnv-title>

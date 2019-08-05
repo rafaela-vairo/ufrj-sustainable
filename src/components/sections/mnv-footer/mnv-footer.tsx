@@ -1,4 +1,5 @@
 import { Component, h, Prop } from '@stencil/core'
+import Language from 'material-design-icons/action/svg/production/ic_language_48px.svg'
 
 export interface locations {
 	name?: string
@@ -36,7 +37,7 @@ export class MnvFooter {
 				<mnv-grid item sm='12' md='8' lg='8' xl='8'>
 					<img
 						class='map'
-						alt='Mapa da UFRJ'
+						alt='Map of the state of Rio de Janeiro, highlighting the five UFRJ campuses.'
 						src='../../../assets/mapa_campi_ufrj_refined_2.svg'
 					/>
 				</mnv-grid>
@@ -54,6 +55,9 @@ export class MnvFooter {
 						</mnv-paragraph>
 					</div>
 					<div class='social'>
+						<a href='https://ufrj.br/'>
+							<img alt='UFRJ main page' src={Language} />
+						</a>
 						<a href='https://www.instagram.com/ufrj.oficial/'>
 							<img alt='Instagram' src='../../../assets/instagram-brands.svg' />
 						</a>

@@ -1,4 +1,5 @@
 import { Component, h, Prop, Host } from '@stencil/core'
+import Launch from 'material-design-icons/action/svg/production/ic_launch_24px.svg'
 
 @Component({
 	tag: 'mnv-projeto',
@@ -36,7 +37,7 @@ export class MnvProjeto {
 					<mnv-paragraph>{this.projText}</mnv-paragraph>
 					<form action={this.projButtonUrl}>
 						<mnv-button contained type='submit'>
-							{this.projButton}
+							{this.projButton} <img src={Launch} />
 						</mnv-button>
 					</form>
 				</div>

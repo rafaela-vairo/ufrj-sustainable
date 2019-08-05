@@ -15,6 +15,22 @@
 	@include sm {
 		padding: 23px;
 	}
+	img {
+		margin-bottom: -5px;
+		@include xl {
+			margin-left: 7.5px;
+		}
+		@include lg {
+			margin-left: 6.75px;
+		}
+		@include md {
+			margin-left: 6.25px;
+		}
+		@include sm {
+			margin-left: 5.75px;
+		}
+		filter: invert(100%);
+	}
 }
 
 .project-img-main {
