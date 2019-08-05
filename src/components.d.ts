@@ -68,6 +68,7 @@ export namespace Components {
     'sectionSubtitle': string;
     'sectionTitle': string;
     'spotlight': any;
+    'spotlightAlt': string;
   }
   interface MnvExpositorBase {
     'data': any;
@@ -151,6 +152,7 @@ export namespace Components {
     'projButton': string;
     'projButtonUrl': string;
     'projImg': string;
+    'projImgAlt': string;
     'projImgLegenda': string;
     'projText': string;
     'projTitle': string;
@@ -523,6 +525,7 @@ declare namespace LocalJSX {
     'sectionSubtitle'?: string;
     'sectionTitle'?: string;
     'spotlight'?: any;
+    'spotlightAlt'?: string;
   }
   interface MnvExpositorBase extends JSXBase.HTMLAttributes<HTMLMnvExpositorBaseElement> {
     'data'?: any;
@@ -606,6 +609,7 @@ declare namespace LocalJSX {
     'projButton'?: string;
     'projButtonUrl'?: string;
     'projImg'?: string;
+    'projImgAlt'?: string;
     'projImgLegenda'?: string;
     'projText'?: string;
     'projTitle'?: string;

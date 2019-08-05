@@ -27,70 +27,58 @@ export class MnvFooter {
 				phone: '+55 (21) 3938-9600',
 				fax: '+55 (21) 3938-1605',
 			},
-			{
-				name: 'Campus Duque de Caxias',
-				address: 'Rod. Washigton Luiz, KM 104 - 5°',
-				phone: '(21) 2679-1018',
-			},
-			{
-				name: 'Pólo Xerém UFRJ',
-				address: 'Estr. de Xerém, 27°',
-				phone: '(21) 2679-2098',
-			},
-			{
-				name: 'Acesso à Graduação da UFRJ',
-				address: '',
-				phone: '3938-9430',
-				email: 'acessograduacao@ufrj.br',
-			},
 		]
 	}
 
 	render = () => (
 		<footer>
 			<mnv-grid container>
-				<mnv-grid item sm='12' md='12' lg='6' xl='6'>
+				<mnv-grid item sm='12' md='8' lg='8' xl='8'>
 					<img
 						class='map'
 						alt='Mapa da UFRJ'
-						src='../../../assets/mapa_campi_ufrj2_refined.svg'
+						src='../../../assets/mapa_campi_ufrj_refined_2.svg'
 					/>
 				</mnv-grid>
-				<mnv-grid item sm='12' md='12' lg='6' xl='6' class='address-root'>
-					<mnv-grid container>
-						{this.locations.map(location => (
-							<mnv-grid item sm='12' md='6' lg='6' xl='6'>
-								<div class='address'>
-									<div>
-										<mnv-title level='h5'>{location['name']}</mnv-title>
-										<mnv-paragraph>
-											<div>{location['address']}</div>
-											{location['floor'] ? (
-												<div>{location['floor']}</div>
-											) : null}
-											{location['cep'] ? <div>{location['cep']}</div> : null}
-											{location['phone'] ? (
-												<div>
-													<i>Telefone</i>: {location['phone']}
-												</div>
-											) : null}
-											{location['fax'] ? (
-												<div>
-													<i>Fax</i>: {location['fax']}
-												</div>
-											) : null}
-											{location['email'] ? (
-												<div>
-													<i>Email</i>: {location['email']}
-												</div>
-											) : null}
-										</mnv-paragraph>
-									</div>
-									{/* <hr /> */}
-								</div>
-							</mnv-grid>
-						))}
-					</mnv-grid>
+				<mnv-grid item sm='12' md='4' lg='4' xl='4' class='address-root'>
+					<div class='address'>
+						<mnv-title level='h5'>Downtown campuses</mnv-title>
+						<mnv-paragraph>
+							<ol>
+								<li>University City</li>
+								<li>Praia Vermelha campus</li>
+								<li>Centro campus</li>
+								<li>Duque de Caxias campus</li>
+								<li>Macaé campus</li>
+							</ol>
+						</mnv-paragraph>
+					</div>
+					<div class='social'>
+						<a href='https://www.instagram.com/ufrj.oficial/'>
+							<img
+								alt='Instagram'
+								src='../../../assets/instagram-brands.svg'
+							/>
+						</a>
+						<a href='https://www.facebook.com/PortalUFRJ/'>
+							<img
+								alt='Facebook'
+								src='../../../assets/facebook-brands.svg'
+							/>
+						</a>
+						<a href='https://twitter.com/ufrj?lang=en'>
+							<img
+								alt='Twitter'
+								src='../../../assets/twitter-brands.svg'
+							/>
+						</a>
+						<a href='https://www.youtube.com/user/WebTVUFRJ'>
+							<img
+								alt='Youtube'
+								src='../../../assets/youtube-brands.svg'
+							/>
+						</a>
+					</div>
 				</mnv-grid>
 			</mnv-grid>
 		</footer>

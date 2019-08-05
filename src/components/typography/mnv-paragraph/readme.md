@@ -17,11 +17,11 @@
 
 ### Used by
 
- - [app-home](..\..\app-pages\app-home)
- - [mnv-about](..\..\sections\mnv-about)
- - [mnv-card](..\..\layout\mnv-card)
- - [mnv-footer](..\..\sections\mnv-footer)
- - [mnv-projeto](..\..\sections\expositor\mnv-projeto)
+ - [app-home](../../app-pages/app-home)
+ - [mnv-about](../../sections/mnv-about)
+ - [mnv-card](../../layout/mnv-card)
+ - [mnv-footer](../../sections/mnv-footer)
+ - [mnv-projeto](../../sections/expositor/mnv-projeto)
 
 ### Graph
 ```mermaid

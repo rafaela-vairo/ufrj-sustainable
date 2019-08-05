@@ -8,7 +8,8 @@ export class MnvProjeto {
 	@Prop() projTitle: string = 'Title'
 	@Prop() projText: string = 'Text'
 	@Prop() projImg: string
-	@Prop() projImgLegenda: string = 'Image: Arthur Moaes'
+	@Prop() projImgLegenda: string
+	@Prop() projImgAlt: string
 	@Prop() projButton: string = 'More info'
 	@Prop() projButtonUrl: string
 
@@ -21,6 +22,7 @@ export class MnvProjeto {
 						style={{
 							'--project-img': `url('${this.projImg}')`,
 						}}
+						aria-label={this.projImgAlt}
 					/>
 				) : (
 					''

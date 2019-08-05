@@ -51,6 +51,7 @@ export class MnvNavbar {
 					<img
 						class='link-brand'
 						src='../../assets/icon/ufrj-100-anos-branco-horizontal.svg'
+						alt='UFRJ 100 years logo'
 					/>
 				</a>
 				<div class='links'>

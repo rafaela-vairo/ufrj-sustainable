@@ -7,6 +7,7 @@ import { Component, h, Prop } from '@stencil/core'
 export class MnvExpositor {
 	@Prop() sectionTitle: string
 	@Prop() sectionSubtitle: string
+	@Prop() spotlightAlt: string
 	@Prop() spotlight
 	@Prop() projects
 
@@ -18,6 +19,7 @@ export class MnvExpositor {
 					style={{
 						'--main-background': `url('${this.spotlight.projeto_imagem.url}')`,
 					}}
+					aria-label={this.spotlightAlt}
 				>
 					<mnv-grid container>
 						<mnv-grid item block xl='12' lg='12' md='12' sm='12'>
@@ -42,6 +44,7 @@ export class MnvExpositor {
 									projText={project.projeto_descricao}
 									projImg={project.projeto_imagem.url}
 									projImgLegenda={project.projeto_imagem.caption}
+									projImgAlt={project.projeto_imagem.alt}
 									projButtonUrl={project.projeto_link_url}
 								/>
 							))}

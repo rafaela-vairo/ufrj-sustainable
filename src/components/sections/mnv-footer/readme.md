@@ -16,9 +16,9 @@
 
 ### Depends on
 
-- [mnv-grid](..\..\layout\mnv-grid)
-- [mnv-title](..\..\typography\mnv-title)
-- [mnv-paragraph](..\..\typography\mnv-paragraph)
+- [mnv-grid](../../layout/mnv-grid)
+- [mnv-title](../../typography/mnv-title)
+- [mnv-paragraph](../../typography/mnv-paragraph)
 
 ### Graph
 ```mermaid

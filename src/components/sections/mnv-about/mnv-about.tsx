@@ -25,7 +25,7 @@ export class AppAbout {
 				<mnv-grid container>
 					<mnv-grid item xl='2' lg='2' />
 					<mnv-grid item block xl='8' lg='12' md='12' sm='12'>
-						<mnv-title level='h1'>{this.mainTitle}</mnv-title>
+						<mnv-title level='h1' class='about-title'>{this.mainTitle}</mnv-title>
 						<mnv-paragraph class='main-text'>{this.mainText}</mnv-paragraph>
 					</mnv-grid>
 					<mnv-grid item xl='2' lg='2' />

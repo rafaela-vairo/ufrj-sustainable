@@ -39,6 +39,14 @@
 	h4 {
 		color: white !important;
 	}
+	h1 {
+		@include md {
+		padding-top:45px;
+		}
+		@include sm {
+			padding-top: 45px;
+		}
+	}
 	@include xl {
 		height: 840px;
 		margin-bottom: -330px;

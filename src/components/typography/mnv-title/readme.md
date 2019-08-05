@@ -16,19 +16,19 @@
 
 ### Used by
 
- - [app-home](..\..\app-pages\app-home)
- - [mnv-about](..\..\sections\mnv-about)
- - [mnv-bignumbers](..\..\sections\mnv-bignumbers)
- - [mnv-card](..\..\layout\mnv-card)
- - [mnv-expositor](..\..\sections\expositor\mnv-expositor)
- - [mnv-footer](..\..\sections\mnv-footer)
- - [mnv-hero](..\..\sections\mnv-hero)
- - [mnv-list-card](..\..\sections\mnv-list-card)
- - [mnv-projeto](..\..\sections\expositor\mnv-projeto)
+ - [app-home](../../app-pages/app-home)
+ - [mnv-about](../../sections/mnv-about)
+ - [mnv-bignumbers](../../sections/mnv-bignumbers)
+ - [mnv-card](../../layout/mnv-card)
+ - [mnv-expositor](../../sections/expositor/mnv-expositor)
+ - [mnv-footer](../../sections/mnv-footer)
+ - [mnv-hero](../../sections/mnv-hero)
+ - [mnv-list-card](../../sections/mnv-list-card)
+ - [mnv-projeto](../../sections/expositor/mnv-projeto)
 
 ### Depends on
 
-- [mnv-overline](..\mnv-overline)
+- [mnv-overline](../mnv-overline)
 
 ### Graph
 ```mermaid

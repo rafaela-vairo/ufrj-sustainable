@@ -1,5 +1,11 @@
 .about-root {
 	width: 100%;
+	@include md {
+		padding-top:30px;
+	}
+	@include sm {
+		padding-top: 30px;
+	}
 	/* 	@include md {
 		padding-top: 30px;
 	}

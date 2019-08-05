@@ -10,9 +10,9 @@ export class MnvMobMenu {
 	@Prop({ reflect: true }) setClass: string = 'menuroot'
 	@Listen('scroll', { target: 'window' })
 	handleScroll() {
-		if (window.scrollY > window.innerHeight - 160) {
+		if (window.scrollY > window.innerHeight - 760) {
 			this.setClass = 'menuroot slideUp'
-		} else if (window.scrollY < window.innerHeight - 160) {
+		} else if (window.scrollY < window.innerHeight - 760) {
 			this.setClass = 'menuroot slideDown'
 		}
 	}
@@ -36,6 +36,7 @@ export class MnvMobMenu {
 						<img
 							class='link-brand'
 							src='../../assets/icon/ufrj-100-anos-branco-horizontal.svg'
+							alt='UFRJ 100 years logo'
 						/>
 					</a>
 				</div>

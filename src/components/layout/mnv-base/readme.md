@@ -9,8 +9,8 @@
 
 ### Used by
 
- - [app-heropage](..\..\app-pages\app-heropage)
- - [app-home](..\..\app-pages\app-home)
+ - [app-heropage](../../app-pages/app-heropage)
+ - [app-home](../../app-pages/app-home)
 
 ### Graph
 ```mermaid

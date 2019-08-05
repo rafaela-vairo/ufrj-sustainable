@@ -55,13 +55,13 @@ header {
 }
 
 .slideUp {
-	height: 120px;
+	height: 90px;
 	padding-top: 0px;
 	background: $mnv-color-primary;
 	box-shadow: 0 3px 5px rgba($mnv-color-black, 0.3);
 	img.link-brand {
 		@include xl {
-			height: 95px;
+			height: 60px;
 			padding-left: 21px;
 		}
 		@include lg {

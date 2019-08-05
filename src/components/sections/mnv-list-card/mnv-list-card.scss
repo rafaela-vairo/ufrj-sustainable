@@ -38,6 +38,12 @@
 
 	mnv-title {
 		margin-left: 15px;
+		@include md {
+			padding-top: 60px;
+		}
+		@include sm {
+			padding-top: 60px;
+		}
 	}
 }
 

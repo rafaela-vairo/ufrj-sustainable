@@ -16,15 +16,15 @@
 
 ### Depends on
 
-- [mnv-base](..\..\layout\mnv-base)
-- [mnv-navbar](..\..\navigation\menu-desktop\mnv-navbar)
-- [mnv-mob-menu](..\..\navigation\menu-mobile\mnv-mob-menu)
-- [mnv-hero](..\..\sections\mnv-hero)
-- [mnv-bg](..\..\layout\mnv-bg)
-- [mnv-about](..\..\sections\mnv-about)
-- [mnv-bignumbers](..\..\sections\mnv-bignumbers)
-- [mnv-expositor-base](..\..\sections\expositor\mnv-expositor-base)
-- [mnv-list-card](..\..\sections\mnv-list-card)
+- [mnv-base](../../layout/mnv-base)
+- [mnv-navbar](../../navigation/menu-desktop/mnv-navbar)
+- [mnv-mob-menu](../../navigation/menu-mobile/mnv-mob-menu)
+- [mnv-hero](../../sections/mnv-hero)
+- [mnv-bg](../../layout/mnv-bg)
+- [mnv-about](../../sections/mnv-about)
+- [mnv-bignumbers](../../sections/mnv-bignumbers)
+- [mnv-expositor-base](../../sections/expositor/mnv-expositor-base)
+- [mnv-list-card](../../sections/mnv-list-card)
 
 ### Graph
 ```mermaid

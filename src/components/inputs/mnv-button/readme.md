@@ -21,10 +21,10 @@
 
 ### Used by
 
- - [app-home](..\..\app-pages\app-home)
- - [mnv-card](..\..\layout\mnv-card)
- - [mnv-hero](..\..\sections\mnv-hero)
- - [mnv-projeto](..\..\sections\expositor\mnv-projeto)
+ - [app-home](../../app-pages/app-home)
+ - [mnv-card](../../layout/mnv-card)
+ - [mnv-hero](../../sections/mnv-hero)
+ - [mnv-projeto](../../sections/expositor/mnv-projeto)
 
 ### Graph
 ```mermaid

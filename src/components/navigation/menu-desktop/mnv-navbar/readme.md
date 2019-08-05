@@ -16,12 +16,12 @@
 
 ### Used by
 
- - [app-heropage](..\..\..\app-pages\app-heropage)
- - [app-home](..\..\..\app-pages\app-home)
+ - [app-heropage](../../../app-pages/app-heropage)
+ - [app-home](../../../app-pages/app-home)
 
 ### Depends on
 
-- [mnv-navbutton](..\mnv-navbutton)
+- [mnv-navbutton](../mnv-navbutton)
 
 ### Graph
 ```mermaid
