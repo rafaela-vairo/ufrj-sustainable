@@ -14,6 +14,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [app-heropage](../../app-pages/app-heropage)
+
 ### Depends on
 
 - [mnv-grid](../../layout/mnv-grid)
@@ -27,6 +31,7 @@ graph TD;
   mnv-footer --> mnv-title
   mnv-footer --> mnv-paragraph
   mnv-title --> mnv-overline
+  app-heropage --> mnv-footer
   style mnv-footer fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

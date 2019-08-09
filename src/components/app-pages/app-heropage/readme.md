@@ -25,6 +25,7 @@
 - [mnv-bignumbers](../../sections/mnv-bignumbers)
 - [mnv-expositor-base](../../sections/expositor/mnv-expositor-base)
 - [mnv-list-card](../../sections/mnv-list-card)
+- [mnv-footer](../../sections/mnv-footer)
 
 ### Graph
 ```mermaid
@@ -38,6 +39,7 @@ graph TD;
   app-heropage --> mnv-bignumbers
   app-heropage --> mnv-expositor-base
   app-heropage --> mnv-list-card
+  app-heropage --> mnv-footer
   mnv-navbar --> mnv-navbutton
   mnv-mob-menu --> mnv-mob-button
   mnv-mob-menu --> mnv-mob-drawer
@@ -67,6 +69,9 @@ graph TD;
   mnv-card --> mnv-divider
   mnv-card --> mnv-paragraph
   mnv-card --> mnv-button
+  mnv-footer --> mnv-grid
+  mnv-footer --> mnv-title
+  mnv-footer --> mnv-paragraph
   style app-heropage fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
